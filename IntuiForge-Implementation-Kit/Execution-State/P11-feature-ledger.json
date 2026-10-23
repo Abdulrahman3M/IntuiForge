@@ -1,0 +1,42 @@
+{
+  "phase": "P11",
+  "title": "AI Article Authoring Studio & Export",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-20T13:51:24+04:00",
+  "features": [
+    {"id":"AI-01","status":"PASS","implementation":["packages/authoring/src/index.js","packages/authoring/src/studio.js","packages/authoring/src/index.d.ts"],"automatedEvidence":["tests/p11-authoring.test.mjs: offline inert v1 prompt contract","npm run test:p11: 7/7","npm test: 100/100"],"browserEvidence":"PASS: Arabic RTL and English LTR authoring sessions generated the contract prompt while preview remained engine-rendered."},
+    {"id":"AI-02","status":"PASS","implementation":["packages/authoring/src/index.js","packages/article/src/index.js"],"automatedEvidence":["tests/p11-authoring.test.mjs: JSON and Markdown roundtrip preserves IDs, semantics, assets, state, bindings and events; unsupported versions rejected at /schemaVersion","npm run test:p11: 7/7","npm run test:p02: 12/12"],"browserEvidence":"PASS: explicit JSON/Markdown export, import, and unsupported-version error paths exercised in the real browser fixture."},
+    {"id":"AI-03","status":"PASS","implementation":["packages/authoring/src/studio.js","tests/browser/p11.html","tests/browser/p11.css","tests/browser/p11.js"],"automatedEvidence":["tests/browser/p11.js: visual edit, block removal, template selection and field controls","window.P11_RUN_CHECKS(): 28/28 assertions passed in Arabic and English"],"browserEvidence":"PASS: title/summary/block fields, props, bindings and events edited through native controls; no JavaScript source editing required."},
+    {"id":"AI-04","status":"PASS","implementation":["packages/authoring/src/studio.js","packages/article-renderer/src/index.js","packages/core/src/engine.js"],"automatedEvidence":["tests/browser/p11.js: verifies shared renderer identity, valid draft preview, invalid draft isolation, and renderer lifecycle"],"browserEvidence":"PASS: preview uses registered org.intuiforge.article production renderer; invalid drafts preserve last valid preview and theme changes dispose/remount cleanly."},
+    {"id":"AI-05","status":"PASS","implementation":["packages/authoring/src/studio.js"],"automatedEvidence":["tests/browser/p11.js: selected component inspector, declarative props/bindings/events and exact validation locator assertions"],"browserEvidence":"PASS: selected block data and declared events are visible without execution; invalid field diagnostics identify and focus the corresponding control."},
+    {"id":"AI-06","status":"PASS","implementation":["packages/authoring/src/index.js","tests/p11-authoring.test.mjs","tests/browser/p11.js"],"automatedEvidence":["tests/p11-authoring.test.mjs: general article, quiz, knowledge map and science graph all validate"],"browserEvidence":"PASS: article, quiz, knowledgeMap and mathGraph templates loaded and validated in the browser."},
+    {"id":"AI-07","status":"PASS","implementation":["packages/authoring/src/index.js","packages/authoring/src/studio.js","packages/article/src/index.js"],"automatedEvidence":["tests/p11-authoring.test.mjs: exact validator path/fixHint, invalid publish rejected, correction then explicit publish succeeds","npm run test:p11: 7/7"],"browserEvidence":"PASS: invalid drafts blocked from preview/publish, precise errors located the field, and correction restored valid preview."},
+    {"id":"AI-08","status":"PASS","implementation":["packages/authoring/src/index.js","packages/authoring/src/studio.js"],"automatedEvidence":["tests/p11-authoring.test.mjs: bounded undo/redo, clone isolation, published snapshot immutability and accessor rejection"],"browserEvidence":"PASS: undo/redo and explicit publish observed; original article remained unchanged before explicit publish and draft edits did not mutate published data."}
+  ],
+  "verification": {
+    "baseline":"PASS: npm test 93/93 before P11; P10 COMPLETE and MED-01..07 PASS.",
+    "finalExecution": {
+      "date":"2026-10-20",
+      "focusedTests":"PASS: npm run test:p11, 7/7.",
+      "fullTests":"PASS: npm test, 100/100.",
+      "regressions":{"P02":"PASS: 12/12","P05":"PASS: 5/5","P10":"PASS: 7/7"},
+      "syntaxAndJson":"PASS: node --check for P11 JS entry/studio/browser fixture; package, phase-state and traceability JSON parsed.",
+      "securityScan":"PASS: no innerHTML, eval, new Function, localStorage or fetch calls in P11 authoring source and fixture.",
+      "browserIdentity":{
+        "tool":"mcp__edge_ai",
+        "process":"PASS: dedicated msedge.exe PID 29508; expected executable and exact IB-Edge-Debug user-data root; listener owned by same PID and bound to 127.0.0.1:9222.",
+        "cdp":"PASS: http://127.0.0.1:9222/json/version identified Edg/155.0.4283.62, Protocol 1.3, WebSocket endpoint present.",
+        "activeProfile":"PASS: edge://version showed C:\\Users\\Abdoo\\AppData\\Local\\IB-Edge-Debug\\Profile."
+      },
+      "browserFixture":"PASS: window.P11_RUN_CHECKS() passed all 28 assertions in Arabic RTL and English LTR; browser console was empty.",
+      "responsive":"PASS: 320, 360, 768, 1024 and 1440 px viewport matrix had no horizontal overflow or off-canvas panel; one/two/three-column breakpoints behaved as designed; meaningful text >=16 CSS px; primary action >=44 px.",
+      "keyboard":"PASS: Tab moved between named controls and focused control exposed a visible 2.4px outline.",
+      "theme":"PASS: Arabic RTL light and dark and English LTR dark visual layouts captured inline and visually inspected.",
+      "network":"PASS: 46 requests per session, all to 127.0.0.1:4173; no external origin.",
+      "screenshots":"PASS: actual screenshots returned inline and visually inspected at RTL 1440 light, RTL 360/768/1440 dark, and LTR 1440 dark. Connector denied writing PNGs to Reports; no persistent image paths claimed.",
+      "browserEnvironmentManager":"Direct identity was verified; the app-local manager configuration root was absent in this execution context. Manager Status was not run because its missing-config path creates a managed-reference environment.json. No browser settings/profile/process were modified.",
+      "preservation":"PASS: RichViz v0.5.0 ZIP SHA-256 remains 6639552377C83B0FA48739C2140B808FF71CECF5ED9BC68C427D4E3B3482EEF3. P00-P10 and P12+ source contracts untouched by P11; no InfoBank edits.",
+      "phaseGate":"COMPLETE: AI-01..AI-08 all PASS with automated and real-browser evidence. Stop after P11; P12 remains NOT_STARTED."
+    }
+  }
+}

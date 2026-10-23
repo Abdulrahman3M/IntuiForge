@@ -1,0 +1,13 @@
+.rev,
+.rev * {
+  font-size: max(16px, var(--reading-size, 16px)) !important;
+}
+
+.rev .rev-tooltip {
+  font-size: max(16px, var(--reading-size, 16px)) !important;
+}
+
+.rev .rev-btn {
+  min-inline-size: 24px;
+  min-block-size: 24px;
+}

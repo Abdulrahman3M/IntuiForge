@@ -1,0 +1,130 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "arabic-phonetics-lesson",
+  "locale": "ar",
+  "dir": "rtl",
+  "title": "حروف العربية وأصواتها",
+  "summary": "درس عملي يضم الصوت والبطاقات والاختبار والتمرين، مع مدخلات مقيدة.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "language-learning",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["ar"],
+    "provenance": []
+  },
+  "assets": [
+    {
+      "id": "lesson-audio",
+      "url": "./media/arabic-audio.mp3",
+      "type": "audio/mpeg",
+      "alt": "مقطع نطق تعليمي",
+      "license": "owner-supplied-required",
+      "provenance": "owner-supplied-example"
+    }
+  ],
+  "initialState": {
+    "speed": {
+      "type": "number",
+      "value": 1,
+      "min": 0.5,
+      "max": 2
+    },
+    "lessonProgress": {
+      "type": "integer",
+      "value": 1,
+      "min": 0,
+      "max": 4
+    }
+  },
+  "derived": {},
+  "sections": [
+    {
+      "id": "sounds",
+      "heading": "التعرّف على الأصوات",
+      "blocks": [
+        {
+          "id": "audio",
+          "type": "audio",
+          "props": {
+            "assetId": "lesson-audio",
+            "transcript": "أمثلة النطق",
+            "speeds": [
+              0.5,
+              0.75,
+              1,
+              1.25,
+              1.5,
+              2
+            ]
+          },
+          "bindings": {
+            "speed": "speed"
+          },
+          "events": {
+            "speedChange": {
+              "action": "setState",
+              "variable": "speed",
+              "valueFrom": "event.value"
+            }
+          }
+        },
+        {
+          "id": "cards",
+          "type": "flashcards",
+          "props": {
+            "cards": [
+              {
+                "id": "alif",
+                "front": "أ",
+                "back": "أَلِف"
+              },
+              {
+                "id": "ba",
+                "front": "ب",
+                "back": "بَاء"
+              }
+            ]
+          }
+        },
+        {
+          "id": "quiz",
+          "type": "quiz",
+          "props": {
+            "questions": [
+              {
+                "id": "q1",
+                "type": "single-choice",
+                "prompt": "أي حرف يأتي بعد الألف؟",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "ب"
+                  },
+                  {
+                    "id": "b",
+                    "label": "ت"
+                  }
+                ],
+                "answer": "a",
+                "explanation": "الباء هو الحرف التالي للألف."
+              }
+            ]
+          }
+        },
+        {
+          "id": "progress",
+          "type": "progress",
+          "props": {
+            "label": "تقدم النشاط",
+            "max": 4
+          },
+          "bindings": {
+            "value": "lessonProgress"
+          }
+        }
+      ]
+    }
+  ]
+}

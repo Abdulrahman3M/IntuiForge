@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IntuiForge P08 visual audit</title>
+    <link rel="stylesheet" href="/tests/browser/p08.css">
+  </head>
+  <body>
+    <main>
+      <header><h1>فحص محركات IntuiForge</h1><p>اختبارات مباشرة مرئية للأنواع والمحركات والخرائط المعرفية.</p></header>
+      <p id="audit-status" role="status" aria-live="polite">جاري تهيئة فحص P08…</p>
+      <section aria-label="نتائج المعاينة"><h2>معاينة مرئية أثناء الفحص</h2><div id="audit-surface" class="audit-surface"></div></section>
+      <section aria-label="المقال التفاعلي"><h2>خريطة معرفية مرتبطة بحالة المقال</h2><div id="article-host"></div></section>
+      <details><summary>سجل فحوص P08</summary><pre id="audit-log"></pre></details>
+    </main>
+    <script type="module" src="/tests/browser/p08.js"></script>
+  </body>
+</html>

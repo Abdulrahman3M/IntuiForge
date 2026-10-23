@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "type": "node-map",
+  "title": "Git concepts map",
+  "description": "Repositories contain branches; branches hold commits; pull requests propose merging one branch into another.",
+  "data": {
+    "layout": "layered",
+    "direction": "LR",
+    "groups": [
+      {
+        "id": "local",
+        "label": "Local",
+        "tone": "teal"
+      },
+      {
+        "id": "remote",
+        "label": "Remote",
+        "tone": "info"
+      }
+    ],
+    "nodes": [
+      {
+        "id": "repo",
+        "label": "Repository",
+        "subtitle": "All history",
+        "icon": "database",
+        "tone": "accent",
+        "details": "A repository stores every commit and branch of a project."
+      },
+      {
+        "id": "branch",
+        "label": "Branch",
+        "subtitle": "A line of work",
+        "icon": "git-branch",
+        "tone": "violet",
+        "group": "local",
+        "details": "A branch is a movable pointer to a commit."
+      },
+      {
+        "id": "commit",
+        "label": "Commit",
+        "subtitle": "A snapshot",
+        "icon": "git-commit",
+        "tone": "teal",
+        "group": "local",
+        "details": "A commit records the project state and a message."
+      },
+      {
+        "id": "remote",
+        "label": "Remote",
+        "subtitle": "Shared copy",
+        "icon": "cloud",
+        "tone": "info",
+        "group": "remote",
+        "details": "A remote is a copy of the repository hosted elsewhere."
+      },
+      {
+        "id": "pr",
+        "label": "Pull request",
+        "subtitle": "Review and merge",
+        "icon": "git-pull-request",
+        "tone": "success",
+        "group": "remote",
+        "status": {
+          "text": "Open",
+          "state": "ok"
+        },
+        "details": "A pull request proposes merging one branch into another."
+      }
+    ],
+    "edges": [
+      {
+        "from": "repo",
+        "to": "branch",
+        "label": "has"
+      },
+      {
+        "from": "branch",
+        "to": "commit",
+        "label": "points to"
+      },
+      {
+        "from": "repo",
+        "to": "remote",
+        "label": "syncs with"
+      },
+      {
+        "from": "remote",
+        "to": "pr",
+        "label": "hosts"
+      },
+      {
+        "from": "branch",
+        "to": "pr",
+        "label": "proposed in"
+      }
+    ]
+  }
+}

@@ -1,0 +1,8 @@
+Rich Visualization Library (Rich Viz)
+Copyright © 2026 Abdulrahman ElBatrah
+
+Original RichViz source code, schemas, renderers, adapters, examples, documentation, gallery styling, hand-authored icons, and original illustration assets are licensed under the Apache License, Version 2.0. See LICENSE.
+
+Third-party software remains under its respective upstream license. Their copyrights and required license texts are retained beside the bundled distributions under External-Libraries/ and summarized in THIRD_PARTY_NOTICES.md. In particular, Apache ECharts carries its upstream NOTICE and bundled D3 BSD-3-Clause license; Plotly carries its embedded dependency notices and MapLibre/Mapbox BSD-3-Clause terms. These notices apply only to their respective third-party works and do not alter the Apache-2.0 license for original RichViz material.
+
+React Flow and Recharts vendor bundles were modified to integrate with RichViz's locally shared React runtime and namespaced styles. Those files and modifications remain governed by the corresponding upstream licenses; their modifications are identified at the affected bundle files and in THIRD_PARTY_NOTICES.md.

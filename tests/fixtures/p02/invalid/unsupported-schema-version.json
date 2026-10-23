@@ -1,0 +1,27 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "0.9.0",
+  "id": "old-article",
+  "locale": "en",
+  "dir": "ltr",
+  "title": "Unsupported version",
+  "summary": "A static article used to verify explicit unsupported-version migration diagnostics.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "article",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["en"],
+    "provenance": []
+  },
+  "assets": [],
+  "initialState": {},
+  "derived": {},
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "blocks": [{"id": "paragraph", "type": "paragraph", "content": "Static explanatory text."}]
+    }
+  ]
+}

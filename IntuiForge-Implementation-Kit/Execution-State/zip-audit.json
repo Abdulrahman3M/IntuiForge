@@ -1,0 +1,2951 @@
+{
+  "source": "D:\\Test\\02 │ Assistance Projects\\IntuiForge — Intelligent UI Engine\\Input\\RichViz v0.5.0.zip",
+  "sha256": "6639552377c83b0fa48739c2140b808ff71cecf5ed9bc68c427d4e3b3482eef3",
+  "errors": [],
+  "warnings": [],
+  "entries": [
+    {
+      "name": "RichViz-main/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/.github/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/.github/workflows/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/.github/workflows/version-consistency.yml",
+      "bytes": 311,
+      "compressed": 179
+    },
+    {
+      "name": "RichViz-main/.gitignore",
+      "bytes": 461,
+      "compressed": 301
+    },
+    {
+      "name": "RichViz-main/AGENTS.md",
+      "bytes": 5017,
+      "compressed": 2330
+    },
+    {
+      "name": "RichViz-main/Assets/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/LICENSE",
+      "bytes": 35148,
+      "compressed": 12119
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/README.md",
+      "bytes": 917,
+      "compressed": 565
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/0ad.png",
+      "bytes": 22518,
+      "compressed": 22518
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/7z.png",
+      "bytes": 19930,
+      "compressed": 19929
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/abiword.png",
+      "bytes": 22475,
+      "compressed": 22463
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/abrt.png",
+      "bytes": 21250,
+      "compressed": 21250
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/accessories-camera.png",
+      "bytes": 18160,
+      "compressed": 18087
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/accessories-character-map.png",
+      "bytes": 10014,
+      "compressed": 10010
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/acroread.png",
+      "bytes": 18049,
+      "compressed": 18049
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/activity-log-manager.png",
+      "bytes": 18429,
+      "compressed": 18418
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/adobe-flashplayer.png",
+      "bytes": 15642,
+      "compressed": 15613
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/adobeair.png",
+      "bytes": 17400,
+      "compressed": 17400
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/agenda.png",
+      "bytes": 25721,
+      "compressed": 25721
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/akregator.png",
+      "bytes": 22324,
+      "compressed": 22290
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/amazon.png",
+      "bytes": 18458,
+      "compressed": 18439
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/anjuta.png",
+      "bytes": 22989,
+      "compressed": 22896
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/applets-screenshooter.png",
+      "bytes": 24282,
+      "compressed": 24282
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/assistant-qt4.png",
+      "bytes": 26678,
+      "compressed": 26678
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/atom.png",
+      "bytes": 30839,
+      "compressed": 30780
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/atraci.png",
+      "bytes": 19497,
+      "compressed": 19468
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/audacious.png",
+      "bytes": 18682,
+      "compressed": 18682
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/audacity.png",
+      "bytes": 22903,
+      "compressed": 22903
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/audience.png",
+      "bytes": 27174,
+      "compressed": 26929
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/avast.png",
+      "bytes": 22371,
+      "compressed": 22371
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/baobab.png",
+      "bytes": 18804,
+      "compressed": 18798
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/bijiben.png",
+      "bytes": 16883,
+      "compressed": 16798
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/birdie.png",
+      "bytes": 19762,
+      "compressed": 19753
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/bleachbit.png",
+      "bytes": 23318,
+      "compressed": 23318
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/blender.png",
+      "bytes": 19909,
+      "compressed": 19857
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/bluetooth.png",
+      "bytes": 20761,
+      "compressed": 20757
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/brackets.png",
+      "bytes": 23561,
+      "compressed": 23559
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/brasero.png",
+      "bytes": 36864,
+      "compressed": 36864
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/cable.png",
+      "bytes": 21806,
+      "compressed": 21806
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/calc.png",
+      "bytes": 21651,
+      "compressed": 21630
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/calibre.png",
+      "bytes": 14363,
+      "compressed": 14329
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/captiva.png",
+      "bytes": 20659,
+      "compressed": 20631
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/catfish.png",
+      "bytes": 13686,
+      "compressed": 13672
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/checkbox.png",
+      "bytes": 17593,
+      "compressed": 17575
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/cheese.png",
+      "bytes": 27156,
+      "compressed": 27101
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/chromium.png",
+      "bytes": 26807,
+      "compressed": 26683
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/clementine.png",
+      "bytes": 17073,
+      "compressed": 17062
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/clipgrab.png",
+      "bytes": 14185,
+      "compressed": 14177
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/cmakesetup32.png",
+      "bytes": 16250,
+      "compressed": 16141
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/corebird.png",
+      "bytes": 20190,
+      "compressed": 20185
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/credentials-preferences.png",
+      "bytes": 15992,
+      "compressed": 15962
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/darktable.png",
+      "bytes": 24292,
+      "compressed": 24281
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/dconf-editor.png",
+      "bytes": 20419,
+      "compressed": 20409
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/deja-dup.png",
+      "bytes": 23147,
+      "compressed": 23140
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/deluge.png",
+      "bytes": 23168,
+      "compressed": 23157
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/designer-qt4.png",
+      "bytes": 26569,
+      "compressed": 26569
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/docky.png",
+      "bytes": 21742,
+      "compressed": 21740
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/dosbox.png",
+      "bytes": 15834,
+      "compressed": 15786
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/dropbox.png",
+      "bytes": 24398,
+      "compressed": 24274
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/easytag.png",
+      "bytes": 19255,
+      "compressed": 19227
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/eclipse.png",
+      "bytes": 30068,
+      "compressed": 29956
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/eidete.png",
+      "bytes": 34111,
+      "compressed": 34111
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/emacs.png",
+      "bytes": 22463,
+      "compressed": 22396
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/empathy.png",
+      "bytes": 17595,
+      "compressed": 17589
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/eog.png",
+      "bytes": 14864,
+      "compressed": 14844
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/evince.png",
+      "bytes": 21951,
+      "compressed": 21951
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/filebot.png",
+      "bytes": 22725,
+      "compressed": 22669
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/filezilla.png",
+      "bytes": 21973,
+      "compressed": 21971
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/final-term.png",
+      "bytes": 12290,
+      "compressed": 12200
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/firefox-aurora.png",
+      "bytes": 34560,
+      "compressed": 34560
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/firefox.png",
+      "bytes": 28054,
+      "compressed": 28054
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/firewall-config.png",
+      "bytes": 17930,
+      "compressed": 17882
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/geany.png",
+      "bytes": 24371,
+      "compressed": 24370
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/geary.png",
+      "bytes": 16838,
+      "compressed": 16800
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gedit-icon.png",
+      "bytes": 15372,
+      "compressed": 15321
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/giggle.png",
+      "bytes": 18586,
+      "compressed": 18586
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gimp.png",
+      "bytes": 31220,
+      "compressed": 31220
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gitg.png",
+      "bytes": 19453,
+      "compressed": 19449
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/glade.png",
+      "bytes": 19082,
+      "compressed": 19069
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gloobus.png",
+      "bytes": 19835,
+      "compressed": 19741
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-clocks.png",
+      "bytes": 16223,
+      "compressed": 16105
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-documents.png",
+      "bytes": 13414,
+      "compressed": 13387
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-mahjongg.png",
+      "bytes": 17413,
+      "compressed": 17358
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-maps.png",
+      "bytes": 21360,
+      "compressed": 21360
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-monitor.png",
+      "bytes": 17585,
+      "compressed": 17507
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-mplayer.png",
+      "bytes": 17364,
+      "compressed": 17254
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-music.png",
+      "bytes": 21459,
+      "compressed": 21439
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-photos.png",
+      "bytes": 17293,
+      "compressed": 17213
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-power-manager.png",
+      "bytes": 29951,
+      "compressed": 29951
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-software.png",
+      "bytes": 22700,
+      "compressed": 22699
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-sound-recorder.png",
+      "bytes": 17213,
+      "compressed": 17213
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-sudoku.png",
+      "bytes": 14978,
+      "compressed": 14938
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnome-tweak-tool.png",
+      "bytes": 16301,
+      "compressed": 16240
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gnote.png",
+      "bytes": 19505,
+      "compressed": 19483
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/google-chrome.png",
+      "bytes": 26177,
+      "compressed": 26046
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gparted.png",
+      "bytes": 17592,
+      "compressed": 17472
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/grsync.png",
+      "bytes": 20976,
+      "compressed": 20852
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/gthumb.png",
+      "bytes": 19884,
+      "compressed": 19863
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/guake.png",
+      "bytes": 13615,
+      "compressed": 13577
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/guayadeque.png",
+      "bytes": 17562,
+      "compressed": 17536
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/haguichi.png",
+      "bytes": 18925,
+      "compressed": 18914
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/help-info.png",
+      "bytes": 30281,
+      "compressed": 30278
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/higan.png",
+      "bytes": 16801,
+      "compressed": 16674
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/hipchat.png",
+      "bytes": 19650,
+      "compressed": 19642
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/hp-logo.png",
+      "bytes": 25593,
+      "compressed": 25593
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/iagno.png",
+      "bytes": 19626,
+      "compressed": 19553
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/ibus-setup.png",
+      "bytes": 21659,
+      "compressed": 21659
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/inkscape.png",
+      "bytes": 13115,
+      "compressed": 13115
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/input-mouse.png",
+      "bytes": 15539,
+      "compressed": 15509
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/input-tablet.png",
+      "bytes": 9182,
+      "compressed": 9182
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/java.png",
+      "bytes": 21737,
+      "compressed": 21737
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/kazam.png",
+      "bytes": 15059,
+      "compressed": 15042
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/keepass.png",
+      "bytes": 18800,
+      "compressed": 18776
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/kingsoft-writer.png",
+      "bytes": 14864,
+      "compressed": 14820
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/launcher-bfb.png",
+      "bytes": 30856,
+      "compressed": 30844
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/libreoffice-base.png",
+      "bytes": 17773,
+      "compressed": 17763
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/libreoffice-calc.png",
+      "bytes": 14891,
+      "compressed": 14863
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/libreoffice-draw.png",
+      "bytes": 15652,
+      "compressed": 15624
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/libreoffice-impress.png",
+      "bytes": 14410,
+      "compressed": 14388
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/libreoffice-main.png",
+      "bytes": 7644,
+      "compressed": 7641
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/libreoffice-math.png",
+      "bytes": 8963,
+      "compressed": 8963
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/libreoffice-writer.png",
+      "bytes": 13916,
+      "compressed": 13848
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/lighttable.png",
+      "bytes": 14235,
+      "compressed": 14201
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/linguist-qt4.png",
+      "bytes": 26099,
+      "compressed": 26099
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/logview.png",
+      "bytes": 26127,
+      "compressed": 26127
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/media-player-banshee.png",
+      "bytes": 20852,
+      "compressed": 20852
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/mega.png",
+      "bytes": 15731,
+      "compressed": 15720
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/meld.png",
+      "bytes": 27504,
+      "compressed": 27504
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/midori.png",
+      "bytes": 26494,
+      "compressed": 26494
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/minecraft.png",
+      "bytes": 11595,
+      "compressed": 11560
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/mixxx.png",
+      "bytes": 20396,
+      "compressed": 20378
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/mscore.png",
+      "bytes": 24158,
+      "compressed": 24158
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/multimedia-volume-control.png",
+      "bytes": 28056,
+      "compressed": 28031
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/musique.png",
+      "bytes": 16745,
+      "compressed": 16724
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/mysql-workbench.png",
+      "bytes": 19449,
+      "compressed": 19377
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/nemo.png",
+      "bytes": 12282,
+      "compressed": 12223
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/netbeans.png",
+      "bytes": 18456,
+      "compressed": 18316
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/network-workgroup.png",
+      "bytes": 18732,
+      "compressed": 18732
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/nvidia-settings.png",
+      "bytes": 17614,
+      "compressed": 17530
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/openshot.png",
+      "bytes": 16990,
+      "compressed": 16877
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/org-gnome-weather-application.png",
+      "bytes": 20358,
+      "compressed": 20344
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/owncloud.png",
+      "bytes": 19397,
+      "compressed": 19346
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/php.png",
+      "bytes": 19263,
+      "compressed": 19230
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/picard.png",
+      "bytes": 18544,
+      "compressed": 18526
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/pidgin.png",
+      "bytes": 15679,
+      "compressed": 15512
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/pithos.png",
+      "bytes": 18380,
+      "compressed": 18355
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/polari.png",
+      "bytes": 22488,
+      "compressed": 22488
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/popcorntime.png",
+      "bytes": 22804,
+      "compressed": 22802
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-color.png",
+      "bytes": 33259,
+      "compressed": 33259
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-desktop-accessibility.png",
+      "bytes": 24518,
+      "compressed": 24518
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-desktop-font.png",
+      "bytes": 15166,
+      "compressed": 15166
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-desktop-wallpaper.png",
+      "bytes": 15807,
+      "compressed": 15758
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-desktop.png",
+      "bytes": 17241,
+      "compressed": 17111
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-management-service.png",
+      "bytes": 22430,
+      "compressed": 22422
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-system-notifications.png",
+      "bytes": 14297,
+      "compressed": 14260
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/preferences-system-sharing.png",
+      "bytes": 21883,
+      "compressed": 21862
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/printer.png",
+      "bytes": 15492,
+      "compressed": 15459
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/qt4logo.png",
+      "bytes": 24810,
+      "compressed": 24810
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/qtproject-qtcreator.png",
+      "bytes": 26471,
+      "compressed": 26471
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/scanner.png",
+      "bytes": 22392,
+      "compressed": 22299
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/seahorse.png",
+      "bytes": 22230,
+      "compressed": 22230
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/session-properties.png",
+      "bytes": 11794,
+      "compressed": 11790
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/show-desktop.png",
+      "bytes": 13138,
+      "compressed": 13078
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/shutter.png",
+      "bytes": 25462,
+      "compressed": 25447
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/skype.png",
+      "bytes": 26617,
+      "compressed": 26498
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/slingscold.png",
+      "bytes": 25430,
+      "compressed": 25385
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/software-properties.png",
+      "bytes": 21439,
+      "compressed": 21381
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/soundconverter.png",
+      "bytes": 23893,
+      "compressed": 23821
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/steadyflow.png",
+      "bytes": 20721,
+      "compressed": 20721
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/steam.png",
+      "bytes": 11683,
+      "compressed": 11683
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/stellarium.png",
+      "bytes": 17213,
+      "compressed": 17204
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/sublime-text.png",
+      "bytes": 19986,
+      "compressed": 19976
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/synapse.png",
+      "bytes": 23220,
+      "compressed": 23044
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/synaptic.png",
+      "bytes": 14828,
+      "compressed": 14799
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/system-lock-screen.png",
+      "bytes": 37583,
+      "compressed": 37583
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/system-search.png",
+      "bytes": 25308,
+      "compressed": 25202
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/system-users.png",
+      "bytes": 19740,
+      "compressed": 19729
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/teamspeak3.png",
+      "bytes": 19254,
+      "compressed": 19253
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/teamviewer.png",
+      "bytes": 18083,
+      "compressed": 18006
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/terminator.png",
+      "bytes": 13741,
+      "compressed": 13675
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/thunderbird.png",
+      "bytes": 17717,
+      "compressed": 17694
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/timeshift.png",
+      "bytes": 21923,
+      "compressed": 21920
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/tomboy.png",
+      "bytes": 19587,
+      "compressed": 19565
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/tracker.png",
+      "bytes": 15605,
+      "compressed": 15605
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/tuxguitar.png",
+      "bytes": 17418,
+      "compressed": 17392
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/ubuntu-tweak.png",
+      "bytes": 22973,
+      "compressed": 22912
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/unetbootin.png",
+      "bytes": 10283,
+      "compressed": 10283
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/unity-display-panel.png",
+      "bytes": 9183,
+      "compressed": 9183
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/utilities-terminal.png",
+      "bytes": 8662,
+      "compressed": 8650
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/valama.png",
+      "bytes": 19592,
+      "compressed": 19584
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/vbox.png",
+      "bytes": 30378,
+      "compressed": 30378
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/viber.png",
+      "bytes": 31834,
+      "compressed": 31698
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/vim.png",
+      "bytes": 14765,
+      "compressed": 14702
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/vlc.png",
+      "bytes": 22870,
+      "compressed": 22863
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/vocal.png",
+      "bytes": 25483,
+      "compressed": 25483
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/web-browser.png",
+      "bytes": 31324,
+      "compressed": 31324
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/winff.png",
+      "bytes": 15212,
+      "compressed": 15180
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/wingpanel.png",
+      "bytes": 10812,
+      "compressed": 10720
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/wireshark.png",
+      "bytes": 19260,
+      "compressed": 19253
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/workspace-overview.png",
+      "bytes": 12646,
+      "compressed": 12583
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/wps-office-etmain.png",
+      "bytes": 13585,
+      "compressed": 13578
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/wps-office-wppmain.png",
+      "bytes": 13378,
+      "compressed": 13344
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/x-office-address-book.png",
+      "bytes": 16939,
+      "compressed": 16928
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/xchat.png",
+      "bytes": 15629,
+      "compressed": 15467
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/xnoise.png",
+      "bytes": 31651,
+      "compressed": 31575
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/xterm.png",
+      "bytes": 10099,
+      "compressed": 10077
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/apps/y-ppa-manager.png",
+      "bytes": 17178,
+      "compressed": 17166
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/as-icon.png",
+      "bytes": 23892,
+      "compressed": 23833
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/checkgmail.png",
+      "bytes": 17931,
+      "compressed": 17925
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/gdrive.png",
+      "bytes": 16311,
+      "compressed": 16262
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-chrome-app.png",
+      "bytes": 11390,
+      "compressed": 11282
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-deviantart.png",
+      "bytes": 28757,
+      "compressed": 28757
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-evernote.png",
+      "bytes": 18492,
+      "compressed": 18463
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-facebook.png",
+      "bytes": 14165,
+      "compressed": 14124
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-feedly.png",
+      "bytes": 16978,
+      "compressed": 16942
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-github.png",
+      "bytes": 13170,
+      "compressed": 13170
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-docs.png",
+      "bytes": 10753,
+      "compressed": 10638
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-forms.png",
+      "bytes": 11554,
+      "compressed": 11456
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-gmail-offline.png",
+      "bytes": 18096,
+      "compressed": 18091
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-hangouts.png",
+      "bytes": 19627,
+      "compressed": 19621
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-keep.png",
+      "bytes": 13593,
+      "compressed": 13573
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-plus.png",
+      "bytes": 25328,
+      "compressed": 25328
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-remote-desktop.png",
+      "bytes": 20249,
+      "compressed": 20238
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-sheets.png",
+      "bytes": 10866,
+      "compressed": 10750
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google-youtube.png",
+      "bytes": 14683,
+      "compressed": 14651
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-google.png",
+      "bytes": 23176,
+      "compressed": 23176
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-grooveshark.png",
+      "bytes": 22978,
+      "compressed": 22978
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-jolicloud.png",
+      "bytes": 14102,
+      "compressed": 14084
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-pinterest.png",
+      "bytes": 22222,
+      "compressed": 22222
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-rdio.png",
+      "bytes": 20478,
+      "compressed": 20474
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-slack.png",
+      "bytes": 22528,
+      "compressed": 22360
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-soundcloud.png",
+      "bytes": 20102,
+      "compressed": 20063
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-spotify.png",
+      "bytes": 21617,
+      "compressed": 21530
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-sunrise-calendar.png",
+      "bytes": 17582,
+      "compressed": 17582
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-telegram.png",
+      "bytes": 16750,
+      "compressed": 16720
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-trello.png",
+      "bytes": 14183,
+      "compressed": 14171
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-tumblr.png",
+      "bytes": 14700,
+      "compressed": 14679
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-vimeo.png",
+      "bytes": 19860,
+      "compressed": 19860
+    },
+    {
+      "name": "RichViz-main/Assets/Application-Icons/Captiva/web/web-wunderlist.png",
+      "bytes": 26912,
+      "compressed": 26912
+    },
+    {
+      "name": "RichViz-main/Assets/Effects/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Effects/cursor-blue-glow.png",
+      "bytes": 1123,
+      "compressed": 1123
+    },
+    {
+      "name": "RichViz-main/Assets/Icons/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Icons/home-page.png",
+      "bytes": 7734,
+      "compressed": 6615
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/accessibility-review.svg",
+      "bytes": 1569,
+      "compressed": 691
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/api-lifecycle.svg",
+      "bytes": 1648,
+      "compressed": 762
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/ci-test-pipeline.svg",
+      "bytes": 1701,
+      "compressed": 727
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/container-deployment.svg",
+      "bytes": 1434,
+      "compressed": 761
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/data-model.svg",
+      "bytes": 1712,
+      "compressed": 676
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/design-tokens.svg",
+      "bytes": 1747,
+      "compressed": 752
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/git-branching-model.svg",
+      "bytes": 1348,
+      "compressed": 642
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/observability-traces.svg",
+      "bytes": 1644,
+      "compressed": 737
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/responsive-breakpoints.svg",
+      "bytes": 1761,
+      "compressed": 748
+    },
+    {
+      "name": "RichViz-main/Assets/Illustrations/secure-auth-flow.svg",
+      "bytes": 1773,
+      "compressed": 760
+    },
+    {
+      "name": "RichViz-main/Assets/README.md",
+      "bytes": 1050,
+      "compressed": 549
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/api-orbit.svg",
+      "bytes": 1336,
+      "compressed": 612
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/bug-hunter.svg",
+      "bytes": 1250,
+      "compressed": 575
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/cloud-coder.svg",
+      "bytes": 1185,
+      "compressed": 577
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/code-rocket.svg",
+      "bytes": 1099,
+      "compressed": 540
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/coffee-and-code.svg",
+      "bytes": 1193,
+      "compressed": 547
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/database-pal.svg",
+      "bytes": 1247,
+      "compressed": 578
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/git-garden.svg",
+      "bytes": 1250,
+      "compressed": 573
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/palette-pilot.svg",
+      "bytes": 1120,
+      "compressed": 569
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/pixel-perfect.svg",
+      "bytes": 1004,
+      "compressed": 498
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/terminal-wizard.svg",
+      "bytes": 1128,
+      "compressed": 531
+    },
+    {
+      "name": "RichViz-main/Assets/Stickers/ux-compass.svg",
+      "bytes": 1259,
+      "compressed": 548
+    },
+    {
+      "name": "RichViz-main/Assets/assets.js",
+      "bytes": 1698,
+      "compressed": 628
+    },
+    {
+      "name": "RichViz-main/Assets/catalog.json",
+      "bytes": 253113,
+      "compressed": 19500
+    },
+    {
+      "name": "RichViz-main/Assets/index.html",
+      "bytes": 2206,
+      "compressed": 833
+    },
+    {
+      "name": "RichViz-main/Assets/richviz-hero.svg",
+      "bytes": 2969,
+      "compressed": 1166
+    },
+    {
+      "name": "RichViz-main/Assets/richviz-visual-browser.png",
+      "bytes": 206957,
+      "compressed": 202892
+    },
+    {
+      "name": "RichViz-main/CHANGELOG.md",
+      "bytes": 7398,
+      "compressed": 3257
+    },
+    {
+      "name": "RichViz-main/CONTRIBUTING.md",
+      "bytes": 950,
+      "compressed": 538
+    },
+    {
+      "name": "RichViz-main/Examples/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Examples/core/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Examples/core/annotated.json",
+      "bytes": 3083,
+      "compressed": 768
+    },
+    {
+      "name": "RichViz-main/Examples/core/bar-chart.json",
+      "bytes": 556,
+      "compressed": 276
+    },
+    {
+      "name": "RichViz-main/Examples/core/custom.json",
+      "bytes": 2324,
+      "compressed": 651
+    },
+    {
+      "name": "RichViz-main/Examples/core/data-chart.json",
+      "bytes": 852,
+      "compressed": 344
+    },
+    {
+      "name": "RichViz-main/Examples/core/infographic.json",
+      "bytes": 1555,
+      "compressed": 599
+    },
+    {
+      "name": "RichViz-main/Examples/core/kpi-dashboard.json",
+      "bytes": 2017,
+      "compressed": 630
+    },
+    {
+      "name": "RichViz-main/Examples/core/media.json",
+      "bytes": 858,
+      "compressed": 358
+    },
+    {
+      "name": "RichViz-main/Examples/core/mermaid.json",
+      "bytes": 368,
+      "compressed": 231
+    },
+    {
+      "name": "RichViz-main/Examples/core/node-map.json",
+      "bytes": 2327,
+      "compressed": 620
+    },
+    {
+      "name": "RichViz-main/Examples/core/pipeline.json",
+      "bytes": 1350,
+      "compressed": 433
+    },
+    {
+      "name": "RichViz-main/Examples/core/process-cards.json",
+      "bytes": 1279,
+      "compressed": 481
+    },
+    {
+      "name": "RichViz-main/Examples/core/process-flow.json",
+      "bytes": 1718,
+      "compressed": 497
+    },
+    {
+      "name": "RichViz-main/Examples/core/react-flow.json",
+      "bytes": 1993,
+      "compressed": 480
+    },
+    {
+      "name": "RichViz-main/Examples/core/step-guide.json",
+      "bytes": 1094,
+      "compressed": 418
+    },
+    {
+      "name": "RichViz-main/Examples/core/svg.json",
+      "bytes": 1701,
+      "compressed": 421
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/cache-hit-sequence.json",
+      "bytes": 760,
+      "compressed": 371
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/course-preparation-gantt.json",
+      "bytes": 614,
+      "compressed": 357
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/enrollment-relationships.json",
+      "bytes": 744,
+      "compressed": 335
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/mean-progressive-reveal.json",
+      "bytes": 2045,
+      "compressed": 686
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/practice-score-scatter.json",
+      "bytes": 1060,
+      "compressed": 394
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/resource-lifecycle-states.json",
+      "bytes": 506,
+      "compressed": 257
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/resource-proportions-doughnut.json",
+      "bytes": 600,
+      "compressed": 308
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/skill-profile-radar.json",
+      "bytes": 820,
+      "compressed": 365
+    },
+    {
+      "name": "RichViz-main/Examples/patterns/study-session-stacked.json",
+      "bytes": 922,
+      "compressed": 377
+    },
+    {
+      "name": "RichViz-main/External-Libraries/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/chartjs/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/chartjs/active/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/chartjs/active/LICENSE.md",
+      "bytes": 1093,
+      "compressed": 636
+    },
+    {
+      "name": "RichViz-main/External-Libraries/chartjs/active/chart.umd.min.js",
+      "bytes": 208522,
+      "compressed": 70640
+    },
+    {
+      "name": "RichViz-main/External-Libraries/echarts/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/echarts/active/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/echarts/active/LICENSE",
+      "bytes": 11990,
+      "compressed": 4172
+    },
+    {
+      "name": "RichViz-main/External-Libraries/echarts/active/NOTICE",
+      "bytes": 168,
+      "compressed": 122
+    },
+    {
+      "name": "RichViz-main/External-Libraries/echarts/active/echarts.min.js",
+      "bytes": 1121883,
+      "compressed": 369237
+    },
+    {
+      "name": "RichViz-main/External-Libraries/echarts/active/licenses/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/echarts/active/licenses/LICENSE-d3",
+      "bytes": 1475,
+      "compressed": 775
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/LICENSE",
+      "bytes": 1089,
+      "compressed": 645
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/abnfDiagram-DGLNOSUI.mjs",
+      "bytes": 2293,
+      "compressed": 993
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/architecture-7GRP2DOG-HF4J73XS.mjs",
+      "bytes": 171,
+      "compressed": 120
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/architectureDiagram-IU6H5EVY.mjs",
+      "bytes": 155489,
+      "compressed": 43986
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/blockDiagram-FSX6DT2V.mjs",
+      "bytes": 41281,
+      "compressed": 13229
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/c4Diagram-YNRVYILN.mjs",
+      "bytes": 66206,
+      "compressed": 18796
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-22SYA5HA.mjs",
+      "bytes": 1055,
+      "compressed": 498
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-2FTYKNOQ.mjs",
+      "bytes": 730,
+      "compressed": 399
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-36VM3LGA.mjs",
+      "bytes": 1066,
+      "compressed": 504
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-3SEI7E7V.mjs",
+      "bytes": 1991,
+      "compressed": 866
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-3T2MNPEU.mjs",
+      "bytes": 1792,
+      "compressed": 809
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-44AU3KAP.mjs",
+      "bytes": 705086,
+      "compressed": 153910
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-4MZOTL6B.mjs",
+      "bytes": 10480,
+      "compressed": 4156
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-52IMQVNL.mjs",
+      "bytes": 1927,
+      "compressed": 903
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-5NYYYZGL.mjs",
+      "bytes": 991,
+      "compressed": 478
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-BOZ75642.mjs",
+      "bytes": 360,
+      "compressed": 251
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-CVBX6EWK.mjs",
+      "bytes": 550,
+      "compressed": 321
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-D36F7FYG.mjs",
+      "bytes": 42423,
+      "compressed": 15540
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-DEGLBX6O.mjs",
+      "bytes": 63583,
+      "compressed": 20044
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-F6PIGZHG.mjs",
+      "bytes": 28157,
+      "compressed": 9517
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-FE53TMRB.mjs",
+      "bytes": 242760,
+      "compressed": 37793
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-FNR2RGIF.mjs",
+      "bytes": 189,
+      "compressed": 141
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-GDOATIN3.mjs",
+      "bytes": 47129,
+      "compressed": 15985
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-H7BX327W.mjs",
+      "bytes": 1212,
+      "compressed": 607
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-HI3EPXIC.mjs",
+      "bytes": 1285,
+      "compressed": 633
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-JCBDXJ5W.mjs",
+      "bytes": 14911,
+      "compressed": 4132
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-JGXDHUYS.mjs",
+      "bytes": 1950,
+      "compressed": 936
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-L2B47AAZ.mjs",
+      "bytes": 120482,
+      "compressed": 38884
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-LIEGGFIX.mjs",
+      "bytes": 555,
+      "compressed": 322
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-LLWYPJEZ.mjs",
+      "bytes": 556,
+      "compressed": 318
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-MFYRHTYG.mjs",
+      "bytes": 889,
+      "compressed": 446
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-MIE3LDYP.mjs",
+      "bytes": 628,
+      "compressed": 414
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-MLQVGYRW.mjs",
+      "bytes": 597,
+      "compressed": 352
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-MNT3HHAC.mjs",
+      "bytes": 1420,
+      "compressed": 764
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-NRRTYJAG.mjs",
+      "bytes": 1849,
+      "compressed": 747
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-OCMJQKYE.mjs",
+      "bytes": 37701,
+      "compressed": 8167
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-PKJCTQEK.mjs",
+      "bytes": 470118,
+      "compressed": 149908
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-QADHU5CF.mjs",
+      "bytes": 18553,
+      "compressed": 6894
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-QVIEFLGF.mjs",
+      "bytes": 915,
+      "compressed": 490
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-QX7LGXZU.mjs",
+      "bytes": 567,
+      "compressed": 324
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-R2KH53MI.mjs",
+      "bytes": 562,
+      "compressed": 364
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-RXM7Z7NK.mjs",
+      "bytes": 1186,
+      "compressed": 599
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-S4TE5DX6.mjs",
+      "bytes": 316,
+      "compressed": 227
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-SDIBIOXT.mjs",
+      "bytes": 263,
+      "compressed": 207
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-TDFULVG6.mjs",
+      "bytes": 6261,
+      "compressed": 2878
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-TECWHJ6D.mjs",
+      "bytes": 116268,
+      "compressed": 29764
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-TINYC7RT.mjs",
+      "bytes": 49527,
+      "compressed": 15950
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-V3KJR4XU.mjs",
+      "bytes": 221,
+      "compressed": 152
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-VTMXW4ES.mjs",
+      "bytes": 5502,
+      "compressed": 2536
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-Y5NT6LW5.mjs",
+      "bytes": 15737,
+      "compressed": 4400
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-Y5O5OPKC.mjs",
+      "bytes": 3414,
+      "compressed": 1155
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-YZG4BXY6.mjs",
+      "bytes": 568,
+      "compressed": 321
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/chunk-ZZ52EIBP.mjs",
+      "bytes": 2020,
+      "compressed": 892
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/classDiagram-v2-VV4INRHB.mjs",
+      "bytes": 50260,
+      "compressed": 15955
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/cose-bilkent-MSIMRU2B.mjs",
+      "bytes": 84169,
+      "compressed": 22969
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/cynefin-OW5HDTMX-KMPDV6GS.mjs",
+      "bytes": 161,
+      "compressed": 115
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/cynefinDiagram-KTGLXFXK.mjs",
+      "bytes": 10595,
+      "compressed": 3742
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/dagre-QJJCSHY4.mjs",
+      "bytes": 39564,
+      "compressed": 14094
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/diagram-2ZIM67RP.mjs",
+      "bytes": 11226,
+      "compressed": 4274
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/diagram-FYHH5O6R.mjs",
+      "bytes": 4781,
+      "compressed": 1972
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/diagram-LYLDACMS.mjs",
+      "bytes": 81523,
+      "compressed": 25138
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/diagram-TYT3HRBC.mjs",
+      "bytes": 11620,
+      "compressed": 4050
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/diagram-XVIN6YVD.mjs",
+      "bytes": 8738,
+      "compressed": 3814
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/diagram-ZO2NLLYC.mjs",
+      "bytes": 6622,
+      "compressed": 2757
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/ebnfDiagram-TU3FGH35.mjs",
+      "bytes": 2507,
+      "compressed": 987
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/elk-GHAXNSLK.mjs",
+      "bytes": 1610587,
+      "compressed": 506081
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/erDiagram-XID3VV23.mjs",
+      "bytes": 31097,
+      "compressed": 10556
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/eventmodeling-NTZA5JFV-P5QJSWSK.mjs",
+      "bytes": 173,
+      "compressed": 120
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/flowDiagram-WPHQAKTU.mjs",
+      "bytes": 702,
+      "compressed": 265
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/ganttDiagram-QACGSKG6.mjs",
+      "bytes": 50497,
+      "compressed": 16912
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/gitGraph-4MIJSDKK-V5NEQQYP.mjs",
+      "bytes": 163,
+      "compressed": 116
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/gitGraphDiagram-EB76O4HC.mjs",
+      "bytes": 29721,
+      "compressed": 8761
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/info-A6RAGUB7-IGBHH2L7.mjs",
+      "bytes": 155,
+      "compressed": 112
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/infoDiagram-343ZKIDN.mjs",
+      "bytes": 1116,
+      "compressed": 533
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/ishikawaDiagram-UEEU5D75.mjs",
+      "bytes": 17602,
+      "compressed": 6639
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/journeyDiagram-4QTZOVLF.mjs",
+      "bytes": 23544,
+      "compressed": 8270
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/kanban-definition-VEJL4RG2.mjs",
+      "bytes": 20807,
+      "compressed": 7238
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/katex-QVRI4OIV.mjs",
+      "bytes": 272628,
+      "compressed": 78777
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/mindmap-definition-C5K5ZT7T.mjs",
+      "bytes": 23950,
+      "compressed": 7994
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/packet-AYTQ26CC-PJTKDECJ.mjs",
+      "bytes": 159,
+      "compressed": 114
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/pegDiagram-FHIILVJB.mjs",
+      "bytes": 2449,
+      "compressed": 1033
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/pie-WAS4IAKB-U3JFQXZN.mjs",
+      "bytes": 153,
+      "compressed": 111
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/pieDiagram-S76BU6V7.mjs",
+      "bytes": 5620,
+      "compressed": 2284
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/quadrantDiagram-HZBLWUZE.mjs",
+      "bytes": 34035,
+      "compressed": 9827
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/radar-RG4KPBEZ-7T2UW32D.mjs",
+      "bytes": 157,
+      "compressed": 113
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/railroad-74A4TZTK-DZY7ARDL.mjs",
+      "bytes": 163,
+      "compressed": 116
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/railroad-abnf-HS5TGJTU-LWS535ZK.mjs",
+      "bytes": 171,
+      "compressed": 120
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/railroad-ebnf-LZEXJU2U-EA3S4ZFM.mjs",
+      "bytes": 171,
+      "compressed": 120
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/railroad-peg-WCYAUIDC-DUKZONPX.mjs",
+      "bytes": 169,
+      "compressed": 119
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/railroadDiagram-R6RP3MQ2.mjs",
+      "bytes": 2115,
+      "compressed": 865
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/requirementDiagram-SGBABQV6.mjs",
+      "bytes": 31511,
+      "compressed": 9769
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/sankeyDiagram-IM6M5BOW.mjs",
+      "bytes": 24134,
+      "compressed": 8804
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/sequenceDiagram-FGJOIFJ2.mjs",
+      "bytes": 118530,
+      "compressed": 31572
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/sizeCapture-ERV5D3W5.mjs",
+      "bytes": 884,
+      "compressed": 479
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/stateDiagram-v2-6KDGCZ5J.mjs",
+      "bytes": 42334,
+      "compressed": 13940
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/swimlanes-OJBUSBEF.mjs",
+      "bytes": 108609,
+      "compressed": 39813
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/swimlanesDiagram-LNXYTHDW.mjs",
+      "bytes": 902,
+      "compressed": 406
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/timeline-definition-7G6YQRTY.mjs",
+      "bytes": 30894,
+      "compressed": 10144
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/treeView-Q6P3EWNA-AABPVERA.mjs",
+      "bytes": 163,
+      "compressed": 116
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/treemap-WGGIJYW6-F2JSY3V3.mjs",
+      "bytes": 161,
+      "compressed": 115
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/usecaseDiagram-6Y6TMLBO.mjs",
+      "bytes": 225437,
+      "compressed": 64890
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/vennDiagram-6RODYPCK.mjs",
+      "bytes": 43064,
+      "compressed": 16116
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/wardley-WFR3VGLG-EIT5NWVN.mjs",
+      "bytes": 161,
+      "compressed": 115
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/wardleyDiagram-RFZKLAPA.mjs",
+      "bytes": 25906,
+      "compressed": 6895
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/chunks/mermaid.esm.min/xychartDiagram-TWWI2QJZ.mjs",
+      "bytes": 43329,
+      "compressed": 11946
+    },
+    {
+      "name": "RichViz-main/External-Libraries/mermaid/active/dist/mermaid.esm.min.mjs",
+      "bytes": 30198,
+      "compressed": 11262
+    },
+    {
+      "name": "RichViz-main/External-Libraries/plotly/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/plotly/active/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/plotly/active/LICENSE",
+      "bytes": 1086,
+      "compressed": 644
+    },
+    {
+      "name": "RichViz-main/External-Libraries/plotly/active/THIRD-PARTY-NOTICES.txt",
+      "bytes": 1409,
+      "compressed": 622
+    },
+    {
+      "name": "RichViz-main/External-Libraries/plotly/active/licenses/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/plotly/active/licenses/LICENSE-maplibre.txt",
+      "bytes": 6041,
+      "compressed": 1542
+    },
+    {
+      "name": "RichViz-main/External-Libraries/plotly/active/plotly.min.js",
+      "bytes": 4815814,
+      "compressed": 1472136
+    },
+    {
+      "name": "RichViz-main/External-Libraries/react-flow/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/react-flow/active/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/react-flow/active/THIRD-PARTY-NOTICES.txt",
+      "bytes": 27046,
+      "compressed": 2486
+    },
+    {
+      "name": "RichViz-main/External-Libraries/react-flow/active/react-flow-editor.css",
+      "bytes": 24270,
+      "compressed": 4438
+    },
+    {
+      "name": "RichViz-main/External-Libraries/react-flow/active/react-flow-editor.js",
+      "bytes": 621851,
+      "compressed": 155926
+    },
+    {
+      "name": "RichViz-main/External-Libraries/recharts/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/recharts/active/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/External-Libraries/recharts/active/THIRD-PARTY-NOTICES.txt",
+      "bytes": 45978,
+      "compressed": 3578
+    },
+    {
+      "name": "RichViz-main/External-Libraries/recharts/active/recharts.js",
+      "bytes": 813790,
+      "compressed": 190914
+    },
+    {
+      "name": "RichViz-main/LICENSE",
+      "bytes": 11391,
+      "compressed": 3966
+    },
+    {
+      "name": "RichViz-main/NOTICE",
+      "bytes": 1157,
+      "compressed": 623
+    },
+    {
+      "name": "RichViz-main/README.md",
+      "bytes": 11366,
+      "compressed": 4615
+    },
+    {
+      "name": "RichViz-main/SECURITY.md",
+      "bytes": 441,
+      "compressed": 278
+    },
+    {
+      "name": "RichViz-main/Start Website.bat",
+      "bytes": 792,
+      "compressed": 364
+    },
+    {
+      "name": "RichViz-main/THIRD_PARTY_NOTICES.md",
+      "bytes": 5633,
+      "compressed": 2330
+    },
+    {
+      "name": "RichViz-main/VERSION",
+      "bytes": 6,
+      "compressed": 6
+    },
+    {
+      "name": "RichViz-main/docs/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/docs/API.md",
+      "bytes": 1501,
+      "compressed": 801
+    },
+    {
+      "name": "RichViz-main/docs/ARCHITECTURE.md",
+      "bytes": 1557,
+      "compressed": 768
+    },
+    {
+      "name": "RichViz-main/docs/ENGINES.md",
+      "bytes": 1317,
+      "compressed": 657
+    },
+    {
+      "name": "RichViz-main/docs/READER-CONTROLS.md",
+      "bytes": 1600,
+      "compressed": 854
+    },
+    {
+      "name": "RichViz-main/docs/RICH-VIZ-PROBLEMS-AND-SOLUTIONS.md",
+      "bytes": 2103,
+      "compressed": 1143
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/README.md",
+      "bytes": 1092,
+      "compressed": 409
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/annotated.md",
+      "bytes": 4960,
+      "compressed": 1647
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/bar-chart.md",
+      "bytes": 2432,
+      "compressed": 1174
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/custom.md",
+      "bytes": 4220,
+      "compressed": 1545
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/data-chart.md",
+      "bytes": 2724,
+      "compressed": 1236
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/infographic.md",
+      "bytes": 3424,
+      "compressed": 1473
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/kpi-dashboard.md",
+      "bytes": 4047,
+      "compressed": 1560
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/mermaid.md",
+      "bytes": 2237,
+      "compressed": 1107
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/node-map.md",
+      "bytes": 4631,
+      "compressed": 1700
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/pipeline.md",
+      "bytes": 3380,
+      "compressed": 1372
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/process-cards.md",
+      "bytes": 3313,
+      "compressed": 1414
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/process-flow.md",
+      "bytes": 3771,
+      "compressed": 1445
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/react-flow.md",
+      "bytes": 3924,
+      "compressed": 1373
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/step-guide.md",
+      "bytes": 3090,
+      "compressed": 1358
+    },
+    {
+      "name": "RichViz-main/docs/diagrams/svg.md",
+      "bytes": 3525,
+      "compressed": 1305
+    },
+    {
+      "name": "RichViz-main/package.json",
+      "bytes": 386,
+      "compressed": 196
+    },
+    {
+      "name": "RichViz-main/scripts/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/scripts/build-catalog.mjs",
+      "bytes": 3580,
+      "compressed": 1637
+    },
+    {
+      "name": "RichViz-main/scripts/validate-registry.mjs",
+      "bytes": 1172,
+      "compressed": 547
+    },
+    {
+      "name": "RichViz-main/scripts/validate-version.mjs",
+      "bytes": 2747,
+      "compressed": 1119
+    },
+    {
+      "name": "RichViz-main/serve.cjs",
+      "bytes": 1260,
+      "compressed": 642
+    },
+    {
+      "name": "RichViz-main/server.py",
+      "bytes": 9927,
+      "compressed": 3432
+    },
+    {
+      "name": "RichViz-main/skills/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/Examples/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/Examples/minimal-static.mjs",
+      "bytes": 401,
+      "compressed": 233
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/README.md",
+      "bytes": 753,
+      "compressed": 435
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/References/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/References/host-audit.md",
+      "bytes": 608,
+      "compressed": 371
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/References/migration-checklist.md",
+      "bytes": 596,
+      "compressed": 351
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/SKILL.md",
+      "bytes": 8302,
+      "compressed": 3654
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/Scripts/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/Scripts/validate-installation.mjs",
+      "bytes": 1025,
+      "compressed": 498
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/VERSION",
+      "bytes": 6,
+      "compressed": 6
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/evals/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-integration/evals/evals.json",
+      "bytes": 1022,
+      "compressed": 527
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/Examples/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/Examples/scenarios.md",
+      "bytes": 1807,
+      "compressed": 920
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/README.md",
+      "bytes": 530,
+      "compressed": 314
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/References/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/References/local-customizations-and-conflicts.md",
+      "bytes": 821,
+      "compressed": 461
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/References/path-mapping.md",
+      "bytes": 1099,
+      "compressed": 581
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/References/update-report.md",
+      "bytes": 586,
+      "compressed": 326
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/References/update-workflow.md",
+      "bytes": 540,
+      "compressed": 329
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/References/validation-and-report.md",
+      "bytes": 856,
+      "compressed": 501
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/References/version-migration-and-rollback.md",
+      "bytes": 807,
+      "compressed": 456
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/SKILL.md",
+      "bytes": 10389,
+      "compressed": 4262
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/Scripts/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/Scripts/compare_installations.py",
+      "bytes": 4033,
+      "compressed": 1539
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/VERSION",
+      "bytes": 6,
+      "compressed": 6
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/tests/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/skills/richviz-updater/tests/test_compare_installations.py",
+      "bytes": 2568,
+      "compressed": 750
+    },
+    {
+      "name": "RichViz-main/src/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/src/README.md",
+      "bytes": 359,
+      "compressed": 234
+    },
+    {
+      "name": "RichViz-main/src/RichVisualization.js",
+      "bytes": 10249,
+      "compressed": 3540
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationCharts.js",
+      "bytes": 3390,
+      "compressed": 1490
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationConnectors.js",
+      "bytes": 8371,
+      "compressed": 2920
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationControls.js",
+      "bytes": 4748,
+      "compressed": 1627
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationDom.js",
+      "bytes": 6594,
+      "compressed": 2431
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationExamples.js",
+      "bytes": 29762,
+      "compressed": 9488
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationFence.js",
+      "bytes": 1870,
+      "compressed": 888
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationIcons.js",
+      "bytes": 12528,
+      "compressed": 4470
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationLayout.js",
+      "bytes": 6700,
+      "compressed": 2209
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationRegistry.js",
+      "bytes": 4438,
+      "compressed": 1489
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationSchema.js",
+      "bytes": 6318,
+      "compressed": 2218
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationText.js",
+      "bytes": 6540,
+      "compressed": 2531
+    },
+    {
+      "name": "RichViz-main/src/RichVisualizationValidate.mjs",
+      "bytes": 4343,
+      "compressed": 1752
+    },
+    {
+      "name": "RichViz-main/src/adapters/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/src/adapters/ChartJsAdapter.js",
+      "bytes": 6019,
+      "compressed": 2104
+    },
+    {
+      "name": "RichViz-main/src/adapters/Common.js",
+      "bytes": 3894,
+      "compressed": 1718
+    },
+    {
+      "name": "RichViz-main/src/adapters/EChartsAdapter.js",
+      "bytes": 5055,
+      "compressed": 1783
+    },
+    {
+      "name": "RichViz-main/src/adapters/MermaidAdapter.js",
+      "bytes": 3949,
+      "compressed": 1587
+    },
+    {
+      "name": "RichViz-main/src/adapters/PlotlyAdapter.js",
+      "bytes": 5198,
+      "compressed": 1888
+    },
+    {
+      "name": "RichViz-main/src/adapters/ReactFlowAdapter.js",
+      "bytes": 1260,
+      "compressed": 625
+    },
+    {
+      "name": "RichViz-main/src/adapters/RechartsAdapter.js",
+      "bytes": 6532,
+      "compressed": 2214
+    },
+    {
+      "name": "RichViz-main/src/gallery/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/src/gallery/gallery.css",
+      "bytes": 4283,
+      "compressed": 1250
+    },
+    {
+      "name": "RichViz-main/src/gallery/gallery.js",
+      "bytes": 12400,
+      "compressed": 4089
+    },
+    {
+      "name": "RichViz-main/src/gallery/index.html",
+      "bytes": 1821,
+      "compressed": 752
+    },
+    {
+      "name": "RichViz-main/src/gallery/media/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/src/gallery/media/sample-checks.svg",
+      "bytes": 1375,
+      "compressed": 423
+    },
+    {
+      "name": "RichViz-main/src/gallery/media/sample-pr-list.svg",
+      "bytes": 1225,
+      "compressed": 396
+    },
+    {
+      "name": "RichViz-main/src/gallery/theme.css",
+      "bytes": 1186,
+      "compressed": 621
+    },
+    {
+      "name": "RichViz-main/src/registry.json",
+      "bytes": 5574,
+      "compressed": 692
+    },
+    {
+      "name": "RichViz-main/src/renderers/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/src/renderers/Cards.js",
+      "bytes": 6402,
+      "compressed": 1956
+    },
+    {
+      "name": "RichViz-main/src/renderers/Chart.js",
+      "bytes": 2552,
+      "compressed": 1124
+    },
+    {
+      "name": "RichViz-main/src/renderers/ChartNative.js",
+      "bytes": 9731,
+      "compressed": 2974
+    },
+    {
+      "name": "RichViz-main/src/renderers/Composite.js",
+      "bytes": 7179,
+      "compressed": 2284
+    },
+    {
+      "name": "RichViz-main/src/renderers/Dashboard.js",
+      "bytes": 3378,
+      "compressed": 1103
+    },
+    {
+      "name": "RichViz-main/src/renderers/Flow.js",
+      "bytes": 7311,
+      "compressed": 2652
+    },
+    {
+      "name": "RichViz-main/src/renderers/GraphConnections.js",
+      "bytes": 4888,
+      "compressed": 1874
+    },
+    {
+      "name": "RichViz-main/src/renderers/MermaidView.js",
+      "bytes": 309,
+      "compressed": 194
+    },
+    {
+      "name": "RichViz-main/src/renderers/NodeMap.js",
+      "bytes": 11315,
+      "compressed": 3815
+    },
+    {
+      "name": "RichViz-main/src/renderers/Scene.js",
+      "bytes": 6623,
+      "compressed": 2280
+    },
+    {
+      "name": "RichViz-main/src/rich-visualization.css",
+      "bytes": 43375,
+      "compressed": 8673
+    },
+    {
+      "name": "RichViz-main/src/schema/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/src/schema/Primitives.js",
+      "bytes": 9604,
+      "compressed": 3076
+    },
+    {
+      "name": "RichViz-main/src/schema/TypesCards.js",
+      "bytes": 6502,
+      "compressed": 1653
+    },
+    {
+      "name": "RichViz-main/src/schema/TypesComposite.js",
+      "bytes": 19958,
+      "compressed": 4775
+    },
+    {
+      "name": "RichViz-main/src/schema/TypesData.js",
+      "bytes": 9251,
+      "compressed": 2719
+    },
+    {
+      "name": "RichViz-main/src/schema/TypesFlow.js",
+      "bytes": 10224,
+      "compressed": 2533
+    },
+    {
+      "name": "RichViz-main/tests/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/tests/controls-connectors.test.mjs",
+      "bytes": 3157,
+      "compressed": 1157
+    },
+    {
+      "name": "RichViz-main/tests/core.test.mjs",
+      "bytes": 3629,
+      "compressed": 1293
+    },
+    {
+      "name": "RichViz-main/tests/extended-core.test.mjs",
+      "bytes": 25846,
+      "compressed": 8300
+    },
+    {
+      "name": "RichViz-main/tests/test_visual_browser_server.py",
+      "bytes": 5501,
+      "compressed": 1603
+    },
+    {
+      "name": "RichViz-main/tests/version-consistency.test.mjs",
+      "bytes": 1556,
+      "compressed": 628
+    },
+    {
+      "name": "RichViz-main/tests/visual-browser.test.mjs",
+      "bytes": 12974,
+      "compressed": 3465
+    },
+    {
+      "name": "RichViz-main/visual-browser/",
+      "bytes": 0,
+      "compressed": 0
+    },
+    {
+      "name": "RichViz-main/visual-browser/README.md",
+      "bytes": 2687,
+      "compressed": 1305
+    },
+    {
+      "name": "RichViz-main/visual-browser/about.html",
+      "bytes": 1847,
+      "compressed": 912
+    },
+    {
+      "name": "RichViz-main/visual-browser/app-icons.html",
+      "bytes": 2876,
+      "compressed": 1176
+    },
+    {
+      "name": "RichViz-main/visual-browser/asset-pages.js",
+      "bytes": 8883,
+      "compressed": 2966
+    },
+    {
+      "name": "RichViz-main/visual-browser/browser.css",
+      "bytes": 33732,
+      "compressed": 6827
+    },
+    {
+      "name": "RichViz-main/visual-browser/browser.js",
+      "bytes": 12228,
+      "compressed": 3833
+    },
+    {
+      "name": "RichViz-main/visual-browser/catalog.js",
+      "bytes": 5490,
+      "compressed": 1926
+    },
+    {
+      "name": "RichViz-main/visual-browser/diagrams.html",
+      "bytes": 3129,
+      "compressed": 1165
+    },
+    {
+      "name": "RichViz-main/visual-browser/home.js",
+      "bytes": 2602,
+      "compressed": 980
+    },
+    {
+      "name": "RichViz-main/visual-browser/icons.html",
+      "bytes": 2157,
+      "compressed": 953
+    },
+    {
+      "name": "RichViz-main/visual-browser/index.html",
+      "bytes": 4041,
+      "compressed": 1630
+    },
+    {
+      "name": "RichViz-main/visual-browser/library-data.js",
+      "bytes": 2067,
+      "compressed": 852
+    },
+    {
+      "name": "RichViz-main/visual-browser/library.html",
+      "bytes": 3228,
+      "compressed": 1257
+    },
+    {
+      "name": "RichViz-main/visual-browser/library.js",
+      "bytes": 3970,
+      "compressed": 1236
+    },
+    {
+      "name": "RichViz-main/visual-browser/project.html",
+      "bytes": 1839,
+      "compressed": 863
+    },
+    {
+      "name": "RichViz-main/visual-browser/shell.js",
+      "bytes": 6771,
+      "compressed": 2387
+    },
+    {
+      "name": "RichViz-main/visual-browser/stickers.html",
+      "bytes": 1926,
+      "compressed": 868
+    },
+    {
+      "name": "RichViz-main/visual-browser/svg.html",
+      "bytes": 1942,
+      "compressed": 875
+    }
+  ],
+  "entryCount": 588,
+  "uncompressedBytes": 18934354,
+  "truncatedEntryList": false
+}

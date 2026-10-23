@@ -1,0 +1,5 @@
+نفذ المرحلة P01 (Core Workspace & Extension Contracts) من IntuiForge فقط، وفق ملف Handoffs/IMPLEMENTATION-HANDOFF_IntuiForge_P01_Core-Workspace-Extension-Contracts.md داخل حزمة Implementation-Kit.
+
+اقرأ أولًا قواعد المشروع AGENTS.md وما يماثلها وتعليمات المرحلة وAgent-Execution-Protocol.md وFeature-Traceability.csv ووثائق العقد ذات الصلة. تأكد من أن المرحلة P00 COMPLETE وبها أدلة لكل المتطلبات، وإلا لا تبدأ.
+
+تطبق مهارة create-strict-implementation-handoff (1.4.0) لقواعد التسليم، وtoken-optimization (1.0.1) بكفاءة دون حذف تفاصيل أو اختبارات، وbrowser-environment-manager (1.0.1) حصرًا لكل Edge AI/CDP وتحقّق العملية والبروفايل؛ لا تستخدم Edge الشخصي. لا تشغّل subagents أو مراحل متوازية. أعط كل Feature ID في هذه المرحلة تطبيقًا واختبارات وأدلة، ولا تستخدم HTML القديم كمرجع شكلي. اكتب تقرير المرحلة باستخدام Report-Template.md ودوّن PASS/FAIL/UNVERIFIED، ثم توقف ولا تنتقل إلى المرحلة التالية تلقائيًا.

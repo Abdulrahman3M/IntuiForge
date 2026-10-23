@@ -1,0 +1,9 @@
+:root { color-scheme: light dark; font: 16px/1.5 "Segoe UI", Tahoma, Arial, sans-serif; }
+* { box-sizing: border-box; }
+html, body { min-width: 0; width: 100%; min-height: 100%; margin: 0; }
+body { background: #f5f7f4; color: #17231f; }
+.fixture-note { display: flex; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; padding: .5rem clamp(.75rem, 2vw, 1.5rem); border-bottom: 1px solid #dce4de; font-size: 1rem; }
+.fixture-note p { margin: 0; }
+.fixture-mode { color: #57665f; }
+#studio { display: block; width: 100%; min-height: calc(100vh - 3rem); }
+@media (prefers-color-scheme: dark) { body { background: #111814; color: #eef3ef; } .fixture-note { border-color: #35443b; } .fixture-mode { color: #b5c3ba; } }

@@ -1,0 +1,126 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "stellar-life-cycle",
+  "locale": "ar",
+  "dir": "rtl",
+  "title": "دورة حياة النجوم",
+  "summary": "مقال يجمع خرائط المراحل والرسم والمحاكاة والاختبار. أمثلة المحتوى تعليمية وتحتاج مراجعة علمية مستقلة.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "science",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["ar"],
+    "provenance": []
+  },
+  "assets": [],
+  "initialState": {
+    "activeStep": {
+      "type": "enum",
+      "value": "step-nebula",
+      "values": ["step-nebula", "step-protostar", "step-main-sequence", "step-end-stage"]
+    },
+    "activeEvent": {
+      "type": "enum",
+      "value": "event-nebula",
+      "values": ["event-nebula", "event-end"]
+    }
+  },
+  "derived": {
+    "stepIndex": {
+      "op": "if",
+      "condition": { "op": "eq", "a": { "ref": "activeStep" }, "b": "step-nebula" },
+      "then": 0,
+      "else": {
+        "op": "if",
+        "condition": { "op": "eq", "a": { "ref": "activeStep" }, "b": "step-protostar" },
+        "then": 1,
+        "else": {
+          "op": "if",
+          "condition": { "op": "eq", "a": { "ref": "activeStep" }, "b": "step-main-sequence" },
+          "then": 2,
+          "else": 3
+        }
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "star-journey",
+      "heading": "رحلة النجم",
+      "blocks": [
+        {
+          "id": "stellar-intro",
+          "type": "paragraph",
+          "content": "تمر النجوم بمراحل تعتمد على كتلتها الابتدائية."
+        },
+        {
+          "id": "stellar-stepper",
+          "type": "stepper",
+          "props": {
+            "label": "مراحل تطور النجم"
+          },
+          "bindings": {
+            "selected": "activeStep"
+          },
+          "children": [
+            { "id": "step-nebula", "type": "group", "props": { "label": "السديم" }, "children": [{ "id": "copy-nebula", "type": "paragraph", "content": "تبدأ الرحلة داخل سحب الغاز والغبار." }] },
+            { "id": "step-protostar", "type": "group", "props": { "label": "النجم الأولي" }, "children": [{ "id": "copy-protostar", "type": "paragraph", "content": "تجذب الجاذبية المادة إلى مركز أكثر كثافة." }] },
+            { "id": "step-main-sequence", "type": "group", "props": { "label": "التسلسل الرئيسي" }, "children": [{ "id": "copy-main-sequence", "type": "paragraph", "content": "يستقر النجم عندما يتوازن الضغط والجاذبية." }] },
+            { "id": "step-end-stage", "type": "group", "props": { "label": "المراحل النهائية" }, "children": [{ "id": "copy-end-stage", "type": "paragraph", "content": "تتحدد النهاية وفق الكتلة الابتدائية للنجم." }] }
+          ]
+        },
+        {
+          "id": "stellar-diagram",
+          "type": "legacyViz",
+          "props": {
+            "vizType": "process-flow"
+          },
+          "bindings": {
+            "highlightIndex": "stepIndex"
+          }
+        },
+        {
+          "id": "stellar-time",
+          "type": "timeline",
+          "props": {
+            "label": "خط زمني استرشادي"
+          },
+          "bindings": {
+            "selected": "activeEvent"
+          },
+          "children": [
+            { "id": "event-nebula", "type": "group", "props": { "label": "تكوّن النجم", "date": "2026-01-01" }, "children": [{ "id": "event-nebula-copy", "type": "paragraph", "content": "تبدأ العملية في السديم." }] },
+            { "id": "event-end", "type": "group", "props": { "label": "نهاية النجم", "date": "2026-12-31" }, "children": [{ "id": "event-end-copy", "type": "paragraph", "content": "تعتمد النهاية على كتلة النجم." }] }
+          ]
+        },
+        {
+          "id": "stellar-quiz",
+          "type": "quiz",
+          "props": {
+            "questions": [
+              {
+                "id": "q1",
+                "type": "single-choice",
+                "prompt": "ما العامل الرئيسي المؤثر في مسار تطور النجم؟",
+                "options": [
+                  {
+                    "id": "a",
+                    "label": "كتلته الابتدائية"
+                  },
+                  {
+                    "id": "b",
+                    "label": "لون الخلفية"
+                  }
+                ],
+                "answer": "a",
+                "explanation": "الكتلة الابتدائية هي العامل الحاسم في مسار تطور النجم."
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

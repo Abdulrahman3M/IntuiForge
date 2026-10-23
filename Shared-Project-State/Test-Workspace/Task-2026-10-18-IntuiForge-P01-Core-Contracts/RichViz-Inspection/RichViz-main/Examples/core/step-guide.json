@@ -1,0 +1,40 @@
+{
+  "version": 1,
+  "type": "step-guide",
+  "title": "Open a pull request in four steps",
+  "description": "Create a branch, commit the change, push it and open the pull request for review.",
+  "data": {
+    "steps": [
+      {
+        "title": "Create a branch",
+        "text": "Work on a separate branch so main stays stable.",
+        "icon": "git-branch",
+        "tone": "violet",
+        "tip": "Name it after the change."
+      },
+      {
+        "title": "Commit the change",
+        "text": "Save a small, focused snapshot with a clear message.",
+        "icon": "git-commit",
+        "tone": "info"
+      },
+      {
+        "title": "Push to GitHub",
+        "text": "Send the branch to the shared repository.",
+        "icon": "upload",
+        "tone": "teal",
+        "active": true
+      },
+      {
+        "title": "Open the pull request",
+        "text": "Ask teammates to review and merge the branch.",
+        "icon": "git-pull-request",
+        "tone": "success",
+        "status": {
+          "text": "Ready for review",
+          "state": "ok"
+        }
+      }
+    ]
+  }
+}

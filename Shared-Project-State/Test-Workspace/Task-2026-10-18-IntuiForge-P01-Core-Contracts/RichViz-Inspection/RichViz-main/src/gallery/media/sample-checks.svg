@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 270" role="img" aria-label="Three checks, all passing">
+  <rect width="480" height="270" rx="14" fill="#f3f0e8"/>
+  <g font-family="sans-serif" font-size="16" fill="#252923">
+    <rect x="40" y="36" width="400" height="56" rx="12" fill="#fff" stroke="#d9d3c6"/><circle cx="72" cy="64" r="14" fill="#1b7f55"/><path d="m65 64 5 5 9-10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="100" y="70">Unit tests</text><text x="420" y="70" text-anchor="end" fill="#1b7f55" font-weight="700">Passed</text>
+    <rect x="40" y="106" width="400" height="56" rx="12" fill="#fff" stroke="#d9d3c6"/><circle cx="72" cy="134" r="14" fill="#1b7f55"/><path d="m65 134 5 5 9-10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="100" y="140">Lint</text><text x="420" y="140" text-anchor="end" fill="#1b7f55" font-weight="700">Passed</text>
+    <rect x="40" y="176" width="400" height="56" rx="12" fill="#fff" stroke="#d9d3c6"/><circle cx="72" cy="204" r="14" fill="#1b7f55"/><path d="m65 204 5 5 9-10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/><text x="100" y="210">Security scan</text><text x="420" y="210" text-anchor="end" fill="#1b7f55" font-weight="700">Passed</text>
+  </g>
+</svg>

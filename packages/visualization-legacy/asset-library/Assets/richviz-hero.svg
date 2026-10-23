@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 520" role="img" aria-labelledby="title desc">
+  <title id="title">Rich Visualization Library system</title>
+  <desc id="desc">A central validated specification routes to diagrams, charts, timelines, and interactive node maps.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#122b36"/><stop offset="1" stop-color="#1e5148"/></linearGradient>
+    <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#82dcc2"/><stop offset="1" stop-color="#82b8f1"/></linearGradient>
+    <filter id="shadow" x="-.2" y="-.2" width="1.4" height="1.5"><feDropShadow dx="0" dy="12" stdDeviation="14" flood-color="#07171e" flood-opacity=".28"/></filter>
+  </defs>
+  <rect width="1440" height="520" rx="30" fill="url(#bg)"/>
+  <circle cx="1170" cy="70" r="260" fill="#6ec8aa" opacity=".08"/><circle cx="1220" cy="500" r="320" fill="#8db8ed" opacity=".08"/>
+  <text x="86" y="130" fill="#a1ead2" font-family="system-ui,sans-serif" font-size="20" font-weight="700" letter-spacing="4">RICH VISUALIZATION LIBRARY</text>
+  <text x="82" y="228" fill="#f4f8f5" font-family="system-ui,sans-serif" font-size="76" font-weight="750">One spec.</text>
+  <text x="82" y="315" fill="#f4f8f5" font-family="system-ui,sans-serif" font-size="76" font-weight="750">Many ways to see.</text>
+  <text x="87" y="376" fill="#c4d8d3" font-family="system-ui,sans-serif" font-size="23">Validated · Accessible · Modular · Engine-neutral</text>
+  <g filter="url(#shadow)" font-family="system-ui,sans-serif" text-anchor="middle">
+    <rect x="784" y="187" width="235" height="126" rx="20" fill="#f7f6ed"/><text x="901" y="232" fill="#53645e" font-size="14" font-weight="700">VALIDATED SPEC</text><text x="901" y="270" fill="#183d35" font-size="23" font-weight="700">RichViz.render()</text><text x="901" y="293" fill="#74817a" font-size="13">JSON → schema</text>
+    <path d="M1019 250h61m0 0-15-11m15 11-15 11" fill="none" stroke="url(#glow)" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <rect x="1094" y="112" width="254" height="82" rx="18" fill="#dcefe7"/><text x="1221" y="147" fill="#285c4d" font-size="18" font-weight="700">Flow · Sequence</text><text x="1221" y="173" fill="#55766b" font-size="13">Mermaid · SVG</text>
+    <rect x="1094" y="210" width="254" height="82" rx="18" fill="#e4eaf9"/><text x="1221" y="245" fill="#344f85" font-size="18" font-weight="700">Charts · Data</text><text x="1221" y="271" fill="#6479a3" font-size="13">Chart.js · ECharts · Plotly</text>
+    <rect x="1094" y="308" width="254" height="82" rx="18" fill="#f1e7f6"/><text x="1221" y="343" fill="#654777" font-size="18" font-weight="700">Nodes · Timelines</text><text x="1221" y="369" fill="#826b91" font-size="13">Interactive · Responsive</text>
+    <path d="M1079 250v99h15M1079 250v-97h15" fill="none" stroke="url(#glow)" stroke-width="3" stroke-linecap="round"/>
+  </g>
+</svg>

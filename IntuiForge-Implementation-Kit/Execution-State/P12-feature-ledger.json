@@ -1,0 +1,81 @@
+{
+  "phase": "P12",
+  "title": "Portable Host Integrations & User Progress",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-20T14:30:31+04:00",
+  "features": [
+    {
+      "id": "HOST-01",
+      "status": "PASS",
+      "implementation": ["packages/host-integration/src/index.js", "packages/host-integration/src/index.d.ts", "packages/core/src/index.d.ts"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: public vanilla mount, route callback, isolated lifecycle, and package export", "npm run test:p12: 11/11", "npm test: 111/111"],
+      "browserEvidence": "PASS: dedicated Edge plain-HTML and framework-managed fixtures mounted the production article renderer and returned ready; host header/footer remained attached."
+    },
+    {
+      "id": "HOST-02",
+      "status": "PASS",
+      "implementation": ["packages/host-integration/src/index.js", "tests/browser/p12-plain.html", "tests/browser/p12-static.html"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: mountIntuiArticle and no-script fixture contract", "npm run test:p12: 11/11"],
+      "browserEvidence": "PASS: vanilla DOM fixture mounted in an existing host node; separate static fallback had zero script elements, remained readable, and preserved host content."
+    },
+    {
+      "id": "HOST-03",
+      "status": "PASS",
+      "implementation": ["packages/host-integration/src/index.js", "packages/visualization-legacy/src/index.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: P02 mixed Markdown validates, contains a legacyViz block, and preserves RichViz 0.5.0 validate/render APIs", "npm test: VIZ-01 confirms all 14 preserved RichViz types remain registered"],
+      "browserEvidence": "PASS: existing edu-viz Markdown rendered through the default RichViz adapter in both host fixtures; a separate existing RichViz copy kept rendering beside the new mount."
+    },
+    {
+      "id": "HOST-04",
+      "status": "PASS",
+      "implementation": ["packages/host-integration/src/progress.js", "packages/state/src/learning-progress.js", "packages/article-renderer/src/index.js", "packages/core/src/index.d.ts"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: per-user/article namespace, bounded versioned records, corrupt/unknown/accessor rejection, explicit-save-only behavior, and remount restore", "npm run test:p07: 10/10", "npm run test:p05: 5/5"],
+      "browserEvidence": "PASS: framework fixture marked a flashcard reviewed, confirmed no write before the save action, saved through host callbacks, refreshed, and restored the reviewed state. No ambient storage was used."
+    },
+    {
+      "id": "HOST-05",
+      "status": "PASS",
+      "implementation": ["packages/react-island/src/index.js", "packages/react-island/src/index.d.ts", "tests/browser/p12-framework.html", "tests/browser/p12-host-fixtures.js"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: injected root is contained, updates, unmounts once, and preserves host siblings", "npm test: CORE-04 optional React-island lifecycle regression remains green"],
+      "browserEvidence": "PASS: framework-managed fixture exercised the injected root render/update/unmount contract inside a contained island. No React package was added; the host supplies a real root factory only when its own component needs React."
+    },
+    {
+      "id": "HOST-06",
+      "status": "PASS",
+      "implementation": ["packages/core/src/index.d.ts", "packages/host-integration/src/index.js", "packages/host-integration/src/progress.js"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: callbacks are explicit, storage is opt-in, snapshots reject accessors, and article source is unchanged", "npm run test:p12: 11/11"],
+      "browserEvidence": "PASS: route navigation was delegated as a stable token without changing the current URL; theme update, user identity, progress storage, host shell, and fallback remained host-owned."
+    },
+    {
+      "id": "HOST-07",
+      "status": "PASS",
+      "implementation": ["docs/P12-Portable-Host-Integrations-And-User-Progress.md", "tests/browser/p12-plain.html", "tests/browser/p12-framework.html", "tests/browser/p12-static.html"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: legacy source remains unchanged and no implicit localStorage is created", "npm run test:p12: 11/11"],
+      "browserEvidence": "PASS: both fixture rollback branches are reproducible; plain rollback leaves the old RichViz copy running, while framework rollback restores static content and preserves host header/footer. A real downstream package-manager migration was not available because this workspace contains no external host manifest."
+    }
+  ],
+  "verification": {
+    "baseline": "PASS: P11 COMPLETE; RichViz v0.5.0 source ZIP SHA-256 6639552377C83B0FA48739C2140B808FF71CECF5ED9BC68C427D4E3B3482EEF3; npm test 100/100 before P12 edits.",
+    "finalExecution": {
+      "date": "2026-10-20",
+      "focusedTests": "PASS: npm run test:p12, 11/11.",
+      "regressions": {"P05": "PASS: 5/5", "P07": "PASS: 10/10"},
+      "fullTests": "PASS: npm test, 111/111.",
+      "browserIdentity": {
+        "tool": "mcp__edge_ai",
+        "configured": "UNVERIFIED: browser-environment-manager environment.json was absent; no manager status/configuration write was performed.",
+        "process": "PASS: current dedicated msedge.exe PID 29508 carried the IB-Edge-Debug user-data argument; its 127.0.0.1:9222 listener belonged to the same PID.",
+        "cdp": "PASS: /json/version returned Edg/155.0.4283.62, protocol 1.3, and a loopback WebSocket endpoint.",
+        "activeProfile": "PASS: edge://version showed the active profile under the dedicated IB-Edge-Debug directory."
+      },
+      "browserFixture": "PASS: plain and framework fixtures passed their live assertions, including route delegation, theme refresh, edu-viz/RichViz rendering, explicit progress save/restore, and host containment. Both rollback controls passed.",
+      "staticFallback": "PASS: the dedicated static fixture had zero scripts; visible narrative, host footer, and 16px text remained present.",
+      "responsive": "PASS: 320/360/768/1024/1440 px in both interactive fixtures; no horizontal overflow and article text 16px at each width.",
+      "consoleAndNetwork": "PASS: no console messages on tested pages; 51 plain, 50 framework, and 2 static requests were all loopback fixture requests.",
+      "screenshots": "PASS: viewport screenshot returned inline and was visually inspected at 1440x900. Full-page screenshot was not required; no persistent screenshot file is claimed.",
+      "preservation": "PASS: RichViz v0.5.0 source ZIP hash unchanged; existing renderer/legacy APIs, Markdown fence, host routes/content and sibling RichViz mount remain available.",
+      "limitations": ["No external host project or manifest was supplied, so package-manager-specific update was documented and rollback was exercised with host fixtures.", "The workspace does not install React; the optional framework-root contract was tested with an injected root implementation.", "No Git metadata or official build/release record is available; no commit, version, or build ID was invented."],
+      "phaseGate": "COMPLETE: HOST-01..HOST-07 all PASS. Stop after P12; P13 remains NOT_STARTED."
+    }
+  }
+}

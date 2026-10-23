@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "type": "mermaid",
+  "title": "A resource lifecycle",
+  "description": "States describe what a resource is; transition labels describe events. A paused state preserves identity until the resource resumes.",
+  "dir": "ltr",
+  "data": {
+    "source": "stateDiagram-v2\n    [*] --> Draft\n    Draft --> Published: approve\n    Published --> Paused: suspend\n    Paused --> Published: resume\n    Published --> Archived: retire\n    Paused --> Archived: retire\n    Archived --> [*]"
+  }
+}

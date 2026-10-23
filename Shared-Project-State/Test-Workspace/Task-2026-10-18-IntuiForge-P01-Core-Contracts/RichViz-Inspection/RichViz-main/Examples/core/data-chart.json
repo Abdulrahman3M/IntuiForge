@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "type": "data-chart",
+  "title": "Requests per hour through the day",
+  "description": "Traffic is low at night, rises through the morning and peaks in the early afternoon.",
+  "options": {
+    "engine": "chartjs"
+  },
+  "data": {
+    "chart": "area",
+    "labels": [
+      "00",
+      "04",
+      "08",
+      "12",
+      "16",
+      "20"
+    ],
+    "unit": "k",
+    "axis": {
+      "x": "Hour",
+      "y": "Requests (thousands)"
+    },
+    "series": [
+      {
+        "name": "Requests",
+        "values": [
+          4,
+          2,
+          18,
+          46,
+          39,
+          14
+        ],
+        "tone": "info"
+      },
+      {
+        "name": "Errors",
+        "values": [
+          0.1,
+          0.1,
+          0.4,
+          1.2,
+          0.8,
+          0.3
+        ],
+        "tone": "danger"
+      }
+    ]
+  }
+}

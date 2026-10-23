@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "type": "custom",
+  "title": "Predict, then reveal the explanation",
+  "description": "Make a prediction in the first accordion panel, then open the counterexample and transfer question. This progressive-disclosure interaction differs from the original tab comparison.",
+  "dir": "ltr",
+  "data": {
+    "layout": "stack",
+    "blocks": [
+      {
+        "block": "accordion",
+        "items": [
+          {
+            "label": "Make a prediction",
+            "icon": "book",
+            "blocks": [
+              {
+                "block": "callout",
+                "title": "Prediction",
+                "text": "Two equal-size samples have the same mean. Must their values be distributed alike? Make a prediction before revealing the explanation.",
+                "icon": "book",
+                "tone": "info"
+              }
+            ]
+          },
+          {
+            "label": "Reveal the explanation",
+            "icon": "eye",
+            "blocks": [
+              {
+                "block": "text",
+                "text": "Sample A: 4, 4, 4. Sample B: 0, 4, 8. Both means are 4, but the second sample has a wider spread."
+              },
+              {
+                "block": "callout",
+                "title": "What the mean omits",
+                "text": "A center statistic does not describe the spread or shape of a distribution.",
+                "tone": "warning",
+                "icon": "alert"
+              },
+              {
+                "block": "text",
+                "text": "Transfer question: if two classes have the same average score, which additional information would help you compare their learning needs?"
+              },
+              {
+                "block": "list",
+                "items": [
+                  "Range or other spread measure",
+                  "Distribution of individual scores",
+                  "Context and sample size"
+                ],
+                "ordered": true
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}

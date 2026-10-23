@@ -1,0 +1,64 @@
+{
+  "version": 1,
+  "type": "infographic",
+  "title": "Why use version control",
+  "description": "Version control keeps history, supports teamwork, and makes it safe to experiment.",
+  "data": {
+    "columns": 3,
+    "intro": {
+      "title": "Three reasons teams adopt Git",
+      "text": "Each one removes a common risk of working on shared files.",
+      "icon": "git-branch",
+      "tone": "accent"
+    },
+    "sections": [
+      {
+        "title": "History",
+        "subtitle": "Never lose work",
+        "icon": "clock",
+        "tone": "info",
+        "metric": {
+          "value": "100",
+          "unit": "%",
+          "label": "Recoverable"
+        },
+        "text": "Every change is saved, so you can go back to any earlier state."
+      },
+      {
+        "title": "Teamwork",
+        "subtitle": "Work in parallel",
+        "icon": "users",
+        "tone": "violet",
+        "items": [
+          {
+            "label": "Branches",
+            "value": "Unlimited"
+          },
+          {
+            "label": "Reviews",
+            "value": "Built in"
+          },
+          {
+            "label": "Merges",
+            "text": "Combine work safely"
+          }
+        ]
+      },
+      {
+        "title": "Safety",
+        "subtitle": "Experiment freely",
+        "icon": "shield",
+        "tone": "success",
+        "steps": [
+          "Create a branch",
+          "Try the idea",
+          "Keep it or discard it"
+        ],
+        "progress": {
+          "value": 85,
+          "label": "Confidence"
+        }
+      }
+    ]
+  }
+}

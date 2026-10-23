@@ -1,0 +1,88 @@
+{
+  "version": 1,
+  "type": "custom",
+  "title": "Branch strategies compared",
+  "description": "Trunk-based development favours short branches; Git Flow uses long-lived release branches.",
+  "data": {
+    "layout": "grid",
+    "columns": 2,
+    "blocks": [
+      {
+        "block": "card",
+        "title": "Trunk-based",
+        "subtitle": "Short-lived branches",
+        "icon": "git-merge",
+        "tone": "success",
+        "text": "Merge small changes to main many times a day.",
+        "status": {
+          "text": "Fast feedback",
+          "state": "ok"
+        }
+      },
+      {
+        "block": "card",
+        "title": "Git Flow",
+        "subtitle": "Long-lived branches",
+        "icon": "git-branch",
+        "tone": "violet",
+        "text": "Separate develop, release and hotfix branches.",
+        "status": {
+          "text": "More ceremony",
+          "state": "warn"
+        }
+      },
+      {
+        "block": "group",
+        "title": "Compare in detail",
+        "layout": "stack",
+        "blocks": [
+          {
+            "block": "tabs",
+            "items": [
+              {
+                "label": "Release cadence",
+                "icon": "calendar",
+                "blocks": [
+                  {
+                    "block": "progress",
+                    "label": "Trunk-based",
+                    "value": 90,
+                    "tone": "success"
+                  },
+                  {
+                    "block": "progress",
+                    "label": "Git Flow",
+                    "value": 45,
+                    "tone": "violet"
+                  }
+                ]
+              },
+              {
+                "label": "Risk",
+                "icon": "alert",
+                "blocks": [
+                  {
+                    "block": "callout",
+                    "title": "Watch out",
+                    "text": "Long-lived branches drift and make merges painful.",
+                    "tone": "warning",
+                    "icon": "alert"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "block": "list",
+        "items": [
+          "Pick one strategy per team",
+          "Automate the checks",
+          "Keep branches small"
+        ],
+        "ordered": true
+      }
+    ]
+  }
+}

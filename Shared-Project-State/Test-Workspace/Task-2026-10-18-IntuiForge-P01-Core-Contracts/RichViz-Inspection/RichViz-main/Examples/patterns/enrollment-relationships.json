@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "type": "mermaid",
+  "title": "Enrollment: entities and cardinalities",
+  "description": "Crow-foot relationships distinguish one-to-many relationships and a junction entity. Attributes separate identity from descriptive information.",
+  "dir": "ltr",
+  "data": {
+    "source": "erDiagram\n    LEARNER ||--o{ ENROLLMENT : has\n    COURSE ||--o{ ENROLLMENT : receives\n    COURSE ||--|{ LESSON : contains\n    LEARNER {\n        int learner_id PK\n        string name\n    }\n    COURSE {\n        int course_id PK\n        string title\n    }\n    ENROLLMENT {\n        int learner_id FK\n        int course_id FK\n        string status\n    }\n    LESSON {\n        int lesson_id PK\n        int course_id FK\n    }"
+  }
+}

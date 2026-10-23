@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "type": "data-chart",
+  "title": "A multidimensional skill profile",
+  "description": "Radar spokes compare strengths across dimensions on a shared 0–10 scale. Illustrative self-assessment, not an objective score.",
+  "dir": "ltr",
+  "options": {
+    "engine": "chartjs",
+    "height": 340
+  },
+  "data": {
+    "chart": "radar",
+    "labels": [
+      "Recall",
+      "Explain",
+      "Apply",
+      "Analyze",
+      "Evaluate"
+    ],
+    "series": [
+      {
+        "name": "Before",
+        "values": [
+          7,
+          5,
+          3,
+          2,
+          2
+        ],
+        "tone": "info"
+      },
+      {
+        "name": "After",
+        "values": [
+          8,
+          8,
+          7,
+          6,
+          5
+        ],
+        "tone": "teal"
+      }
+    ],
+    "axis": {}
+  }
+}

@@ -1,0 +1,243 @@
+[
+  {
+    "id": "mermaid",
+    "name": "Mermaid diagram",
+    "category": "F1",
+    "renderer": "mermaid",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/mermaid.md",
+    "example": "Examples/core/mermaid.json"
+  },
+  {
+    "id": "react-flow",
+    "name": "React Flow interactive diagram",
+    "category": "F2",
+    "renderer": "react-flow/svg",
+    "interactive": true,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware",
+      "interaction"
+    ],
+    "documentation": "docs/diagrams/react-flow.md",
+    "example": "Examples/core/react-flow.json"
+  },
+  {
+    "id": "process-cards",
+    "name": "Rich card-based process",
+    "category": "F3",
+    "renderer": "richviz-native",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/process-cards.md",
+    "example": "Examples/core/process-cards.json"
+  },
+  {
+    "id": "process-flow",
+    "name": "Process flow cards",
+    "category": "F4",
+    "renderer": "richviz-native",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/process-flow.md",
+    "example": "Examples/core/process-flow.json"
+  },
+  {
+    "id": "step-guide",
+    "name": "Step-by-step visual guide",
+    "category": "F5",
+    "renderer": "richviz-native",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/step-guide.md",
+    "example": "Examples/core/step-guide.json"
+  },
+  {
+    "id": "pipeline",
+    "name": "Pipeline diagram",
+    "category": "F6",
+    "renderer": "richviz-native",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/pipeline.md",
+    "example": "Examples/core/pipeline.json"
+  },
+  {
+    "id": "kpi-dashboard",
+    "name": "Dashboard / KPI visualization",
+    "category": "F7",
+    "renderer": "richviz-native",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/kpi-dashboard.md",
+    "example": "Examples/core/kpi-dashboard.json"
+  },
+  {
+    "id": "bar-chart",
+    "name": "Bar / comparison chart",
+    "category": "F8",
+    "renderer": "chart-adapters/svg",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/bar-chart.md",
+    "example": "Examples/core/bar-chart.json"
+  },
+  {
+    "id": "data-chart",
+    "name": "Data-driven visualization",
+    "category": "F9",
+    "renderer": "chart-adapters/svg",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/data-chart.md",
+    "example": "Examples/core/data-chart.json"
+  },
+  {
+    "id": "node-map",
+    "name": "Interactive node map",
+    "category": "F10",
+    "renderer": "react-flow/svg",
+    "interactive": true,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware",
+      "interaction"
+    ],
+    "documentation": "docs/diagrams/node-map.md",
+    "example": "Examples/core/node-map.json"
+  },
+  {
+    "id": "annotated",
+    "name": "Annotated visual explanation",
+    "category": "F11",
+    "renderer": "svg",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/annotated.md",
+    "example": "Examples/core/annotated.json"
+  },
+  {
+    "id": "infographic",
+    "name": "Infographic-style explanation",
+    "category": "F12",
+    "renderer": "composite",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/infographic.md",
+    "example": "Examples/core/infographic.json"
+  },
+  {
+    "id": "svg",
+    "name": "SVG illustration",
+    "category": "SVG",
+    "renderer": "svg",
+    "interactive": false,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware"
+    ],
+    "documentation": "docs/diagrams/svg.md",
+    "example": "Examples/core/svg.json"
+  },
+  {
+    "id": "custom",
+    "name": "Custom visual composition",
+    "category": "E7",
+    "renderer": "composite",
+    "interactive": true,
+    "static": true,
+    "version": 1,
+    "capabilities": [
+      "responsive",
+      "accessible-text",
+      "rtl",
+      "theme-aware",
+      "interaction"
+    ],
+    "documentation": "docs/diagrams/custom.md",
+    "example": "Examples/core/custom.json"
+  }
+]

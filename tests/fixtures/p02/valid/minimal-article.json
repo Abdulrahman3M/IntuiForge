@@ -1,0 +1,33 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "minimal-article",
+  "locale": "en",
+  "dir": "ltr",
+  "title": "A portable article",
+  "summary": "A readable explanation that remains available when interactive JavaScript is unavailable.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "article",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["en"],
+    "provenance": []
+  },
+  "assets": [],
+  "initialState": {},
+  "derived": {},
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "blocks": [
+        {
+          "id": "overview-paragraph",
+          "type": "paragraph",
+          "content": "This static paragraph explains the article's main point."
+        }
+      ]
+    }
+  ]
+}

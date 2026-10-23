@@ -1,0 +1,103 @@
+{
+  "project": "IntuiForge",
+  "sourceZipSha256": "6639552377c83b0fa48739c2140b808ff71cecf5ed9bc68c427d4e3b3482eef3",
+  "status": "COMPLETE",
+  "phases": [
+    {
+      "id": "P00",
+      "status": "COMPLETE",
+      "report": "Reports/P00-Completion.md",
+      "completedFeatureIds": ["BASE-01", "BASE-02", "BASE-03", "BASE-04", "BASE-05", "BASE-06"]
+    },
+    {
+      "id": "P01",
+      "status": "COMPLETE",
+      "report": "Reports/P01-Completion.md",
+      "completedFeatureIds": ["CORE-01", "CORE-02", "CORE-03", "CORE-04", "CORE-05", "CORE-06"]
+    },
+    {
+      "id": "P02",
+      "status": "COMPLETE",
+      "report": "Reports/P02-Completion.md",
+      "completedFeatureIds": ["ART-01", "ART-02", "ART-03", "ART-04", "ART-05", "ART-06", "ART-07", "ART-08"]
+    },
+    {
+      "id": "P03",
+      "status": "COMPLETE",
+      "report": "Reports/P03-Completion.md",
+      "completedFeatureIds": ["UI-01", "UI-02", "UI-03", "UI-04", "UI-05", "UI-06", "UI-07"]
+    },
+    {
+      "id": "P04",
+      "status": "COMPLETE",
+      "report": "Reports/P04-Completion.md",
+      "completedFeatureIds": ["INT-01", "INT-02", "INT-03", "INT-04", "INT-05", "INT-06", "INT-07"]
+    },
+    {
+      "id": "P05",
+      "status": "COMPLETE",
+      "report": "Reports/P05-Completion.md",
+      "completedFeatureIds": ["DOC-01", "DOC-02", "DOC-03", "DOC-04", "DOC-05", "DOC-06", "DOC-07"]
+    },
+    {
+      "id": "P06",
+      "status": "COMPLETE",
+      "report": "Reports/P06-Completion.md",
+      "completedFeatureIds": ["WGT-01", "WGT-02", "WGT-03", "WGT-04", "WGT-05", "WGT-06", "WGT-07"]
+    },
+    {
+      "id": "P07",
+      "status": "COMPLETE",
+      "report": "Reports/P07-Completion.md",
+      "completedFeatureIds": ["EDU-01", "EDU-02", "EDU-03", "EDU-04", "EDU-05", "EDU-06", "EDU-07"]
+    },
+    {
+      "id": "P08",
+      "status": "COMPLETE",
+      "report": "Reports/P08-Completion.md",
+      "completedFeatureIds": ["VIZ-01", "VIZ-02", "VIZ-03", "VIZ-04", "VIZ-05", "VIZ-06", "VIZ-07", "VIZ-08", "VIZ-09"]
+    },
+    {
+      "id": "P09",
+      "status": "COMPLETE",
+      "report": "Reports/P09-Completion.md",
+      "completedFeatureIds": ["SCI-01", "SCI-02", "SCI-03", "SCI-04", "SCI-05", "SCI-06", "SCI-07", "SCI-08"]
+    },
+    {
+      "id": "P10",
+      "status": "COMPLETE",
+      "report": "Reports/P10-Completion.md",
+      "completedFeatureIds": ["MED-01", "MED-02", "MED-03", "MED-04", "MED-05", "MED-06", "MED-07"]
+    },
+    {
+      "id": "P11",
+      "status": "COMPLETE",
+      "report": "Reports/P11-Completion.md",
+      "completedFeatureIds": ["AI-01", "AI-02", "AI-03", "AI-04", "AI-05", "AI-06", "AI-07", "AI-08"]
+    },
+    {
+      "id": "P12",
+      "status": "COMPLETE",
+      "report": "Reports/P12-Completion.md",
+      "completedFeatureIds": ["HOST-01", "HOST-02", "HOST-03", "HOST-04", "HOST-05", "HOST-06", "HOST-07"]
+    },
+    {
+      "id": "P13",
+      "status": "COMPLETE",
+      "report": "Reports/P13-Completion.md",
+      "completedFeatureIds": ["NFR-01", "NFR-02", "NFR-03", "NFR-04", "NFR-05", "NFR-06", "NFR-07", "NFR-08"]
+    },
+    {
+      "id": "P14",
+      "status": "COMPLETE",
+      "report": "Reports/P14-Completion.md",
+      "completedFeatureIds": ["SHOW-01", "SHOW-02", "SHOW-03", "SHOW-04", "SHOW-05"]
+    },
+    {
+      "id": "P15",
+      "status": "COMPLETE",
+      "report": "Reports/P15-Completion.md",
+      "completedFeatureIds": ["REL-01", "REL-02", "REL-03", "REL-04", "REL-05", "REL-06", "REL-07"]
+    }
+  ]
+}

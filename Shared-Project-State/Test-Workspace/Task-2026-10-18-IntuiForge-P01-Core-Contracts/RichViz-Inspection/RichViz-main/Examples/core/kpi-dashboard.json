@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "type": "kpi-dashboard",
+  "title": "Learning objective: merge a pull request",
+  "description": "The learner has completed 62 percent of the objective; checks and security pass, one review is still pending.",
+  "data": {
+    "current": {
+      "title": "Learning objective",
+      "subtitle": "Merge your first pull request safely",
+      "icon": "target",
+      "tone": "accent",
+      "progress": {
+        "value": 62,
+        "label": "Objective progress"
+      },
+      "chips": [
+        {
+          "text": "Checks passing",
+          "state": "ok"
+        },
+        {
+          "text": "1 review pending",
+          "state": "warn"
+        },
+        {
+          "text": "Security clear",
+          "state": "ok"
+        }
+      ]
+    },
+    "metrics": [
+      {
+        "label": "Lessons done",
+        "value": 8,
+        "unit": "/ 12",
+        "icon": "book",
+        "tone": "info",
+        "delta": {
+          "text": "+2 this week",
+          "direction": "up",
+          "tone": "success"
+        }
+      },
+      {
+        "label": "Quiz score",
+        "value": 91,
+        "unit": "%",
+        "icon": "check-circle",
+        "tone": "success",
+        "progress": 91
+      },
+      {
+        "label": "Open reviews",
+        "value": 1,
+        "icon": "eye",
+        "tone": "warning",
+        "note": "Waiting on a teammate"
+      }
+    ],
+    "progress": [
+      {
+        "label": "Branching",
+        "value": 100,
+        "tone": "success"
+      },
+      {
+        "label": "Pull requests",
+        "value": 62,
+        "tone": "info"
+      },
+      {
+        "label": "Conflict resolution",
+        "value": 20,
+        "tone": "orange"
+      }
+    ],
+    "statuses": [
+      {
+        "label": "CI",
+        "state": "ok",
+        "text": "Passing"
+      },
+      {
+        "label": "Review",
+        "state": "warn",
+        "text": "Pending"
+      },
+      {
+        "label": "Deploy",
+        "state": "pending",
+        "text": "Not started"
+      }
+    ]
+  }
+}

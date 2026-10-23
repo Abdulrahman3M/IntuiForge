@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "type": "mermaid",
+  "title": "Overlapping work and dependencies",
+  "description": "A Gantt timeline encodes duration, overlap and a milestone. It differs from an ordered step guide because tasks occupy explicit intervals.",
+  "dir": "ltr",
+  "data": {
+    "source": "gantt\n    title Illustrative course preparation\n    dateFormat YYYY-MM-DD\n    axisFormat %d %b\n    section Content\n    Outline :a, 2026-10-05, 2d\n    Write lessons :b, after a, 4d\n    section Review\n    Prepare rubric :c, 2026-10-06, 3d\n    Review lessons :d, after b, 2d\n    Release :milestone, after d, 0d"
+  }
+}

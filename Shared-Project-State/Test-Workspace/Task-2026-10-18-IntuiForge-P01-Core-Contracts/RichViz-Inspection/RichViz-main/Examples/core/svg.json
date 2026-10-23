@@ -1,0 +1,91 @@
+{
+  "version": 1,
+  "type": "svg",
+  "title": "Client and server exchange",
+  "description": "A client sends a request to a server and the server sends back a response.",
+  "data": {
+    "viewBox": [
+      0,
+      0,
+      640,
+      220
+    ],
+    "elements": [
+      {
+        "type": "rect",
+        "x": 30,
+        "y": 60,
+        "width": 160,
+        "height": 100,
+        "rx": 16,
+        "fill": "info",
+        "opacity": 0.25,
+        "stroke": "info",
+        "strokeWidth": 2
+      },
+      {
+        "type": "text",
+        "x": 110,
+        "y": 116,
+        "text": "Client",
+        "size": 22,
+        "weight": "bold"
+      },
+      {
+        "type": "rect",
+        "x": 450,
+        "y": 60,
+        "width": 160,
+        "height": 100,
+        "rx": 16,
+        "fill": "teal",
+        "opacity": 0.25,
+        "stroke": "teal",
+        "strokeWidth": 2
+      },
+      {
+        "type": "text",
+        "x": 530,
+        "y": 116,
+        "text": "Server",
+        "size": 22,
+        "weight": "bold"
+      },
+      {
+        "type": "line",
+        "x1": 195,
+        "y1": 90,
+        "x2": 445,
+        "y2": 90,
+        "stroke": "violet",
+        "strokeWidth": 3,
+        "arrow": true
+      },
+      {
+        "type": "text",
+        "x": 320,
+        "y": 78,
+        "text": "Request",
+        "size": 15
+      },
+      {
+        "type": "line",
+        "x1": 445,
+        "y1": 135,
+        "x2": 195,
+        "y2": 135,
+        "stroke": "success",
+        "strokeWidth": 3,
+        "arrow": true,
+        "dash": true
+      },
+      {
+        "type": "text",
+        "x": 320,
+        "y": 160,
+        "text": "Response",
+        "size": 15
+      }
+    ]
+  }
+}

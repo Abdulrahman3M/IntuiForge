@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "type": "process-cards",
+  "title": "From screenshot to explanation",
+  "description": "Each stage pairs a screenshot with a short explanation of what the learner should notice.",
+  "data": {
+    "orientation": "horizontal",
+    "stages": [
+      {
+        "title": "Open the page",
+        "subtitle": "Find the pull request tab",
+        "icon": "image",
+        "tone": "info",
+        "media": {
+          "src": "media/sample-pr-list.svg",
+          "alt": "A list of three pull requests with open status"
+        }
+      },
+      {
+        "title": "Read the checks",
+        "subtitle": "Green means passing",
+        "icon": "check-circle",
+        "tone": "success",
+        "media": {
+          "src": "media/sample-checks.svg",
+          "alt": "Three checks, all passing"
+        },
+        "active": true
+      }
+    ]
+  }
+}

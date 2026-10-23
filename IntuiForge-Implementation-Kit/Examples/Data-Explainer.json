@@ -1,0 +1,98 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "data-explainer",
+  "locale": "en",
+  "dir": "ltr",
+  "title": "Interactive Data Explainer",
+  "summary": "Table filtering, calculator and reactive chart, no invented statistics.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "data-analysis",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["en"],
+    "provenance": []
+  },
+  "assets": [],
+  "initialState": {
+    "minScore": {
+      "type": "number",
+      "value": 50,
+      "min": 0,
+      "max": 100
+    }
+  },
+  "derived": {},
+  "sections": [
+    {
+      "id": "data",
+      "heading": "Explore the Example Data",
+      "blocks": [
+        {
+          "id": "filter",
+          "type": "slider",
+          "props": {
+            "min": 0,
+            "max": 100,
+            "label": "Minimum score"
+          },
+          "bindings": {
+            "value": "minScore"
+          },
+          "events": {
+            "change": {
+              "action": "setState",
+              "variable": "minScore",
+              "valueFrom": "event.value"
+            }
+          }
+        },
+        {
+          "id": "table",
+          "type": "smartTable",
+          "props": {
+            "columns": [
+              {
+                "key": "name",
+                "label": "Name"
+              },
+              {
+                "key": "score",
+                "label": "Score"
+              }
+            ],
+            "rows": [
+              {
+                "name": "Sample A",
+                "score": 40
+              },
+              {
+                "name": "Sample B",
+                "score": 75
+              },
+              {
+                "name": "Sample C",
+                "score": 95
+              }
+            ]
+          },
+          "bindings": {
+            "minScore": "minScore"
+          }
+        },
+        {
+          "id": "chart",
+          "type": "legacyViz",
+          "props": {
+            "vizType": "bar-chart",
+            "dataSource": "table.rows"
+          },
+          "bindings": {
+            "minScore": "minScore"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,90 @@
+{
+  "version": 1,
+  "type": "react-flow",
+  "title": "Where a commit travels",
+  "description": "A commit moves from the working directory to the staging area, the local repository and then the remote repository.",
+  "data": {
+    "graph": {
+      "version": 1,
+      "nodes": [
+        {
+          "id": "wd",
+          "position": {
+            "x": 0,
+            "y": 0
+          },
+          "data": {
+            "label": "Working directory",
+            "subtitle": "Edit files",
+            "icon": "folder",
+            "tone": "info"
+          }
+        },
+        {
+          "id": "stage",
+          "position": {
+            "x": 330,
+            "y": 0
+          },
+          "data": {
+            "label": "Staging area",
+            "subtitle": "git add",
+            "icon": "layers",
+            "tone": "violet"
+          }
+        },
+        {
+          "id": "local",
+          "position": {
+            "x": 660,
+            "y": 0
+          },
+          "data": {
+            "label": "Local repository",
+            "subtitle": "git commit",
+            "icon": "database",
+            "tone": "teal"
+          }
+        },
+        {
+          "id": "remote",
+          "position": {
+            "x": 990,
+            "y": 0
+          },
+          "data": {
+            "label": "Remote repository",
+            "subtitle": "git push",
+            "icon": "cloud",
+            "tone": "success",
+            "status": {
+              "text": "Shared",
+              "state": "ok"
+            }
+          }
+        }
+      ],
+      "edges": [
+        {
+          "id": "e1",
+          "source": "wd",
+          "target": "stage",
+          "label": "add"
+        },
+        {
+          "id": "e2",
+          "source": "stage",
+          "target": "local",
+          "label": "commit"
+        },
+        {
+          "id": "e3",
+          "source": "local",
+          "target": "remote",
+          "label": "push",
+          "animated": true
+        }
+      ]
+    }
+  }
+}

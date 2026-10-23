@@ -1,0 +1,68 @@
+{
+  "phase": "P06",
+  "title": "Smart Tables, Forms & Analysis Widgets",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-19T07:24:34+04:00",
+  "report": "Reports/P06-Completion.md",
+  "features": [
+    {
+      "id": "WGT-01",
+      "status": "PASS",
+      "implementation": ["packages/article/src/index.js", "packages/article-renderer/src/widgets.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p06-general-widgets.test.mjs", "tests/p06-renderer.test.mjs"],
+      "browserEvidence": "P06 fixture: live search, filtering, paging, sorting and labeled CSV export; 16/16 behavior checks overall."
+    },
+    {
+      "id": "WGT-02",
+      "status": "PASS",
+      "implementation": ["packages/article/src/index.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p06-general-widgets.test.mjs", "tests/p06-renderer.test.mjs"],
+      "browserEvidence": "Live invalid/valid value validation; generated controls have unique IDs and names; final Edge console had no messages."
+    },
+    {
+      "id": "WGT-03",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/widgets.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p06-general-widgets.test.mjs", "tests/p06-renderer.test.mjs"],
+      "browserEvidence": "Live calculator input update produced 20 USD with bounded declared values."
+    },
+    {
+      "id": "WGT-04",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/widgets.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p06-general-widgets.test.mjs", "tests/p06-renderer.test.mjs"],
+      "browserEvidence": "Live shared-state comparison update and overlay-position range update passed."
+    },
+    {
+      "id": "WGT-05",
+      "status": "PASS",
+      "implementation": ["packages/article/src/index.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p06-renderer.test.mjs"],
+      "browserEvidence": "Live native menu, keyboard-focusable tooltip, dialog open, and Escape close passed."
+    },
+    {
+      "id": "WGT-06",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/widgets.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p06-general-widgets.test.mjs", "tests/p06-renderer.test.mjs"],
+      "browserEvidence": "Live declared filter updated derived KPI and visualization bindings together to active:2."
+    },
+    {
+      "id": "WGT-07",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p06-renderer.test.mjs"],
+      "browserEvidence": "Live RTL tab arrow-key selection, shared-state accordion, and selectable-card pressed state passed."
+    }
+  ],
+  "verification": {
+    "focusedCommand": "npm run test:p06",
+    "focusedResult": "13/13 passed",
+    "fullCommand": "npm test",
+    "fullResult": "50/50 passed",
+    "browserFixture": "tests/browser/p06.html",
+    "browserBehaviorChecks": "16/16 passed",
+    "responsiveWidthsCssPx": [320, 360, 768, 1024, 1440],
+    "consoleMessagesAfterFix": 0
+  }
+}

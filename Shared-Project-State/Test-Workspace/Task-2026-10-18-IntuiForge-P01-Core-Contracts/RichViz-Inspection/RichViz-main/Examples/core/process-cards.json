@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "type": "process-cards",
+  "title": "Shared project state between two coding agents",
+  "description": "Claude Code writes its progress to a shared project state, and Codex reads that state before continuing the work.",
+  "data": {
+    "group": {
+      "title": "Hand-off between agents",
+      "subtitle": "One source of truth",
+      "icon": "workflow",
+      "tone": "accent"
+    },
+    "orientation": "vertical",
+    "stages": [
+      {
+        "title": "Claude Code",
+        "subtitle": "Implements the change and records what is finished",
+        "icon": "terminal",
+        "tone": "violet",
+        "status": {
+          "text": "Done",
+          "state": "ok"
+        }
+      },
+      {
+        "title": "Shared project state",
+        "subtitle": "Files, notes and the task list that both agents read",
+        "icon": "database",
+        "tone": "info",
+        "active": true,
+        "status": {
+          "text": "Source of truth",
+          "tone": "info"
+        }
+      },
+      {
+        "title": "Codex",
+        "subtitle": "Reads the state, reviews and continues from the same point",
+        "icon": "code",
+        "tone": "teal",
+        "progress": {
+          "value": 40,
+          "label": "Review"
+        }
+      }
+    ]
+  }
+}

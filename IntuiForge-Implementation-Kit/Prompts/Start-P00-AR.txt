@@ -1,0 +1,5 @@
+أريد بدء مشروع IntuiForge — Intelligent UI Engine من نسخة RichViz القديمة بنظام Strict Implementation Handoff. توجد حزمة Implementation-Kit ومصدر RichViz ZIP المنفصل في المسارات التي سأحددها لك.
+
+اقرأ 00-Start-Here-AR.md وAgent-Execution-Protocol.md وBrowser-Environment-Protocol.md ثم **فقط** Handoffs/IMPLEMENTATION-HANDOFF_IntuiForge_P00_*.md والملفات المرجعية التي يحددها. استخدم مهارة create-strict-implementation-handoff v1.4.0 كمرجع لقواعد التسليم، token-optimization v1.0.1 للاستخدام الأمثل للتوكنز دون تقليل جودة أو حذف اختبارات، وbrowser-environment-manager v1.0.1 حصريًا للتحقق من Edge AI المخصص. لا تستخدم ملف Edge الشخصي؛ لا تنشئ/تصلح/تعيد ضبط المتصفح إلا بحسب سياسة المهارة والسلطات المعتمدة.
+
+نفذ P00 فقط: فحص قراءة للمصدر دون تعديل الشيفرة، قوائم الملفات والحقوق والوظائف والتوافق وقواعد AGENTS والاختبارات، ثم تقرير P00 وخريطة انتقال قابلة للتتبع. اعمل بوكيل واحد دون subagents، لا تبدأ أي مرحلة أخرى، ولا تعتبر HTML القديم مرجعًا لتصميم الـUI. سجّل PASS/FAIL/UNVERIFIED بأدلة. أوقف فقط أي تعارض حقيقي يستدعي قرار المالك.

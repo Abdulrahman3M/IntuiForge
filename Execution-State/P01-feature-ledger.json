@@ -1,0 +1,14 @@
+{
+  "phase": "P01",
+  "sourceZip": "Input/RichViz v0.5.0.zip",
+  "sourceZipSha256": "6639552377c83b0fa48739c2140b808ff71cecf5ed9bc68c427d4e3b3482eef3",
+  "generatedAt": "2026-10-18",
+  "features": [
+    { "id": "CORE-01", "status": "PASS", "evidence": ["Reports/P01-Completion.md#core-01", "tests/p01-core.test.mjs", "packages/core/src/engine.js"] },
+    { "id": "CORE-02", "status": "PASS", "evidence": ["Reports/P01-Completion.md#core-02", "tests/p01-core.test.mjs", "packages/core/src/registry.js"] },
+    { "id": "CORE-03", "status": "PASS", "evidence": ["Reports/P01-Completion.md#core-03", "tests/p01-core.test.mjs", "packages/visualization-legacy/src/index.js"] },
+    { "id": "CORE-04", "status": "PASS", "evidence": ["Reports/P01-Completion.md#core-04", "tests/p01-core.test.mjs", "packages/react-island/src/index.js"] },
+    { "id": "CORE-05", "status": "PASS", "evidence": ["Reports/P01-Completion.md#core-05", "tests/p01-core.test.mjs", "package.json"] },
+    { "id": "CORE-06", "status": "PASS", "evidence": ["Reports/P01-Completion.md#core-06", "tests/p01-core.test.mjs", "tests/browser/fallback.html", "inline mcp__edge_ai screenshots and DOM measurements"] }
+  ]
+}

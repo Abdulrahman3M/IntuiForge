@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 320" role="img" aria-labelledby="title desc">
+  <title id="title">مخطط تقدم التعلم</title>
+  <desc id="desc">ثلاثة أعمدة تصاعدية تمثل الفهم بعد القراءة والتدريب والمراجعة.</desc>
+  <rect width="640" height="320" rx="28" fill="#f7fbf8"/>
+  <path d="M88 262H566" stroke="#718278" stroke-width="3"/>
+  <rect x="142" y="176" width="90" height="86" rx="12" fill="#a9c4b2"/>
+  <rect x="280" y="122" width="90" height="140" rx="12" fill="#6c9c7e"/>
+  <rect x="418" y="64" width="90" height="198" rx="12" fill="#245f42"/>
+  <path d="m185 157 139-46 139-52" fill="none" stroke="#d47a3f" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="185" cy="157" r="10" fill="#d47a3f"/><circle cx="324" cy="111" r="10" fill="#d47a3f"/><circle cx="463" cy="59" r="10" fill="#d47a3f"/>
+  <g fill="#24352b" font-family="system-ui,sans-serif" font-size="20" text-anchor="middle"><text x="187" y="296">قراءة</text><text x="325" y="296">تدريب</text><text x="463" y="296">مراجعة</text></g>
+</svg>

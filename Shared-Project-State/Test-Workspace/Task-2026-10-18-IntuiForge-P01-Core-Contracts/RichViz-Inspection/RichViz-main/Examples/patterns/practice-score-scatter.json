@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "type": "data-chart",
+  "title": "Association is not causation",
+  "description": "Scatter points encode two numeric variables, including observations with similar practice time and different scores. These invented observations cannot establish causation.",
+  "dir": "ltr",
+  "options": {
+    "engine": "chartjs",
+    "height": 340
+  },
+  "data": {
+    "chart": "scatter",
+    "labels": [],
+    "series": [
+      {
+        "name": "Observations",
+        "values": [
+          [
+            1,
+            42
+          ],
+          [
+            2,
+            58
+          ],
+          [
+            3,
+            51
+          ],
+          [
+            3,
+            76
+          ],
+          [
+            4,
+            70
+          ],
+          [
+            5,
+            78
+          ],
+          [
+            6,
+            75
+          ],
+          [
+            7,
+            90
+          ]
+        ],
+        "tone": "violet"
+      }
+    ],
+    "axis": {
+      "x": "Practice hours",
+      "y": "Quiz score (%)"
+    }
+  }
+}

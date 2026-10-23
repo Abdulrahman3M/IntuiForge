@@ -1,0 +1,16 @@
+{
+  "phase": "P02",
+  "sourceZip": "Input/RichViz v0.5.0.zip",
+  "sourceZipSha256": "6639552377c83b0fa48739c2140b808ff71cecf5ed9bc68c427d4e3b3482eef3",
+  "generatedAt": "2026-10-18",
+  "features": [
+    { "id": "ART-01", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-01", "packages/article/src/schema.js", "packages/article/schema/article-v1.schema.json", "tests/p02-article.test.mjs"] },
+    { "id": "ART-02", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-02", "packages/article/src/index.js", "tests/fixtures/p02/valid/mixed-markdown.md", "tests/p02-article.test.mjs"] },
+    { "id": "ART-03", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-03", "packages/article/src/index.js", "tests/fixtures/p02/invalid/duplicate-block-id.json", "tests/p02-article.test.mjs"] },
+    { "id": "ART-04", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-04", "tests/p02-article.test.mjs", "tests/fixtures/p02/invalid/unknown-envelope-field.json"] },
+    { "id": "ART-05", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-05", "packages/article/src/index.js", "tests/fixtures/p02/invalid/unsupported-schema-version.json", "tests/p02-article.test.mjs"] },
+    { "id": "ART-06", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-06", "packages/article/src/index.js", "tests/p02-article.test.mjs"] },
+    { "id": "ART-07", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-07", "packages/article/src/index.js", "tests/fixtures/p02/invalid/unsafe-asset-path.json", "tests/p02-article.test.mjs"] },
+    { "id": "ART-08", "status": "PASS", "evidence": ["Reports/P02-Completion.md#art-08", "packages/article/src/index.js", "tests/fixtures/p02/invalid/malformed-intui-article.md", "tests/p02-article.test.mjs"] }
+  ]
+}

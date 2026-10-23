@@ -1,0 +1,8 @@
+{
+  "skill_name": "richviz-integration",
+  "evals": [
+    {"id": 1, "prompt": "Install RichViz into this static site. It already has Chart.js and a restrictive CSP; use local assets and keep its article viewer lazy.", "expected_output": "Audits existing setup, reuses Chart.js, identifies required CSP/local paths, applies narrow lazy integration, validates and reports tests.", "files": []},
+    {"id": 2, "prompt": "Upgrade our React Flow diagrams to the latest Rich Viz but don't disturb other diagrams or the shared React runtime.", "expected_output": "Routes to richviz-updater, which audits the existing integration, maps paths and adaptations, plans a differential update, and preserves the shared runtime.", "files": []},
+    {"id": 3, "prompt": "Remove RichViz because we don't use the gallery anymore.", "expected_output": "Searches imports, specs/fences, runtime references, vendor consumers and saved content; removes only proven-unused owned files and retains required data/dependencies.", "files": []}
+  ]
+}

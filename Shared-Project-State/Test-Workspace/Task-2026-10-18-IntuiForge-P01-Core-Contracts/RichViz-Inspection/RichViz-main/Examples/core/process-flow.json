@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "type": "process-flow",
+  "title": "Should this change be merged?",
+  "description": "Checks run first. If they pass and a reviewer approves, the change is merged; otherwise the author fixes it and runs the checks again.",
+  "data": {
+    "direction": "TB",
+    "nodes": [
+      {
+        "id": "start",
+        "title": "Change ready",
+        "icon": "flag",
+        "tone": "info",
+        "shape": "pill"
+      },
+      {
+        "id": "checks",
+        "title": "Automated checks",
+        "subtitle": "Tests, lint, security",
+        "icon": "list-check",
+        "tone": "violet"
+      },
+      {
+        "id": "pass",
+        "title": "Checks pass?",
+        "shape": "diamond",
+        "tone": "warning"
+      },
+      {
+        "id": "review",
+        "title": "Peer review",
+        "subtitle": "A teammate approves",
+        "icon": "users",
+        "tone": "teal"
+      },
+      {
+        "id": "fix",
+        "title": "Fix and push again",
+        "icon": "wrench",
+        "tone": "danger"
+      },
+      {
+        "id": "merge",
+        "title": "Merge",
+        "icon": "git-merge",
+        "tone": "success",
+        "shape": "pill"
+      }
+    ],
+    "edges": [
+      {
+        "from": "start",
+        "to": "checks"
+      },
+      {
+        "from": "checks",
+        "to": "pass"
+      },
+      {
+        "from": "pass",
+        "to": "review",
+        "label": "Yes",
+        "tone": "success"
+      },
+      {
+        "from": "pass",
+        "to": "fix",
+        "label": "No",
+        "tone": "danger"
+      },
+      {
+        "from": "fix",
+        "to": "checks",
+        "dashed": true
+      },
+      {
+        "from": "review",
+        "to": "merge"
+      }
+    ]
+  }
+}

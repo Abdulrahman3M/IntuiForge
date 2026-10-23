@@ -1,0 +1,5 @@
+# Icons, SVG & Stickers Library
+
+Open the [Visual Reference Browser](../visual-browser/) and choose its dedicated [Interface Icons](../visual-browser/icons.html), [Application Icons](../visual-browser/app-icons.html), [SVG illustrations](../visual-browser/svg.html), or [Stickers](../visual-browser/stickers.html) page. Each page uses the shared site design and reads from the canonical icon registry and live asset catalog. `catalog.json` records file hashes and provenance. The GPL-3.0+ Captiva collection has its own [license and source notice](Application-Icons/Captiva/README.md); original Rich Viz SVG illustrations and stickers remain under Apache-2.0.
+
+New assets must be listed in [`catalog.json`](catalog.json) with the author, source, license, redistribution terms, commercial-use terms, attribution and format/dimensions. Preserve each third-party asset's original license and notices; do not add files with unclear reuse rights. Original assets authored for RichViz by Abdulrahman ElBatrah are covered by the project Apache-2.0 license.

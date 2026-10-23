@@ -1,0 +1,60 @@
+{
+  "phase": "P15",
+  "title": "Release, Documentation & Final Acceptance",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-23",
+  "features": [
+    {
+      "id": "REL-01",
+      "status": "PASS",
+      "implementation": ["package.json", "scripts/build-release.mjs"],
+      "automatedEvidence": ["npm run release:build -- release-apache-candidate: two packed outputs have identical SHA-256", "release/release-manifest.json: 518 files, Apache-2.0, offline install PASS, 11 JavaScript export imports plus schema file PASS"],
+      "artifact": "release/intuiforge-engine-1.0.0.tgz; SHA-256 a174191e76f1b7838aa6a9f8a8ed14308f0f3ae906ab8a80b1a983fa69170a46"
+    },
+    {
+      "id": "REL-02",
+      "status": "PASS",
+      "implementation": ["docs/release/MIGRATION.md"],
+      "automatedEvidence": ["tests/p12-host-integration.test.mjs: HOST-07 no-destructive-path rollback test", "tests/p15-release.test.mjs: install/update/rollback preservation contract"]
+    },
+    {
+      "id": "REL-03",
+      "status": "PASS",
+      "implementation": ["LICENSES/README.md", "THIRD-PARTY-NOTICES.md", "package.json"],
+      "automatedEvidence": ["tests/p15-release.test.mjs: Apache-2.0 LICENSE, project NOTICE, upstream licenses/notices and catalog provenance present", "release/release-manifest.json: LICENSE, NOTICE and upstream license files included in 518-file archive"],
+      "licenseBoundary": "Owner approved Apache-2.0 for IntuiForge-authored code and documentation. Third-party content retains its own licenses. npm package remains private; registry publication is disabled."
+    },
+    {
+      "id": "REL-04",
+      "status": "PASS",
+      "implementation": ["IntuiForge-Implementation-Kit/Feature-Traceability.csv", "IntuiForge-Implementation-Kit/Feature-Traceability.json", "Reports/P15-Feature-Audit.csv"],
+      "automatedEvidence": ["tests/p15-release.test.mjs: all 114 unique feature IDs appear once, all statuses PASS, CSV/JSON/audit counts match", "scripts/generate-feature-audit.mjs"]
+    },
+    {
+      "id": "REL-05",
+      "status": "PASS",
+      "implementation": ["README.md", "docs/release/", "Examples/"],
+      "automatedEvidence": ["tests/p15-release.test.mjs: quick start, architecture, API, gallery and migration exist; all six article samples validate and are present in the packaged file list"]
+    },
+    {
+      "id": "REL-06",
+      "status": "PASS",
+      "implementation": ["package.json", "IntuiForge-Implementation-Kit/Execution-State/phase-state.json", "Shared-Project-State/State-Manifest.json"],
+      "automatedEvidence": ["tests/p15-release.test.mjs: semver package metadata present and no Git repository assumed", "History search and prior P01/P02/P13/P14 reports confirm no official NID/CID/RID/build allocator"]
+    },
+    {
+      "id": "REL-07",
+      "status": "PASS",
+      "implementation": ["Start Visual Gallery.bat", "tests/browser-server.mjs", "docs/release/GALLERY.md"],
+      "automatedEvidence": ["Actual Windows batch launch: gallery HTML 200, gallery mount present, asset catalog 200 with 254 assets, project-root file 404; server stopped with Ctrl+C", "tests/p15-release.test.mjs: launcher and loopback allowlist contracts"],
+      "browserEvidence": "The owner-authorized Edge 155.0.4283.62 session and IB-Edge-Debug\\Profile had been verified previously. On 2026-10-23, mcp__edge_ai reopened the local gallery and captured persistent desktop (1440x1000) and mobile (390x844) PNGs at Reports/P15-Visual-Library-Desktop.png and Reports/P15-Visual-Library-Mobile.png. Both were visually inspected. Browser manager process inspection was unavailable because CIM is disabled in this sandbox; Edge navigation and screenshot capture succeeded. No personal browser was used."
+    }
+  ],
+  "verification": {
+    "focusedTests": "PASS: node --test tests/p15-release.test.mjs (7/7); npm test (124/124).",
+    "releaseBuild": "PASS: Apache-2.0 package rebuilt to release/intuiforge-engine-1.0.0.tgz; identical repeated pack hashes, offline installation, 11 public export imports, and packaged schema verified. Previous unlicensed artifact preserved under release/history/pre-apache-license-2026-10-21/.",
+    "windowsLauncher": "PASS: actual Start Visual Gallery.bat launch served the visual library and license catalog on loopback; project-root access returned 404; stopped after verification.",
+    "browser": "PASS: Browser Environment Manager verified dedicated Edge 155.0.4283.62 and CDP 127.0.0.1:9222; edge://version confirmed IB-Edge-Debug\\Profile; local gallery navigation, search, preview and desktop/narrow inline screenshots were verified. Screenshot connector denied project PNG export; no durable screenshot files claimed. No personal browser used.",
+    "phaseGate": "PASS: REL-01..REL-07 evidence is recorded; all 114 traceability IDs are synchronized as PASS."
+  }
+}

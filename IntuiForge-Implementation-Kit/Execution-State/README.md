@@ -1,0 +1,2 @@
+# Execution State
+This is an initialized template, not execution evidence. The coding agent updates a **working copy** during authorized phases. Each phase status must be backed by a report, with Feature IDs linked to actual tests. Never edit this file to artificially grant a phase gate. `sourceZipSha256` remains null until P00 actually receives and checks the owner's ZIP. Preserve checkpoints between sessions without pasting all prior conversations.

@@ -1,0 +1,35 @@
+/* Gallery chrome only; every visualization is styled by ../rich-visualization.css. */
+body { margin: 0; background: var(--bg); color: var(--ink); font-family: var(--sans); }
+.gallery-bar { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: 12px 24px; padding: 12px clamp(14px, 3vw, 32px); border-bottom: 1px solid var(--line); background: color-mix(in srgb, var(--bg) 92%, transparent); backdrop-filter: blur(14px); }
+.gallery-bar h1 { margin: 0; font-size: 1.15rem; }
+.gallery-bar p { margin: 2px 0 0; color: var(--muted); font-size: .85rem; }
+.gallery-controls { display: flex; flex-wrap: wrap; align-items: end; gap: 10px 16px; }
+.gallery-controls label { display: grid; gap: 2px; font-size: .78rem; font-weight: 600; color: var(--muted); }
+.gallery-controls select { min-height: 36px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); color: var(--ink); }
+.gallery-check { display: flex !important; align-items: center; gap: 6px !important; min-height: 36px; }
+.gallery-main { display: grid; gap: 28px; width: 100%; margin: 0; padding: 22px clamp(14px, 3vw, 40px) 80px; box-sizing: border-box; scroll-margin-top: 90px; }
+.gallery-catalogue { display: grid; gap: 28px; }
+.gallery-search { box-sizing: border-box; width: min(100%, 520px); min-height: 42px; padding: 8px 12px; border: 1px solid var(--line); border-radius: 12px; background: var(--surface); color: var(--ink); font: inherit; }
+.gallery-item { display: grid; gap: 8px; }
+.gallery-item > h2 { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 0; font-size: 1rem; }
+.gallery-item > h2 small { color: var(--muted); font-weight: 500; }
+.gallery-item .gallery-source { display: none; max-height: 320px; margin: 0; padding: 10px; overflow: auto; border: 1px solid var(--line); border-radius: 10px; background: var(--surface-2); direction: ltr; text-align: left; font: .8rem/1.5 var(--mono); }
+body[data-show-source] .gallery-source { display: block; }
+.gallery-group { margin: 14px 0 0; padding-top: 14px; border-top: 2px solid var(--line); font-size: .85rem; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.gallery-engines { display: grid; gap: 18px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 420px), 1fr)); }
+.gallery-playground textarea { box-sizing: border-box; width: 100%; min-height: 190px; padding: 10px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--ink); direction: ltr; font: .85rem/1.5 var(--mono); }
+.gallery-playground button { min-height: 40px; padding: 6px 16px; border: 1px solid var(--accent); border-radius: 999px; background: var(--surface); color: var(--accent); font-weight: 700; cursor: pointer; }
+.gallery-bar > *, .gallery-controls label { min-width: 0; }
+.gallery-controls { width: 100%; }
+.gallery-controls select { max-width: 100%; }
+.gallery-bar h1, .gallery-bar p { overflow-wrap: anywhere; }
+.gallery-engines > *, .gallery-main > * { min-width: 0; }
+.gallery-playground textarea { max-width: 100%; }
+.gallery-nav { display: flex; align-items: center; gap: 6px; padding: 4px; border: 1px solid var(--line); border-radius: 13px; background: var(--surface-2); }
+.gallery-nav a { padding: 8px 12px; border-radius: 9px; color: var(--muted); font-size: .82rem; font-weight: 700; text-decoration: none; }
+.gallery-nav a:hover { color: var(--ink); background: var(--surface); }
+.gallery-nav a[aria-current="page"] { color: #fff; background: var(--accent); }
+.gallery-nav a:focus-visible,.gallery-controls select:focus-visible,.gallery-controls input:focus-visible { outline: 3px solid var(--accent-2); outline-offset: 2px; }
+.gallery-about { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 20px; padding: 18px clamp(14px,3vw,40px); border-top: 1px solid var(--line); color: var(--muted); font-size: .82rem; }
+.gallery-about span { margin-inline-end: auto; color: var(--ink); font-weight: 700; }
+@media (max-width: 600px) { .gallery-bar { position: sticky; top: 0; max-height: 52vh; overflow-y: auto; } .gallery-controls { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); } .gallery-nav { width: 100%; justify-content: center; } }

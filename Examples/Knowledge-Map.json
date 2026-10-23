@@ -1,0 +1,69 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "knowledge-map-learning-path",
+  "locale": "ar",
+  "dir": "rtl",
+  "title": "خارطة تعلم Git",
+  "summary": "خريطة تفاعلية قابلة للسحب والتكبير مع عقد تفتح شروحًا وروابط إلى مقالات مستقلة.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "knowledge-map",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["ar"],
+    "provenance": []
+  },
+  "assets": [],
+  "initialState": {},
+  "derived": {},
+  "sections": [
+    {
+      "id": "learning-map",
+      "heading": "مسار التعلم",
+      "blocks": [
+        {
+          "id": "git-roadmap",
+          "type": "knowledgeMap",
+          "props": {
+            "description": "مسار مرئي يربط مفاهيم Git الأساسية بعقد الدروس وملخصاتها.",
+            "pan": true,
+            "zoom": true,
+            "pinchZoom": true,
+            "minimap": true,
+            "nodes": [
+              {
+                "id": "git-basics",
+                "label": "مبادئ Git",
+                "summary": "المستودع والنسخ والإصدارات",
+                "articleRef": "git-intro"
+              },
+              {
+                "id": "git-commits",
+                "label": "Commits",
+                "summary": "حفظ التغييرات",
+                "articleRef": "git-commit"
+              },
+              {
+                "id": "git-branches",
+                "label": "Branches",
+                "summary": "التفرع والدمج",
+                "articleRef": "git-branch"
+              }
+            ],
+            "edges": [
+              {
+                "source": "git-basics",
+                "target": "git-commits"
+              },
+              {
+                "source": "git-commits",
+                "target": "git-branches"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

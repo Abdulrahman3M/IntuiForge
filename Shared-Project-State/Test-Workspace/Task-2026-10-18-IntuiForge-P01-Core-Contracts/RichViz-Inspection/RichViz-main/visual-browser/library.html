@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore every Rich Viz collection from a single visual library hub.">
+  <title>Explore Library · Rich Viz</title><link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../src/gallery/theme.css?v=0.5.0"><link rel="stylesheet" href="browser.css?v=0.5.0">
+</head>
+<body>
+  <a class="skip-link" href="#library-content">Skip to library collections</a><div data-site-header></div>
+  <main class="page-main library-hub" id="library-content">
+    <section class="library-heading-block"><div><p class="home-kicker">The Rich Viz collection</p><h1>Explore the visual library</h1><p>Browse each collection on its own terms, with previews and references drawn from the library’s current content.</p></div><a class="secondary-action" href="./diagrams.html">Open Diagrams</a></section>
+    <section class="library-overview" aria-label="Library totals"><div><span>Total browsable items</span><strong id="library-total">—</strong></div><div><span>Collections</span><strong id="library-collection-total">—</strong></div><div><span>Visualization types</span><strong id="library-type-total">—</strong></div></section>
+    <section class="collection-section" aria-labelledby="collection-title"><div class="section-heading"><div><p class="section-mark">Choose a collection</p><h2 id="collection-title">Browse by visual type</h2></div><span>Counts update from the live catalog</span></div><div id="collection-cards" class="collection-grid" aria-live="polite"><div class="loading-card">Loading library collections…</div></div></section>
+    <section class="hub-search" aria-labelledby="hub-search-title"><div><p class="section-mark">Across the library</p><h2 id="hub-search-title">Search by name or reference</h2><p>Search item names, visual types, categories, and stable reference IDs.</p></div><form id="library-search-form" class="hub-search__form" role="search" hidden><label for="library-search" class="sr-only">Search library items</label><input id="library-search" type="search" placeholder="Try “timeline”, “RV-ICON”, or “process”…" autocomplete="off"><label class="sr-only" for="library-type">Choose what to search</label><select id="library-type"><option value="all">All collections</option><option value="example">Diagrams</option><option value="icon">Icons</option><option value="app-icon">Application Icons</option><option value="svg">SVG</option><option value="sticker">Stickers</option></select></form><p id="library-result-count" class="library-result-count" aria-live="polite" hidden></p><div id="library-results" class="library-results" hidden></div></section>
+    <section class="hub-note"><span aria-hidden="true">✳</span><p>New library content appears in its matching collection automatically. The browser follows the canonical registries and discovered asset catalog rather than maintaining a separate item list.</p></section>
+  </main>
+  <div data-site-footer></div>
+  <script type="module" src="shell.js?v=0.5.0"></script><script type="module" src="library.js?v=0.5.0"></script>
+</body>
+</html>

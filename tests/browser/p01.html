@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>IntuiForge P01 Browser Smoke</title>
+  <style>
+    html { color-scheme: light dark; background: Canvas; color: CanvasText; font: 16px/1.6 system-ui, sans-serif; }
+    body { margin: 0; padding: 1rem; }
+    main { max-width: 72rem; margin-inline: auto; }
+    h1, h2, p { font-size: 1rem; line-height: 1.6; }
+    section { margin-block: 1rem; padding: 1rem; border: 1px solid color-mix(in srgb, CanvasText 20%, transparent); border-radius: .75rem; }
+    #legacy { min-height: 12rem; }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>تحقق P01 — IntuiForge</h1>
+    <section aria-labelledby="legacy-title">
+      <h2 id="legacy-title">توافق RichViz</h2>
+      <div id="legacy" aria-live="polite"></div>
+    </section>
+    <section aria-labelledby="fallback-title">
+      <h2 id="fallback-title">حالة الخطأ المعزولة</h2>
+      <div id="fallback-ar"></div>
+      <div id="fallback-en"></div>
+    </section>
+    <output id="result" aria-live="polite">جارٍ التحقق…</output>
+  </main>
+  <script type="module" src="./p01.js"></script>
+</body>
+</html>

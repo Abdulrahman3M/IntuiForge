@@ -1,0 +1,87 @@
+{
+  "phase": "P08",
+  "title": "Visual Engines & Interactive Knowledge Maps",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-19T12:59:23+04:00",
+  "report": "Reports/P08-Completion.md",
+  "features": [
+    {
+      "id": "VIZ-01",
+      "status": "PASS",
+      "implementation": ["packages/visualization-legacy/src/index.js", "packages/visualization-legacy/src/visual-browser.js"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs"],
+      "browserEvidence": "All 14 preserved RichViz visual types rendered from canonical examples in the live Edge audit; all reported ready."
+    },
+    {
+      "id": "VIZ-02",
+      "status": "PASS",
+      "implementation": ["packages/visualization-legacy/src/index.js", "packages/visualization-legacy/src/visual-browser.js"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs"],
+      "browserEvidence": "Mermaid, XYFlow/React Flow, Chart.js, Recharts, ECharts, and Plotly adapters rendered live; all six were ready."
+    },
+    {
+      "id": "VIZ-03",
+      "status": "PASS",
+      "implementation": ["packages/visualization-legacy/src/index.js", "packages/visualization-legacy/src/visual-browser.js"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs"],
+      "browserEvidence": "Seven native SVG chart forms rendered in the browser without adding runtime dependencies."
+    },
+    {
+      "id": "VIZ-04",
+      "status": "PASS",
+      "implementation": ["packages/article/src/index.js", "packages/article/src/index.d.ts", "packages/article-renderer/src/knowledge-map.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs", "tests/browser/p08.js"],
+      "browserEvidence": "Live map exposed three selectable nodes and two edges; pan, pinch, zoom, node summary selection, text alternative, static/interactive toggle and stable route callback next-lesson worked. The initially focused node remained inside the viewport at all tested widths."
+    },
+    {
+      "id": "VIZ-05",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/knowledge-map.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs"],
+      "browserEvidence": "Automatic layout is deterministic; fit and minimap are present. Map coordinates use a physical left/top origin independent of RTL. Initial focus fits after DOM layout; resize refits until the learner changes the view. At 360, 768 and 1440 CSS px the selected node stayed visible without page overflow."
+    },
+    {
+      "id": "VIZ-06",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/visualization-bindings.js", "packages/article-renderer/src/index.js", "packages/state/src/bindings.js", "packages/article/src/index.js"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs", "tests/p04-reactive-state.test.mjs"],
+      "browserEvidence": "A slider changed the bound RichViz value from 12 to 63 in the live article; safe typed paths only, immutable clone, and no prototype traversal. Map labels stayed at 16px and the responsive page had no horizontal overflow."
+    },
+    {
+      "id": "VIZ-07",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/knowledge-map.js", "packages/article-renderer/src/index.js"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs"],
+      "browserEvidence": "Zoom, fit, text, and static/interactive controls worked. The environment denied the native fullscreen request (TypeError: not granted); the tested fallback expanded the map fixed to the viewport, set aria-pressed, then restored the original layout on the next activation. Native browser fullscreen itself remains unverified."
+    },
+    {
+      "id": "VIZ-08",
+      "status": "PASS",
+      "implementation": ["packages/visualization-legacy/src/visual-browser.js", "packages/visualization-legacy/visual-browser.html", "packages/visualization-legacy/src/visual-browser.css", "packages/visualization-legacy/asset-library/README.md"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs"],
+      "browserEvidence": "Search, group filters, 24-item pagination (373 total / 16 pages), metadata, and previews passed for diagrams, adapters, trusted glyphs, application icons, illustrations, and stickers."
+    },
+    {
+      "id": "VIZ-09",
+      "status": "PASS",
+      "implementation": ["packages/visualization-legacy/VENDOR-MANIFEST.md", "packages/visualization-legacy/asset-library/README.md", "packages/visualization-legacy/asset-library/Assets"],
+      "automatedEvidence": ["tests/p08-visual-engines.test.mjs"],
+      "browserEvidence": "Asset catalog preserves 231 GPL-3.0-or-later Captiva application icons in a separate notice boundary and 23 Apache-2.0 illustrations/stickers. Stable IDs, paths, provenance, and hashes passed catalog checks. Vendor code and source ZIP were not edited."
+    }
+  ],
+  "verification": {
+    "focusedCommand": "npm run test:p08",
+    "focusedResult": "9/9 passed",
+    "fullCommand": "npm test",
+    "fullResult": "69/69 passed",
+    "browserFixture": "tests/browser/p08.html",
+    "visualBrowser": "packages/visualization-legacy/visual-browser.html",
+    "responsiveWidthsCssPx": [360, 768, 1440],
+    "browserAudit": "14 types + 6 adapters + 7 native SVG variants ready; 3-node/2-edge map ready; selected node inside viewport at 360/768/1440; zero article mount errors; zero console error/warning messages on the audit or gallery page.",
+    "assetCatalog": {"totalBrowserItems": 373, "diagrams": 14, "engines": 6, "interfaceIcons": 99, "applicationIcons": 231, "illustrations": 12, "stickers": 11},
+    "browserIdentity": "Verified dedicated Edge PID 20076; executable C:\\Program Files (x86)\\Microsoft\\Edge\\Application\\msedge.exe; exact user-data-dir C:\\Users\\Abdoo\\AppData\\Local\\IB-Edge-Debug; loopback 127.0.0.1:9222 listener owned by PID 20076. Direct /json/version returned Edg/155.0.4283.62, protocol 1.3, and a loopback WebSocket debugger endpoint. Live edge://version confirmed active profile C:\\Users\\Abdoo\\AppData\\Local\\IB-Edge-Debug\\Profile. Browser Environment Manager registry label AI-Agent-Browser remained Unknown environment; direct process/CDP evidence independently verified this session.",
+    "screenshotStatus": "PASS — actual, visually reviewed screenshots were saved through the verified dedicated Edge CDP session: Reports/P08-Knowledge-Map-360.png, Reports/P08-Knowledge-Map-768.png, Reports/P08-Knowledge-Map-1440.png, and Reports/P08-Visual-Browser.png.",
+    "cleanup": "Temporary loopback fixture server stopped; task-created tabs closed; original edge://version and example.com tabs preserved.",
+    "phaseGate": "COMPLETE — VIZ-01..VIZ-09 have automated and live browser evidence; responsive screenshots are saved. P09 remains NOT_STARTED and requires a separate explicit owner instruction."
+  }
+}

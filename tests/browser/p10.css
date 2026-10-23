@@ -1,0 +1,11 @@
+:root { color-scheme: light; font-family: "Segoe UI", Tahoma, sans-serif; background: #f2f5f8; color: #182331; }
+* { box-sizing: border-box; }
+body { margin: 0; min-width: 320px; }
+.fixture-header { max-width: 76rem; margin: 0 auto; padding: clamp(1rem, 4vw, 3rem); }
+.fixture-header p { max-width: 68ch; line-height: 1.7; font-size: 1rem; }
+.fixture-header .eyebrow { color: #356b8c; font-weight: 700; letter-spacing: .04em; }
+.fixture-header h1 { font-size: clamp(1.5rem, 3vw, 2.5rem); margin-block: .4em; }
+.fixture-header a { display: inline-flex; align-items: center; min-height: 44px; margin-inline-end: 1rem; color: #075985; }
+#fixture-state { display: inline-block; min-height: 44px; padding: .7rem 0; }
+#fixture-host { max-width: 76rem; margin: 0 auto 4rem; padding: 0 clamp(1rem, 4vw, 3rem); }
+@media (max-width: 40rem) { .fixture-header { padding-block: 1rem; } }

@@ -1,0 +1,22 @@
+{
+  "phase": "P05",
+  "title": "Complete Portable Article Renderer",
+  "status": "COMPLETE",
+  "features": [
+    { "id": "DOC-01", "status": "PASS", "automatedStatus": "PASS", "implementation": ["packages/article-renderer/src/index.js"], "tests": ["tests/p05-article-renderer.test.mjs", "tests/browser/p05.js"], "evidence": ["5/5 focused tests; verified dedicated Edge fixture mount ready with no adapter errors; 360, 768, 1440 screenshots captured inline"] },
+    { "id": "DOC-02", "status": "PASS", "automatedStatus": "PASS", "implementation": ["packages/article-renderer/src/index.js"], "tests": ["tests/p05-article-renderer.test.mjs", "tests/browser/p05.js"], "evidence": ["TOC and inline Markdown link navigated to stable #analysis in the verified browser; section targets overview and analysis confirmed"] },
+    { "id": "DOC-03", "status": "PASS", "automatedStatus": "PASS", "implementation": ["packages/article-renderer/src/index.js", "packages/article/src/schema.js", "packages/article/schema/article-v1.schema.json"], "tests": ["tests/p05-article-renderer.test.mjs", "tests/browser/p05.js"], "evidence": ["Shared state test passes; browser slider updates metric; RTL ArrowLeft selects next tab with visible focus; disclosure rendered"] },
+    { "id": "DOC-04", "status": "PASS", "automatedStatus": "PASS", "implementation": ["packages/article-renderer/src/index.js"], "tests": ["tests/p05-article-renderer.test.mjs", "tests/browser/p05.js"], "evidence": ["Standalone browser fixture mounted ready; host inline styles unchanged; RTL/LTR direction and no-overflow verified"] },
+    { "id": "DOC-05", "status": "PASS", "automatedStatus": "PASS", "implementation": ["packages/article-renderer/src/index.js"], "tests": ["tests/p05-article-renderer.test.mjs"], "evidence": ["Safe inline Markdown, escaped static output and print CSS assertions pass; actual browser print dialog/print preview was not captured"] },
+    { "id": "DOC-06", "status": "PASS", "automatedStatus": "PASS", "implementation": ["packages/article-renderer/src/index.js", "packages/visualization-legacy/src/index.js"], "tests": ["tests/p05-article-renderer.test.mjs", "tests/browser/p05.js"], "evidence": ["Adapter binding updates 20→42 in tests; real RichViz step-guide mounted in Edge with accessible label and caption"] },
+    { "id": "DOC-07", "status": "PASS", "automatedStatus": "PASS", "implementation": ["packages/article/src/index.js", "packages/article-renderer/src/index.js"], "tests": ["tests/p05-article-renderer.test.mjs", "tests/browser/p05.js"], "evidence": ["Internal fragment validation and route-token tests pass; browser inline and TOC links both reached stable #analysis"] }
+  ],
+  "browser": {
+    "CONFIGURED": "PASS",
+    "BROWSER_RUNNING": "PASS",
+    "CDP_VERIFIED": "PASS",
+    "ACTIVE_PROFILE_VERIFIED": "PASS",
+    "NAVIGATION_VERIFIED": "PASS",
+    "SCREENSHOT_VERIFIED": "PASS"
+  }
+}

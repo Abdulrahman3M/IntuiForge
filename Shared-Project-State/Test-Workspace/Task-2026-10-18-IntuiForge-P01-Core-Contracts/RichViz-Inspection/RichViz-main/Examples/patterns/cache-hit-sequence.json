@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "type": "mermaid",
+  "title": "Messages over time: cache hit and miss",
+  "description": "Lifelines, activation and alternative fragments explain who sends each message and in what temporal order. This is a sequence model rather than a process graph.",
+  "dir": "ltr",
+  "data": {
+    "source": "sequenceDiagram\n    participant L as Learner\n    participant A as App\n    participant C as Cache\n    participant D as Database\n    L->>A: Open lesson\n    activate A\n    A->>C: Look up lesson\n    alt Cache hit\n        C-->>A: Cached lesson\n    else Cache miss\n        C-->>A: Not found\n        A->>D: Read lesson\n        D-->>A: Lesson data\n        A->>C: Store lesson\n    end\n    A-->>L: Display lesson\n    deactivate A"
+  }
+}

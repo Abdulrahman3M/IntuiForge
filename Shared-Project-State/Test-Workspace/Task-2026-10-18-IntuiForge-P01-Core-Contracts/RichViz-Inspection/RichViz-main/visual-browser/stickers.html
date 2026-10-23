@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse animated and static sticker assets included with Rich Viz.">
+  <title>Stickers Library · Rich Viz</title><link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../src/gallery/theme.css?v=0.5.0"><link rel="stylesheet" href="browser.css?v=0.5.0">
+</head>
+<body data-asset-page="stickers">
+  <a class="skip-link" href="#asset-results">Skip to stickers</a><div data-site-header></div>
+  <main class="page-main">
+    <section class="intro"><h1>Stickers</h1><p>A separate catalog for sticker files included in Rich Viz.</p><p class="page-copy">Sticker files are indexed independently from icons and illustrations. Their original formats and attribution are retained in each item’s details.</p></section>
+    <div class="library-toolbar"><label><span class="sr-only">Search stickers</span><input id="asset-search" type="search" placeholder="Search sticker names, categories, or paths…" autocomplete="off"></label><label><span class="sr-only">Filter sticker category</span><select id="asset-category"><option value="all">All categories</option></select></label></div>
+    <p class="library-count" id="asset-count" aria-live="polite"></p>
+    <div class="card-grid" id="asset-results" aria-live="polite" aria-busy="true"></div>
+  </main>
+  <div data-site-footer></div>
+  <dialog id="detail" aria-labelledby="detail-title"><div class="dialog-header"><div class="dialog-heading"><p class="eyebrow">Sticker details</p><h2 id="detail-title">Sticker details</h2></div><button class="close" type="button" aria-label="Close details">×</button></div><div id="detail-content"></div></dialog>
+  <script type="module" src="shell.js?v=0.5.0"></script><script type="module" src="asset-pages.js?v=0.5.0"></script>
+</body>
+</html>

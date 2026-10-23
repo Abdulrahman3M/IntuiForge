@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "type": "data-chart",
+  "title": "Parts of a learning resource",
+  "description": "A doughnut encodes mutually exclusive parts of one whole. Illustrative allocation totals 100 percent.",
+  "dir": "ltr",
+  "options": {
+    "engine": "chartjs",
+    "height": 340
+  },
+  "data": {
+    "chart": "doughnut",
+    "labels": [
+      "Explanation",
+      "Worked examples",
+      "Exercises",
+      "Reflection"
+    ],
+    "series": [
+      {
+        "name": "Share",
+        "values": [
+          30,
+          25,
+          35,
+          10
+        ]
+      }
+    ],
+    "axis": {}
+  }
+}

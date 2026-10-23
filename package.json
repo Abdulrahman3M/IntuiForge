@@ -1,0 +1,53 @@
+{
+  "name": "@intuiforge/engine",
+  "version": "1.0.0",
+  "private": true,
+  "license": "Apache-2.0",
+  "type": "module",
+  "description": "Host-agnostic intelligent UI engine workspace",
+  "types": "./packages/core/src/index.d.ts",
+  "files": [
+    "packages/",
+    "docs/P*.md",
+    "docs/release/",
+    "Examples/",
+    "LICENSES/",
+    "LICENSE",
+    "NOTICE",
+    "THIRD-PARTY-NOTICES.md",
+    "README.md"
+  ],
+  "exports": {
+    ".": { "types": "./packages/core/src/index.d.ts", "import": "./packages/core/src/index.js" },
+    "./v1": { "types": "./packages/core/src/index.d.ts", "import": "./packages/core/src/index.js" },
+    "./react-island": { "types": "./packages/react-island/src/index.d.ts", "import": "./packages/react-island/src/index.js" },
+    "./richviz": { "types": "./packages/visualization-legacy/src/index.d.ts", "import": "./packages/visualization-legacy/src/index.js" },
+    "./article": { "types": "./packages/article/src/index.d.ts", "import": "./packages/article/src/index.js" },
+    "./article-renderer": { "types": "./packages/article-renderer/src/index.d.ts", "import": "./packages/article-renderer/src/index.js" },
+    "./authoring": { "types": "./packages/authoring/src/index.d.ts", "import": "./packages/authoring/src/index.js" },
+    "./scientific": { "types": "./packages/scientific-plugins/src/index.d.ts", "import": "./packages/scientific-plugins/src/index.js" },
+    "./design-system": { "types": "./packages/design-system/src/index.d.ts", "import": "./packages/design-system/src/index.js" },
+    "./state": { "types": "./packages/state/src/index.d.ts", "import": "./packages/state/src/index.js" },
+    "./host": { "types": "./packages/host-integration/src/index.d.ts", "import": "./packages/host-integration/src/index.js" },
+    "./article/schema": "./packages/article/schema/article-v1.schema.json"
+  },
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "test:p01": "node --test tests/p01-core.test.mjs",
+    "test:p02": "node --test tests/p02-article.test.mjs",
+    "test:p03": "node --test tests/p03-design-system.test.mjs",
+    "test:p04": "node --test tests/p04-reactive-state.test.mjs",
+    "test:p05": "node --test tests/p05-article-renderer.test.mjs",
+    "test:p06": "node --test tests/p06-*.test.mjs",
+    "test:p07": "node --test tests/p07-*.test.mjs",
+    "test:p08": "node --test tests/p08-*.test.mjs",
+    "test:p09": "node --test tests/p09-scientific.test.mjs",
+    "test:p10": "node --test tests/p10-rich-media.test.mjs",
+    "test:p11": "node --test tests/p11-authoring.test.mjs",
+    "test:p12": "node --test tests/p12-host-integration.test.mjs",
+    "test:p13": "node --test tests/p13-hardening.test.mjs",
+    "test:p14": "node --test tests/p14-showcase.test.mjs",
+    "test:p15": "node --test tests/p15-release.test.mjs",
+    "release:build": "node scripts/build-release.mjs"
+  }
+}

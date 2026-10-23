@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>IntuiForge P03 — Design Reference</title>
+  <style>
+    html { color-scheme: light dark; background: #f0f2ef; color: #17231f; font: 16px/1.6 system-ui, sans-serif; }
+    body { margin: 0; padding: 1rem; }
+    main { max-width: 80rem; margin-inline: auto; }
+    .outside-probe { border-radius: 0 !important; }
+    #gallery-host { min-width: 0; }
+    #result { display: block; margin-block: 1rem; overflow-wrap: anywhere; }
+  </style>
+</head>
+<body>
+  <main>
+    <button class="if-button outside-probe" id="outside-probe" type="button">Host button outside IntuiForge</button>
+    <div id="gallery-host" aria-label="IntuiForge design system reference"></div>
+    <output id="result" aria-live="polite">Waiting for P03 gallery checks…</output>
+  </main>
+  <script type="module" src="./p03.js"></script>
+</body>
+</html>

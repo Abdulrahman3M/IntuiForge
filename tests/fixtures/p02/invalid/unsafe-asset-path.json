@@ -1,0 +1,36 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "unsafe-asset-article",
+  "locale": "en",
+  "dir": "ltr",
+  "title": "Unsafe resource",
+  "summary": "A static article used to verify that asset paths cannot escape their bundle.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "article",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["en"],
+    "provenance": []
+  },
+  "assets": [
+    {
+      "id": "private-document",
+      "url": "../private.txt",
+      "type": "text/plain",
+      "alt": "Private document",
+      "license": "owner-supplied",
+      "provenance": "owner-supplied"
+    }
+  ],
+  "initialState": {},
+  "derived": {},
+  "sections": [
+    {
+      "id": "overview",
+      "heading": "Overview",
+      "blocks": [{"id": "paragraph", "type": "paragraph", "content": "Static explanatory text."}]
+    }
+  ]
+}

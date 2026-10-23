@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Browse all Rich Viz diagram examples, charts, and visualization types.">
+  <title>Diagrams · Rich Viz</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="../src/gallery/theme.css?v=0.5.0">
+  <link rel="stylesheet" href="browser.css?v=0.5.0">
+</head>
+<body>
+  <a class="skip-link" href="#explore">Skip to diagrams</a>
+  <div data-site-header></div>
+  <main>
+    <section class="intro" aria-labelledby="page-title">
+      <h1 id="page-title">Diagrams</h1>
+      <p>Explore reusable flows, charts, timelines and visual patterns from the Rich Viz library.</p>
+    </section>
+    <section class="stats" aria-label="Library summary" id="summary" aria-busy="true"></section>
+    <section id="explore" class="explorer" aria-label="Browse library visuals">
+      <form class="filters" id="filters" role="search">
+        <label class="search-field"><span class="sr-only">Search library visuals</span><svg aria-hidden="true" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search examples, visualization types, or keywords…" autocomplete="off"></label>
+        <label><span class="sr-only">Filter by visualization type</span><select id="type"><option value="all">All visualization types</option></select></label>
+        <label><span class="sr-only">Filter by category</span><select id="category"><option value="all">All categories</option></select></label>
+        <label><span class="sr-only">Sort visuals</span><select id="sort"><option value="featured">Sort by: Featured</option><option value="name">Name A–Z</option><option value="type">Visualization type</option><option value="category">Category</option><option value="reference">Reference ID</option></select></label>
+        <details class="advanced-filter"><summary>More filters</summary><label><span>Behavior</span><select id="behavior"><option value="all">Any behavior</option><option value="static">Static</option><option value="interactive">Interactive</option><option value="statistical">Statistical</option></select></label></details>
+      </form>
+      <div class="result-bar"><p id="result-count" aria-live="polite"></p><button id="clear" class="quiet-button" type="button">Clear filters</button></div>
+      <div id="results" class="card-grid" aria-live="polite" aria-busy="true"></div>
+      <button id="show-more" class="show-more" type="button" hidden>Show more</button>
+    </section>
+  </main>
+  <div data-site-footer></div>
+  <dialog id="detail" aria-labelledby="detail-title"><div class="dialog-header"><div class="dialog-heading"><p class="eyebrow">Visual details</p><h2 id="detail-title">Visual details</h2></div><button class="close" type="button" aria-label="Close details">×</button></div><div id="detail-content"></div></dialog>
+  <script type="module" src="shell.js"></script>
+  <script type="module" src="browser.js"></script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+{
+  "version": 1,
+  "type": "data-chart",
+  "title": "How a study session is composed",
+  "description": "Stacked segments show both total study time and the contribution of each activity. Illustrative minutes; not a learning recommendation.",
+  "dir": "ltr",
+  "options": {
+    "engine": "chartjs",
+    "height": 340
+  },
+  "data": {
+    "chart": "stacked-bar",
+    "labels": [
+      "Monday",
+      "Tuesday",
+      "Wednesday"
+    ],
+    "series": [
+      {
+        "name": "Read",
+        "values": [
+          20,
+          15,
+          10
+        ],
+        "tone": "info"
+      },
+      {
+        "name": "Practice",
+        "values": [
+          15,
+          25,
+          35
+        ],
+        "tone": "teal"
+      },
+      {
+        "name": "Recall",
+        "values": [
+          10,
+          10,
+          15
+        ],
+        "tone": "violet"
+      }
+    ],
+    "axis": {
+      "y": "Minutes"
+    }
+  }
+}

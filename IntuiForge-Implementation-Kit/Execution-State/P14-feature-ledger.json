@@ -1,0 +1,18 @@
+{
+  "phase": "P14",
+  "title": "Premium Intelligent UI Showcase & Visual QA",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-21",
+  "features": [
+    { "id": "SHOW-01", "status": "PASS", "implementation": ["packages/design-system/src/showcase.js"], "automatedEvidence": ["tests/p14-showcase.test.mjs: 1/1 PASS"], "browserEvidence": "Dedicated Edge rendered all five scenes; science, language and knowledge map content and text alternatives are present. Screenshots at 360/768/1440 were visually inspected inline." },
+    { "id": "SHOW-02", "status": "PASS", "implementation": ["tests/browser/p14.html", "tests/browser/p14.js", "tests/browser/p14.css"], "automatedEvidence": ["Dedicated Edge collectEvidence at 320/360/768/1024/1440 px: 16px minimum, no horizontal overflow, no clipped text"], "browserEvidence": "Five viewport screenshots were captured inline and inspected: 360 light RTL focus; 360 dark LTR error/focus; 768 light RTL map/focus; 768 dark LTR error/focus; 1440 light RTL citation dialog/focus. PNG path saves were denied by the browser connector, so no persistent image filenames are claimed." },
+    { "id": "SHOW-03", "status": "PASS", "implementation": ["packages/design-system/src/showcase.js", "tests/browser/p14.js"], "automatedEvidence": ["tests/p14-showcase.test.mjs: 1/1 PASS", "Dedicated Edge runBehaviorChecks: all 8 result fields true"], "browserEvidence": "Science stepper/slider/quiz/dialog focus return, language tabs/matching/flashcard, map node/linear alternative/pinch/wheel zoom, data search/sort/calculator, fallback/retry, theme and locale updates pass." },
+    { "id": "SHOW-04", "status": "PASS", "implementation": ["packages/design-system/src/showcase.js"], "automatedEvidence": ["tests/p14-showcase.test.mjs asserts legacyHtmlStyleReference=false"], "browserEvidence": "Dedicated Edge evidence reports legacyHtmlStyleReference=false; no old HTML visual style was inherited." },
+    { "id": "SHOW-05", "status": "PASS", "implementation": ["packages/design-system/src/showcase.js"], "automatedEvidence": ["tests/p14-showcase.test.mjs asserts proprietaryParity=false"], "browserEvidence": "Dedicated Edge evidence reports proprietaryParity=false; the showcase states it does not claim ChatGPT UI parity." }
+  ],
+  "verification": {
+    "focusedTests": "PASS: node --check packages/design-system/src/showcase.js; node --check tests/browser/p14.js; node --test tests/p14-showcase.test.mjs (1/1); npm test (117/117).",
+    "browser": "PASS: Browser Environment Manager CDP verified Edge 155.0.4283.62 on loopback 9222 with 14 matching processes; edge://version active profile path matched C:\\Users\\Abdoo\\AppData\\Local\\IB-Edge-Debug\\Profile; P14 fixture navigation succeeded. Eight interaction results true; widths 320/360/768/1024/1440 all minVisibleText=16, no horizontal overflow, no clipped text; light RTL and dark LTR; viewport surface covers; console empty; resources loopback-only; inline screenshot matrix captured/inspected.",
+    "phaseGate": "PASS: SHOW-01..SHOW-05 PASS. P14 COMPLETE. P15 remains NOT_STARTED pending explicit owner instruction. Persistent PNG save was denied by the browser screenshot connector; screenshot evidence was returned inline, no disk paths claimed."
+  }
+}

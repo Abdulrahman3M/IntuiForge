@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "type": "pipeline",
+  "title": "Request path through a web service",
+  "description": "A browser request passes the load balancer and the application server, which reads the database and returns a response.",
+  "data": {
+    "returnPath": {
+      "label": "Response"
+    },
+    "stages": [
+      {
+        "title": "Browser",
+        "subtitle": "Sends the request",
+        "icon": "monitor",
+        "tone": "info",
+        "outputs": [
+          "HTTP request"
+        ],
+        "linkLabel": "HTTPS"
+      },
+      {
+        "title": "Load balancer",
+        "subtitle": "Picks a healthy server",
+        "icon": "network",
+        "tone": "violet",
+        "inputs": [
+          "Request"
+        ],
+        "outputs": [
+          "Routed request"
+        ]
+      },
+      {
+        "title": "App server",
+        "subtitle": "Runs the business logic",
+        "icon": "server",
+        "tone": "teal",
+        "active": true,
+        "inputs": [
+          "Routed request"
+        ],
+        "outputs": [
+          "Query"
+        ]
+      },
+      {
+        "title": "Database",
+        "subtitle": "Stores the data",
+        "icon": "database",
+        "tone": "orange",
+        "status": {
+          "text": "Healthy",
+          "state": "ok"
+        },
+        "inputs": [
+          "Query"
+        ]
+      }
+    ]
+  }
+}

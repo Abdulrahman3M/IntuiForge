@@ -1,0 +1,56 @@
+{
+  "phase": "P09",
+  "title": "Scientific Simulation, Maps & 3D",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-20T11:38:33+04:00",
+  "report": "Reports/P09-Completion.md",
+  "features": [
+    { "id": "SCI-01", "status": "PASS", "implementation": ["packages/scientific-plugins/src/simulation.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — deterministic bounds and run/pause/reset coverage", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — simulationRuns, simulationPauses, simulationResets; 8 components mounted; no console errors" },
+    { "id": "SCI-02", "status": "PASS", "implementation": ["packages/scientific-plugins/src/validation.js", "packages/scientific-plugins/src/geometry.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — mesh bounds, finite projection, invalid face rejection and rollback", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — modelLoadsOnRequest, orbit/pan/zoom and loader-failure text fallback; no implicit host call" },
+    { "id": "SCI-03", "status": "PASS", "implementation": ["packages/scientific-plugins/src/validation.js", "packages/scientific-plugins/src/geometry.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — bounded WGS84 projection and article endpoint rejection", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — offline local map/layer/marker behavior, explicit host-load consent and failure preserving local marker; responsive widths 360/768/1440 have no horizontal overflow" },
+    { "id": "SCI-04", "status": "PASS", "implementation": ["packages/scientific-plugins/src/math.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — allowlisted parser/evaluator, bounded deterministic sampling and unsafe syntax rejection", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — live graph updates, x/y units, keyboard inspection, unsafe formula rejection" },
+    { "id": "SCI-05", "status": "PASS", "implementation": ["packages/scientific-plugins/src/simulation.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — bounded deterministic projectile outputs", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — physicsParametersUpdate changes simulation output in the real Edge fixture" },
+    { "id": "SCI-06", "status": "PASS", "implementation": ["packages/scientific-plugins/src/validation.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — atom/bond validation and unresolved bond rejection", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — molecule atom selection, text description and keyboard interaction" },
+    { "id": "SCI-07", "status": "PASS", "implementation": ["packages/scientific-plugins/src/geometry.js", "packages/scientific-plugins/src/validation.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — acyclic hierarchy, cycle rejection and deterministic text alternative", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — anatomy text alternative and keyboard part highlight" },
+    { "id": "SCI-08", "status": "PASS", "implementation": ["packages/scientific-plugins/src/simulation.js", "packages/scientific-plugins/src/renderers.js"], "automatedEvidence": ["tests/p09-scientific.test.mjs — ordered-frame validation, deterministic interpolation and clamping", "npm run test:p09 — 17/17", "npm test — 86/86"], "browserEvidence": "tests/browser/p09.js — seek/reset/speed/play/pause, reduced-motion and lifecycle-disposal checks" }
+  ],
+  "verification": {
+    "preImplementation": {
+      "previousPhase": "P08 COMPLETE; all nine VIZ IDs PASS in P08-feature-ledger.json and Reports/P08-Completion.md",
+      "sourceZipSha256": "6639552377c83b0fa48739c2140b808ff71cecf5ed9bc68c427d4e3b3482eef3",
+      "gitMetadata": "UNAVAILABLE — project root has no .git directory",
+      "baselineTests": {
+        "npm run test:p02": "PASS — 12/12",
+        "npm run test:p05": "PASS — 5/5",
+        "npm run test:p08": "PASS — 9/9"
+      },
+      "browserEnvironment": {
+        "configured": "PASS — Browser Environment Manager registered the authorized legacy AI-Agent-Browser metadata reference; profile data not copied or modified",
+        "browserRunning": "PASS — 12 matching Edge processes; dedicated parent PID 20076",
+        "cdpVerified": "PASS — 127.0.0.1:9222, Edg/155.0.4283.62, Protocol 1.3",
+        "activeProfileVerified": "PASS — mcp__edge_ai edge://version path is under the dedicated IB-Edge-Debug data directory",
+        "navigationVerified": "NOT_RUN",
+        "screenshotVerified": "NOT_RUN",
+        "tool": "mcp__edge_ai"
+      }
+    },
+      "finalExecution": {
+      "date": "2026-10-20",
+        "focusedTests": "PASS — 17/17",
+        "fullTests": "PASS — 86/86",
+        "regressions": { "P02": "PASS — 12/12", "P05": "PASS — 5/5", "P06": "PASS — 13/13", "P07": "PASS — 10/10", "P08": "PASS — 9/9" },
+        "browser": {
+          "configured": "PASS — authorized AI-Agent-Browser metadata registered; dedicated user-data directory only",
+          "browserRunning": "PASS — dedicated Edge process identity and command line verified; loopback listener 127.0.0.1:9222 owned by PID 29508 during viewport follow-up",
+          "cdpVerified": "PASS — mcp__edge_ai connected; Edge 155.0.4283.62 / Chromium 155.0.8059.85 / CDP 1.3",
+          "activeProfileVerified": "PASS — C:\\Users\\Abdoo\\AppData\\Local\\IB-Edge-Debug\\Profile",
+          "navigationVerified": "PASS — dedicated Edge opened live P09 fixture http://127.0.0.1:4173/tests/browser/p09.html and audit variant; live fixture loaded all eight widgets; title IntuiForge P09 — Scientific Components",
+          "screenshotVerified": "PASS — live non-audit fixture (all eight widgets loaded): Reports/P09-Viewport-360.png at 360x800 CSS px (mobile/touch) and Reports/P09-Viewport-768.png at 768x1024 CSS px. innerWidth matched targets; no horizontal overflow; both screenshots visually reviewed.",
+          "tool": "mcp__edge_ai"
+        },
+        "browserAudit": "PASS — 8/8 components, 28/28 interaction assertions, zero audit errors, zero console warnings/errors; Lighthouse accessibility/best-practices/SEO/agentic-browsing 100 each; responsive no-overflow and zero visible text under 16 CSS px at 360/768/1440; offline/local map and reduced-motion checks passed",
+        "sourceZipSha256": "6639552377c83b0fa48739c2140b808ff71cecf5ed9bc68c427d4e3b3482eef3"
+      },
+      "phaseGate": "COMPLETE — SCI-01..SCI-08 pass and required 360/768 viewport screenshots are captured, saved, and visually reviewed. P10 is COMPLETE; P11 remains NOT_STARTED."
+  }
+}

@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="title desc">
+  <title id="title">مقطع توضيحي طبقي</title>
+  <desc id="desc">طبقات لونية متدرجة، مع موضعين يمكن استكشافهما.</desc>
+  <defs>
+    <linearGradient id="field" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#d8edf8"/><stop offset="1" stop-color="#f8e8c7"/></linearGradient>
+  </defs>
+  <rect width="800" height="420" rx="28" fill="url(#field)"/>
+  <path d="M0 295Q160 230 330 295T800 280V420H0Z" fill="#74a99a"/>
+  <path d="M0 350Q190 292 360 350T800 330V420H0Z" fill="#315f73"/>
+  <circle cx="250" cy="165" r="63" fill="#f6bc5e"/>
+  <path d="M520 190h125v100H520z" rx="12" fill="#fff" opacity=".82"/>
+  <text x="582" y="248" font-family="sans-serif" font-size="28" text-anchor="middle" fill="#18354a">Layer</text>
+</svg>

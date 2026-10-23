@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "type": "bar-chart",
+  "title": "Monthly cost by model",
+  "description": "Model C costs the least per month, Model A the most; values are in US dollars.",
+  "options": {
+    "engine": "chartjs"
+  },
+  "data": {
+    "chart": "bar",
+    "unit": "$",
+    "labels": [
+      "Model A",
+      "Model B",
+      "Model C"
+    ],
+    "series": [
+      {
+        "name": "Monthly cost",
+        "values": [
+          240,
+          120,
+          60
+        ]
+      }
+    ],
+    "highlight": 2,
+    "axis": {
+      "y": "Cost (USD)"
+    }
+  }
+}

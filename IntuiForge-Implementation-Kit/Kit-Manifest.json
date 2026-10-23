@@ -1,0 +1,127 @@
+{
+  "project": "IntuiForge — Intelligent UI Engine",
+  "kitVersion": "1.0.0",
+  "created": "2026-10-18",
+  "mode": "STRICT_HANDOFF_ONLY",
+  "sourceZipIncluded": false,
+  "sourceZipNote": "Owner must supply old RichViz ZIP separately; version/content unverified until P00",
+  "sourceRepo": "Abdulrahman3M/RichViz",
+  "skillVersions": {
+    "create-strict-implementation-handoff": "1.4.0",
+    "token-optimization": "1.0.1",
+    "browser-environment-manager": "1.0.1"
+  },
+  "phases": [
+    {
+      "id": "P00",
+      "title": "Source Audit & Non-Destructive Migration",
+      "dependsOn": null,
+      "featureCount": 6
+    },
+    {
+      "id": "P01",
+      "title": "Core Workspace & Extension Contracts",
+      "dependsOn": "P00",
+      "featureCount": 6
+    },
+    {
+      "id": "P02",
+      "title": "Article Format, Schemas & Validation",
+      "dependsOn": "P01",
+      "featureCount": 8
+    },
+    {
+      "id": "P03",
+      "title": "Professional UI Design System",
+      "dependsOn": "P02",
+      "featureCount": 7
+    },
+    {
+      "id": "P04",
+      "title": "Reactive State, Events & Data Binding",
+      "dependsOn": "P03",
+      "featureCount": 7
+    },
+    {
+      "id": "P05",
+      "title": "Complete Portable Article Renderer",
+      "dependsOn": "P04",
+      "featureCount": 7
+    },
+    {
+      "id": "P06",
+      "title": "Smart Tables, Forms & Analysis Widgets",
+      "dependsOn": "P05",
+      "featureCount": 7
+    },
+    {
+      "id": "P07",
+      "title": "Educational Interaction Suite",
+      "dependsOn": "P06",
+      "featureCount": 7
+    },
+    {
+      "id": "P08",
+      "title": "Visual Engines & Interactive Knowledge Maps",
+      "dependsOn": "P07",
+      "featureCount": 9
+    },
+    {
+      "id": "P09",
+      "title": "Scientific Simulation, Maps & 3D",
+      "dependsOn": "P08",
+      "featureCount": 8
+    },
+    {
+      "id": "P10",
+      "title": "Rich Media, References, Math & Code",
+      "dependsOn": "P09",
+      "featureCount": 7
+    },
+    {
+      "id": "P11",
+      "title": "AI Article Authoring Studio & Export",
+      "dependsOn": "P10",
+      "featureCount": 8
+    },
+    {
+      "id": "P12",
+      "title": "Portable Host Integrations & User Progress",
+      "dependsOn": "P11",
+      "featureCount": 7
+    },
+    {
+      "id": "P13",
+      "title": "Hardening, Accessibility, Internationalization & Performance",
+      "dependsOn": "P12",
+      "featureCount": 8
+    },
+    {
+      "id": "P14",
+      "title": "Premium Intelligent UI Showcase & Visual QA",
+      "dependsOn": "P13",
+      "featureCount": 5
+    },
+    {
+      "id": "P15",
+      "title": "Release, Documentation & Final Acceptance",
+      "dependsOn": "P14",
+      "featureCount": 7
+    }
+  ],
+  "featureCount": 114,
+  "requiredFiles": [
+    "00-Start-Here-AR.md",
+    "Agent-Execution-Protocol.md",
+    "Architecture-Blueprint.md",
+    "Article-Format-Contract.md",
+    "Design-Quality-Contract.md",
+    "Browser-Environment-Protocol.md",
+    "Feature-Traceability.csv",
+    "Phase-Dependency-And-Gates.md",
+    "Scripts/Validate-Kit.py",
+    "Scripts/Audit-Zip.py",
+    "Scripts/Print-Phase-Prompt.py",
+    "Report-Template.md"
+  ]
+}

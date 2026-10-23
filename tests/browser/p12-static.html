@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>IntuiForge P12 — No-JavaScript Fallback</title>
+  <style>
+    :root { color-scheme: light dark; font: 16px/1.75 system-ui, sans-serif; background: #f4f6f3; color: #17231f; }
+    @media (prefers-color-scheme: dark) { :root { background: #111a16; color: #e8f0ec; } }
+    body { margin: 0; padding: clamp(.75rem, 3vw, 2rem); }
+    main { max-width: 48rem; margin-inline: auto; }
+    article { padding: clamp(1rem, 4vw, 2rem); border: 1px solid #89958d; border-radius: 1rem; }
+    h1, h2 { line-height: 1.25; }
+  </style>
+</head>
+<body>
+  <main id="host-page">
+    <header><h1>مقال احتياطي</h1><p>يبقى النص متاحًا إن لم يعمل JavaScript.</p></header>
+    <article lang="en" dir="ltr">
+      <h1>Static host fallback</h1>
+      <p>The static narrative remains available when JavaScript is disabled.</p>
+      <h2>Overview</h2>
+      <p>Markdown prose remains readable even without an interactive runtime.</p>
+      <h2>Legacy visualization</h2>
+      <p>A preserved text alternative explains the legacy steps: first read the explanation, then review the result.</p>
+    </article>
+    <footer>Host content and styles remain available without a script.</footer>
+  </main>
+</body>
+</html>

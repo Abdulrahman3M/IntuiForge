@@ -1,0 +1,116 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "science-water-temperature",
+  "locale": "ar",
+  "dir": "rtl",
+  "title": "درجة الحرارة وحالات الماء",
+  "summary": "مثال يربط منزلق الحرارة بقراءة ورسم وشرح واحد. هذا وصف تجريبي غير قابل للتشغيل قبل P02–P06.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "science",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["ar"],
+    "provenance": []
+  },
+  "assets": [],
+  "initialState": {
+    "tempC": {
+      "type": "number",
+      "value": 25,
+      "min": -20,
+      "max": 120,
+      "step": 5
+    }
+  },
+  "derived": {
+    "phase": {
+      "op": "if",
+      "condition": {
+        "op": "lt",
+        "a": {
+          "ref": "tempC"
+        },
+        "b": 0
+      },
+      "then": "تجمد",
+      "else": {
+        "op": "if",
+        "condition": {
+          "op": "lt",
+          "a": {
+            "ref": "tempC"
+          },
+          "b": 100
+        },
+        "then": "سائل",
+        "else": "غليان"
+      }
+    }
+  },
+  "sections": [
+    {
+      "id": "temperature-demo",
+      "heading": "الماء في حالات مختلفة",
+      "blocks": [
+        {
+          "id": "intro",
+          "type": "paragraph",
+          "content": "في نموذج مبسّط وعند الضغط الجوي القياسي، غيّر درجة الحرارة ولاحظ تغيّر عدة مكونات معًا."
+        },
+        {
+          "id": "temp-slider",
+          "type": "slider",
+          "props": {
+            "label": "درجة الحرارة",
+            "min": -20,
+            "max": 120,
+            "step": 5,
+            "unit": "°C"
+          },
+          "bindings": {
+            "value": "tempC"
+          },
+          "events": {
+            "change": {
+              "action": "setState",
+              "variable": "tempC",
+              "valueFrom": "event.value"
+            }
+          }
+        },
+        {
+          "id": "temp-metric",
+          "type": "metric",
+          "props": {
+            "label": "الحرارة",
+            "unit": "°C"
+          },
+          "bindings": {
+            "value": "tempC"
+          }
+        },
+        {
+          "id": "phase-status",
+          "type": "text",
+          "props": {},
+          "bindings": {
+            "text": "phase"
+          }
+        },
+        {
+          "id": "chart",
+          "type": "legacyViz",
+          "props": {
+            "vizType": "bar-chart",
+            "description": "تغير الحالة وفق المدخلات"
+          },
+          "bindings": {
+            "highlightValue": "tempC"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,914 @@
+[
+  {
+    "id": "BASE-01",
+    "phase": "P00",
+    "area": "Preservation",
+    "requirement": "Source ZIP inventory & integrity",
+    "acceptance": "SHA-256, tree, unsafe entry scan and licenses reported before any edit",
+    "status": "PASS"
+  },
+  {
+    "id": "BASE-02",
+    "phase": "P00",
+    "area": "Preservation",
+    "requirement": "RichViz 0.5.0 core preservation",
+    "acceptance": "All existing documented types, examples, APIs and test outcomes inventoried and protected",
+    "status": "PASS"
+  },
+  {
+    "id": "BASE-03",
+    "phase": "P00",
+    "area": "Preservation",
+    "requirement": "Host-agnostic compatibility surface",
+    "acceptance": "Audit a framework-neutral browser mount API and legacy RichViz contract; no specific host is required",
+    "status": "PASS"
+  },
+  {
+    "id": "BASE-04",
+    "phase": "P00",
+    "area": "Preservation",
+    "requirement": "Clean new IntuiForge project",
+    "acceptance": "No source overwritten; import decisions based on audited actual ZIP",
+    "status": "PASS"
+  },
+  {
+    "id": "BASE-05",
+    "phase": "P00",
+    "area": "Preservation",
+    "requirement": "Third-party licenses & offline libraries",
+    "acceptance": "Apache original + each external license provenance/redistribution evaluated",
+    "status": "PASS"
+  },
+  {
+    "id": "BASE-06",
+    "phase": "P00",
+    "area": "Preservation",
+    "requirement": "Agent instructions & pending work",
+    "acceptance": "Nested AGENTS/CLAUDE/Codex instructions and working-tree status recorded",
+    "status": "PASS"
+  },
+  {
+    "id": "CORE-01",
+    "phase": "P01",
+    "area": "Platform",
+    "requirement": "Modular engine kernel & lifecycle",
+    "acceptance": "mount/refresh/dispose with no orphan listeners",
+    "status": "PASS"
+  },
+  {
+    "id": "CORE-02",
+    "phase": "P01",
+    "area": "Platform",
+    "requirement": "Component/extension registry",
+    "acceptance": "Module registers components by stable ID/version/capabilities",
+    "status": "PASS"
+  },
+  {
+    "id": "CORE-03",
+    "phase": "P01",
+    "area": "Platform",
+    "requirement": "Renderer & adapter abstraction",
+    "acceptance": "Vendor engines remain behind isolated adapters",
+    "status": "PASS"
+  },
+  {
+    "id": "CORE-04",
+    "phase": "P01",
+    "area": "Platform",
+    "requirement": "React Islands optional",
+    "acceptance": "Complex React component mounts only inside island; no whole-host React migration",
+    "status": "PASS"
+  },
+  {
+    "id": "CORE-05",
+    "phase": "P01",
+    "area": "Platform",
+    "requirement": "Public package & stable APIs",
+    "acceptance": "Documented versioned exports plus RichViz compatibility façade",
+    "status": "PASS"
+  },
+  {
+    "id": "CORE-06",
+    "phase": "P01",
+    "area": "Platform",
+    "requirement": "Error boundary & capability fallback",
+    "acceptance": "Module failure produces localized useful fallback without page crash",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-01",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "Versioned portable article package",
+    "acceptance": "kind+schemaVersion+id+locale+content/media metadata validated",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-02",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "JSON and Markdown coexistence",
+    "acceptance": "edu-viz and proposed intui-article fence parsed safely",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-03",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "Canonical block/component IDs",
+    "acceptance": "Stable uniqueness across nested article and deep-link targets",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-04",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "Universal input validation",
+    "acceptance": "Strings AND JS objects validated, normalized and rejected on unknown fields",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-05",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "Schema migrations",
+    "acceptance": "Known older article versions migrate losslessly or fail with explicit diagnostic",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-06",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "Accessible text/JS-off fallback contract",
+    "acceptance": "Article has meaningful static accessible narrative",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-07",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "Safe media and resource manifest",
+    "acceptance": "Type/source/provenance/license/integrity/alt metadata",
+    "status": "PASS"
+  },
+  {
+    "id": "ART-08",
+    "phase": "P02",
+    "area": "Content Contract",
+    "requirement": "Source-location errors",
+    "acceptance": "Validation reports paths, severity, fix hints without pretending autocorrect",
+    "status": "PASS"
+  },
+  {
+    "id": "UI-01",
+    "phase": "P03",
+    "area": "Design",
+    "requirement": "Premium GPT-6-inspired Intelligent UI aesthetic",
+    "acceptance": "Coherent high-quality editorial UI; no claim proprietary pixel-perfect cloning",
+    "status": "PASS"
+  },
+  {
+    "id": "UI-02",
+    "phase": "P03",
+    "area": "Design",
+    "requirement": "16px minimum article text",
+    "acceptance": "Article body, cards, captions, tooltips and graph textual labels >=16 CSS px unless owner overrides",
+    "status": "PASS"
+  },
+  {
+    "id": "UI-03",
+    "phase": "P03",
+    "area": "Design",
+    "requirement": "Responsive adaptive layout",
+    "acceptance": "320/360/768/1024/1440 widths no destructive overflow of content",
+    "status": "PASS"
+  },
+  {
+    "id": "UI-04",
+    "phase": "P03",
+    "area": "Design",
+    "requirement": "RTL/LTR plus mixed-script handling",
+    "acceptance": "Arabic content correctly laid out; LTR tech paths preserved",
+    "status": "PASS"
+  },
+  {
+    "id": "UI-05",
+    "phase": "P03",
+    "area": "Design",
+    "requirement": "Theme bridge and isolation",
+    "acceptance": "Light/dark/system and host tokens; no CSS leakage",
+    "status": "PASS"
+  },
+  {
+    "id": "UI-06",
+    "phase": "P03",
+    "area": "Design",
+    "requirement": "Visual hierarchy/spacing/component states",
+    "acceptance": "Tokens, interaction surfaces, focus, hover, disabled, busy and error states",
+    "status": "PASS"
+  },
+  {
+    "id": "UI-07",
+    "phase": "P03",
+    "area": "Design",
+    "requirement": "Design reference gallery",
+    "acceptance": "Representative snapshots with clear pass/fail visual checklist",
+    "status": "PASS"
+  },
+  {
+    "id": "INT-01",
+    "phase": "P04",
+    "area": "Reactive UX",
+    "requirement": "Central scoped reactive store",
+    "acceptance": "One state update propagates to dependent widgets synchronously",
+    "status": "PASS"
+  },
+  {
+    "id": "INT-02",
+    "phase": "P04",
+    "area": "Reactive UX",
+    "requirement": "Declarative events/actions",
+    "acceptance": "Allowlisted setState/nextStep/selectOption/filter/submit/navigate/scroll/expand/media",
+    "status": "PASS"
+  },
+  {
+    "id": "INT-03",
+    "phase": "P04",
+    "area": "Reactive UX",
+    "requirement": "Secure expression engine",
+    "acceptance": "AST/operator allowlist; no eval, new Function or arbitrary injected JS",
+    "status": "PASS"
+  },
+  {
+    "id": "INT-04",
+    "phase": "P04",
+    "area": "Reactive UX",
+    "requirement": "Computed graph & cycles",
+    "acceptance": "Topological computation with cycle failure, dependency isolation and bounds",
+    "status": "PASS"
+  },
+  {
+    "id": "INT-05",
+    "phase": "P04",
+    "area": "Reactive UX",
+    "requirement": "Multi-widget data binding",
+    "acceptance": "Slider changes text, metric and plot from single variable",
+    "status": "PASS"
+  },
+  {
+    "id": "INT-06",
+    "phase": "P04",
+    "area": "Reactive UX",
+    "requirement": "Async data/error semantics",
+    "acceptance": "Idle/loading/ready/empty/error/retry and user consent for external fetches",
+    "status": "PASS"
+  },
+  {
+    "id": "INT-07",
+    "phase": "P04",
+    "area": "Reactive UX",
+    "requirement": "State lifecycle and cleanup",
+    "acceptance": "No leaked subscriptions after navigating or disposing",
+    "status": "PASS"
+  },
+  {
+    "id": "DOC-01",
+    "phase": "P05",
+    "area": "Article Rendering",
+    "requirement": "Full interactive article composition",
+    "acceptance": "Article combines prose, blocks, visuals and active components",
+    "status": "PASS"
+  },
+  {
+    "id": "DOC-02",
+    "phase": "P05",
+    "area": "Article Rendering",
+    "requirement": "TOC/navigation/sections",
+    "acceptance": "In-page navigation, section anchors and ordered chapter sequence",
+    "status": "PASS"
+  },
+  {
+    "id": "DOC-03",
+    "phase": "P05",
+    "area": "Article Rendering",
+    "requirement": "Dynamic/nested/conditional blocks",
+    "acceptance": "Tabs/accordion/groups/conditionals driven from shared state",
+    "status": "PASS"
+  },
+  {
+    "id": "DOC-04",
+    "phase": "P05",
+    "area": "Article Rendering",
+    "requirement": "Portable rendering",
+    "acceptance": "Same article renders in standalone mode and a compatible web host without host-specific content rewrites",
+    "status": "PASS"
+  },
+  {
+    "id": "DOC-05",
+    "phase": "P05",
+    "area": "Article Rendering",
+    "requirement": "Progressive hydration/print fallback",
+    "acceptance": "Content readable before JS and as accessible print/export",
+    "status": "PASS"
+  },
+  {
+    "id": "DOC-06",
+    "phase": "P05",
+    "area": "Article Rendering",
+    "requirement": "Text/media and visualization coexistence",
+    "acceptance": "Graphs and prose exchange state via declared bindings",
+    "status": "PASS"
+  },
+  {
+    "id": "DOC-07",
+    "phase": "P05",
+    "area": "Article Rendering",
+    "requirement": "Stable deep links",
+    "acceptance": "Internal and cross-article links use stable IDs",
+    "status": "PASS"
+  },
+  {
+    "id": "WGT-01",
+    "phase": "P06",
+    "area": "General Widgets",
+    "requirement": "Smart table",
+    "acceptance": "Sort, search, filter, page/virtualize and accessible export",
+    "status": "PASS"
+  },
+  {
+    "id": "WGT-02",
+    "phase": "P06",
+    "area": "General Widgets",
+    "requirement": "Forms/inputs/sliders/selects",
+    "acceptance": "Controlled validation and no arbitrary executable onChange",
+    "status": "PASS"
+  },
+  {
+    "id": "WGT-03",
+    "phase": "P06",
+    "area": "General Widgets",
+    "requirement": "Interactive calculators",
+    "acceptance": "Safe deterministic operators with input bounds/units/results",
+    "status": "PASS"
+  },
+  {
+    "id": "WGT-04",
+    "phase": "P06",
+    "area": "General Widgets",
+    "requirement": "Reactive comparisons",
+    "acceptance": "Side-by-side/overlay conditional comparison bound to data",
+    "status": "PASS"
+  },
+  {
+    "id": "WGT-05",
+    "phase": "P06",
+    "area": "General Widgets",
+    "requirement": "Buttons/menus/tooltips/dialogs",
+    "acceptance": "Semantics, gestures, keyboard, focus and accessible labels",
+    "status": "PASS"
+  },
+  {
+    "id": "WGT-06",
+    "phase": "P06",
+    "area": "General Widgets",
+    "requirement": "Data filters and KPI widgets",
+    "acceptance": "Filters update metrics and plots together",
+    "status": "PASS"
+  },
+  {
+    "id": "WGT-07",
+    "phase": "P06",
+    "area": "General Widgets",
+    "requirement": "Stateful tabs/accordion/cards",
+    "acceptance": "Existing components reused, extended and accessible",
+    "status": "PASS"
+  },
+  {
+    "id": "EDU-01",
+    "phase": "P07",
+    "area": "Education",
+    "requirement": "Interactive stepper",
+    "acceptance": "Switch step updates text/media/graph/progress linked by stable ID",
+    "status": "PASS"
+  },
+  {
+    "id": "EDU-02",
+    "phase": "P07",
+    "area": "Education",
+    "requirement": "Quiz/scoring/explanations",
+    "acceptance": "Multiple question types, deterministic scoring, correct feedback",
+    "status": "PASS"
+  },
+  {
+    "id": "EDU-03",
+    "phase": "P07",
+    "area": "Education",
+    "requirement": "Flashcards",
+    "acceptance": "Flip/review/keyboard support and optional adapter persistence",
+    "status": "PASS"
+  },
+  {
+    "id": "EDU-04",
+    "phase": "P07",
+    "area": "Education",
+    "requirement": "Interactive timelines",
+    "acceptance": "Navigate dates/events and synchronize media/visuals",
+    "status": "PASS"
+  },
+  {
+    "id": "EDU-05",
+    "phase": "P07",
+    "area": "Education",
+    "requirement": "Drag-drop and matching",
+    "acceptance": "Pointer + keyboard equivalent, reorder and match validation",
+    "status": "PASS"
+  },
+  {
+    "id": "EDU-06",
+    "phase": "P07",
+    "area": "Education",
+    "requirement": "Learning progress",
+    "acceptance": "Per session stable progress model; user save adapter optional",
+    "status": "PASS"
+  },
+  {
+    "id": "EDU-07",
+    "phase": "P07",
+    "area": "Education",
+    "requirement": "Interactive guided comparisons",
+    "acceptance": "Learner explores scenarios and sees rationale",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-01",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Existing 14 visual types",
+    "acceptance": "All types compatible or explicit equivalent/fallback with regression evidence",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-02",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Six external chart/diagram engines",
+    "acceptance": "Mermaid, XYFlow, Chart.js, Recharts, ECharts, Plotly adapters supported",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-03",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Native SVG renderer",
+    "acceptance": "Accessible dependency-free fallback for supported chart types",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-04",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Interactive knowledge-map article",
+    "acceptance": "Pan/zoom/pinch, nodes, edges, node summaries, article deep links",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-05",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Large canvas/automatic layout",
+    "acceptance": "Viewport, optional minimap, scalable node layout & zoom fit",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-06",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Rich dashboards & diagrams",
+    "acceptance": "Infographics, graphs, KPI views responsive and state-bindable",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-07",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Shared control bar",
+    "acceptance": "Zoom, Fit, Fullscreen, static/interactive toggles, text alt where supported",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-01",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "2D simulations",
+    "acceptance": "Bounded deterministic simulation with run/pause/reset",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-02",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "3D viewer/models",
+    "acceptance": "Orbit/pan/zoom, loading/fallback, safe model formats/assets",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-03",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "Geographic map extension",
+    "acceptance": "Layers, markers, interaction, offline/online graceful behavior",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-04",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "Mathematical graphs",
+    "acceptance": "Function/procedure input safe parsing; live graphs and units",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-05",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "Physics learning modules",
+    "acceptance": "Representative parameter-driven experiment",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-06",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "Chemistry/molecule viewer",
+    "acceptance": "Molecular structure with labels and accessible description",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-07",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "Biology/anatomy viewer",
+    "acceptance": "Hierarchical parts/highlighting and 2D text alternative",
+    "status": "PASS"
+  },
+  {
+    "id": "SCI-08",
+    "phase": "P09",
+    "area": "Science & Spatial",
+    "requirement": "Animation timeline controller",
+    "acceptance": "Playback, seek, speed, pause, reduced motion",
+    "status": "PASS"
+  },
+  {
+    "id": "MED-01",
+    "phase": "P10",
+    "area": "Media & Editorial",
+    "requirement": "Audio/video playback",
+    "acceptance": "Captions/transcripts and accessible controls",
+    "status": "PASS"
+  },
+  {
+    "id": "MED-02",
+    "phase": "P10",
+    "area": "Media & Editorial",
+    "requirement": "Media speed control",
+    "acceptance": "Icon-only with clear label, accessible list of speeds and keyboard support",
+    "status": "PASS"
+  },
+  {
+    "id": "MED-03",
+    "phase": "P10",
+    "area": "Media & Editorial",
+    "requirement": "Annotated images/scenes",
+    "acceptance": "Interactive hotspots and description alternatives",
+    "status": "PASS"
+  },
+  {
+    "id": "MED-04",
+    "phase": "P10",
+    "area": "Media & Editorial",
+    "requirement": "Scientific citations/footnotes",
+    "acceptance": "Numbered references, links, sources and focus behavior",
+    "status": "PASS"
+  },
+  {
+    "id": "MED-05",
+    "phase": "P10",
+    "area": "Media & Editorial",
+    "requirement": "Mathematics notation",
+    "acceptance": "Accessible math markup and error behavior",
+    "status": "PASS"
+  },
+  {
+    "id": "MED-06",
+    "phase": "P10",
+    "area": "Media & Editorial",
+    "requirement": "Code and technical blocks",
+    "acceptance": "Syntax-safe display, copy action, no execution of untrusted code",
+    "status": "PASS"
+  },
+  {
+    "id": "MED-07",
+    "phase": "P10",
+    "area": "Media & Editorial",
+    "requirement": "Image/media asset management",
+    "acceptance": "Relative-path resolution, licensing, integrity, offline resources",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-01",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "AI-exportable declarative article format",
+    "acceptance": "ChatGPT can author spec offline; actual behavior rendered by IntuiForge",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-02",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "Import/export roundtrip",
+    "acceptance": "Stable IDs, same semantics, lossless supported fields and version checks",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-03",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "Visual Article Editor",
+    "acceptance": "Edit blocks and data without hand-changing JS source",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-04",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "Live Preview",
+    "acceptance": "Same renderer preview with safe draft isolation",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-05",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "Component Inspector",
+    "acceptance": "Validated props, binding viewer, event preview and errors",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-06",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "Template library",
+    "acceptance": "Multi-use article/quiz/map/science templates with valid schemas",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-07",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "Validation error/report before publish",
+    "acceptance": "Invalid content blocked and exact corrective messages",
+    "status": "PASS"
+  },
+  {
+    "id": "AI-08",
+    "phase": "P11",
+    "area": "AI Authoring",
+    "requirement": "Undo/redo and draft handling",
+    "acceptance": "Safe edit history and no published-data mutation until explicit action",
+    "status": "PASS"
+  },
+  {
+    "id": "HOST-01",
+    "phase": "P12",
+    "area": "Integration",
+    "requirement": "Generic host integration contract",
+    "acceptance": "Mounts through the public browser API with explicit host capabilities; no CMS/framework dependency",
+    "status": "PASS"
+  },
+  {
+    "id": "HOST-02",
+    "phase": "P12",
+    "area": "Integration",
+    "requirement": "Any-host portable integration",
+    "acceptance": "Vanilla DOM API; no mandatory site framework conversion",
+    "status": "PASS"
+  },
+  {
+    "id": "HOST-03",
+    "phase": "P12",
+    "area": "Integration",
+    "requirement": "Legacy RichViz/edu-viz adapter",
+    "acceptance": "Existing markdown visualizations continue to render",
+    "status": "PASS"
+  },
+  {
+    "id": "HOST-04",
+    "phase": "P12",
+    "area": "Integration",
+    "requirement": "Optional progress persistence adapter",
+    "acceptance": "Per-user data outside article and not in RichViz content source",
+    "status": "PASS"
+  },
+  {
+    "id": "HOST-05",
+    "phase": "P12",
+    "area": "Integration",
+    "requirement": "React island lifecycle",
+    "acceptance": "Uses React only when required within contained component",
+    "status": "PASS"
+  },
+  {
+    "id": "HOST-06",
+    "phase": "P12",
+    "area": "Integration",
+    "requirement": "Host-owned application services",
+    "acceptance": "The host retains its CMS, storage, search, identity and user data; IntuiForge does not assume or duplicate them",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-01",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "Security validation all pathways",
+    "acceptance": "Untrusted JSON+object+Markdown/plugin/media tested",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-02",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "CSP, sanitization, sandbox, URL policies",
+    "acceptance": "No inline script injection, unsafe SVG/HTML or arbitrary code execution",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-03",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "Resource caps & performance",
+    "acceptance": "Large nodes/tables/3D bounded with abort/dispose and smooth UX",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-04",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "Accessibility tests",
+    "acceptance": "WCAG 2.2 AA target, keyboard, semantics, visible focus, text alternatives",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-05",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "Localization, Arabic & bidirectional text",
+    "acceptance": "Correct RTL/LTR, Arabic labels and English mixed tokens",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-06",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "Offline and lazy-load",
+    "acceptance": "Local assets and robust offline fallback; no CDN hard dependency",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-07",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "Automated focused & E2E tests",
+    "acceptance": "Unit, integration, visual, regression, perf, error-state evidence",
+    "status": "PASS"
+  },
+  {
+    "id": "NFR-08",
+    "phase": "P13",
+    "area": "Nonfunctional",
+    "requirement": "Secure browser profile testing",
+    "acceptance": "Use browser-environment-manager dedicated Edge CDP, never personal profile",
+    "status": "PASS"
+  },
+  {
+    "id": "SHOW-01",
+    "phase": "P14",
+    "area": "Experience",
+    "requirement": "Premium article showcase",
+    "acceptance": "Science + language + knowledge map examples polished and complete",
+    "status": "PASS"
+  },
+  {
+    "id": "SHOW-02",
+    "phase": "P14",
+    "area": "Experience",
+    "requirement": "Visual regression reference",
+    "acceptance": "Screenshots at sizes/themes/RTL including focus and error states",
+    "status": "PASS"
+  },
+  {
+    "id": "SHOW-03",
+    "phase": "P14",
+    "area": "Experience",
+    "requirement": "Interactive GPT-6-style semantics",
+    "acceptance": "Actual working controls, not merely HTML illustration",
+    "status": "PASS"
+  },
+  {
+    "id": "SHOW-04",
+    "phase": "P14",
+    "area": "Experience",
+    "requirement": "Reject previous HTML style",
+    "acceptance": "Old HTML used for content provenance only; not layout or CSS target",
+    "status": "PASS"
+  },
+  {
+    "id": "SHOW-05",
+    "phase": "P14",
+    "area": "Experience",
+    "requirement": "No false equivalence claims",
+    "acceptance": "Cannot copy proprietary ChatGPT UI runtime or promise pixel-exact parity",
+    "status": "PASS"
+  },
+  {
+    "id": "REL-01",
+    "phase": "P15",
+    "area": "Delivery",
+    "requirement": "Reproducible package",
+    "acceptance": "Versioned outputs install/run offline where supported",
+    "status": "PASS"
+  },
+  {
+    "id": "REL-02",
+    "phase": "P15",
+    "area": "Delivery",
+    "requirement": "Migration/rollback",
+    "acceptance": "Non-destructive change and rollback instructions verified",
+    "status": "PASS"
+  },
+  {
+    "id": "REL-03",
+    "phase": "P15",
+    "area": "Delivery",
+    "requirement": "License compliance",
+    "acceptance": "Third-party bundled licenses and attribution retained",
+    "status": "PASS"
+  },
+  {
+    "id": "REL-04",
+    "phase": "P15",
+    "area": "Delivery",
+    "requirement": "Complete traceability audit",
+    "acceptance": "Every feature has executable test evidence or explicit unresolved status",
+    "status": "PASS"
+  },
+  {
+    "id": "REL-05",
+    "phase": "P15",
+    "area": "Delivery",
+    "requirement": "Release documentation",
+    "acceptance": "Quick start, architecture, API, component gallery, samples, migration",
+    "status": "PASS"
+  },
+  {
+    "id": "REL-06",
+    "phase": "P15",
+    "area": "Delivery",
+    "requirement": "Final project governance & logs",
+    "acceptance": "Follow canonical CID/NID/RID/version/build rules if present",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-08",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Visual Browser and asset catalogs",
+    "acceptance": "Preserve and extend searchable/previewable diagram/icon/SVG/sticker galleries with stable IDs/metadata",
+    "status": "PASS"
+  },
+  {
+    "id": "VIZ-09",
+    "phase": "P08",
+    "area": "Visualization",
+    "requirement": "Original + third-party icon provenance",
+    "acceptance": "Preserve distinct interface glyphs, application icons, diagrams, illustrations and sticker catalogs with notices",
+    "status": "PASS"
+  },
+  {
+    "id": "HOST-07",
+    "phase": "P12",
+    "area": "Integration",
+    "requirement": "First install and differential update workflow",
+    "acceptance": "Existing host adapters and installed RichViz copies can upgrade safely; reproducible no-destructive-path rollback",
+    "status": "PASS"
+  },
+  {
+    "id": "REL-07",
+    "phase": "P15",
+    "area": "Delivery",
+    "requirement": "Local visual gallery launcher and docs",
+    "acceptance": "Keep working visual browser/server.py/Start Website.bat where present; test actual Windows launch",
+    "status": "PASS"
+  }
+]

@@ -1,0 +1,15 @@
+{
+  "phase": "P04",
+  "sourceZip": "Input/RichViz v0.5.0.zip",
+  "sourceZipSha256": "6639552377c83b0fa48739c2140b808ff71cecf5ed9bc68c427d4e3b3482eef3",
+  "generatedAt": "2026-10-18",
+  "features": [
+    { "id": "INT-01", "status": "PASS", "evidence": ["packages/state/src/store.js", "tests/p04-reactive-state.test.mjs#INT-01", "npm run test:p04"] },
+    { "id": "INT-02", "status": "PASS", "evidence": ["packages/state/src/actions.js", "packages/article/src/schema.js", "packages/article/src/index.js", "tests/p04-reactive-state.test.mjs#INT-02"] },
+    { "id": "INT-03", "status": "PASS", "evidence": ["packages/state/src/expressions.js", "tests/p04-reactive-state.test.mjs#INT-03"] },
+    { "id": "INT-04", "status": "PASS", "evidence": ["packages/state/src/store.js", "tests/p04-reactive-state.test.mjs#INT-04"] },
+    { "id": "INT-05", "status": "PASS", "evidence": ["packages/state/src/bindings.js", "tests/p04-reactive-state.test.mjs#INT-05"] },
+    { "id": "INT-06", "status": "PASS", "evidence": ["packages/state/src/resources.js", "tests/p04-reactive-state.test.mjs#INT-06"] },
+    { "id": "INT-07", "status": "PASS", "evidence": ["packages/state/src/store.js", "packages/state/src/bindings.js", "packages/state/src/resources.js", "tests/p04-reactive-state.test.mjs#INT-07"] }
+  ]
+}

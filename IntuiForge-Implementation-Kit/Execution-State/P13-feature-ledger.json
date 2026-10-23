@@ -1,0 +1,92 @@
+{
+  "phase": "P13",
+  "title": "Hardening, Accessibility, Internationalization & Performance",
+  "status": "COMPLETE",
+  "updatedAt": "2026-10-20",
+  "features": [
+    {
+      "id": "NFR-01",
+      "status": "PASS",
+      "implementation": ["packages/article/src/index.js", "packages/core/src/registry.js", "packages/visualization-legacy/src/index.js"],
+      "automatedEvidence": ["npm run test:p13: 5/5; registry, revoked proxy, aggregate string, Markdown line and RichViz object/accessor cases", "npm test: 116/116"],
+      "browserEvidence": "PASS: the validated Arabic article and installed RichViz adapter mounted from local declarative data; no article-supplied code was executed."
+    },
+    {
+      "id": "NFR-02",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/rich-media.js", "packages/article-renderer/src/index.js", "packages/core/src/fallback.js", "packages/core/src/engine.js", "packages/design-system/src/gallery.js", "packages/authoring/src/studio.js", "packages/visualization-legacy/src/index.js"],
+      "automatedEvidence": ["tests/p13-hardening.test.mjs: inert RichViz serialization, same-origin SVG compatibility and bounded media pipeline", "tests/p10-rich-media.test.mjs: supplied SRI verification and safe asset fallback", "npm test: 116/116"],
+      "browserEvidence": "PASS: strict script-src 'self' blocked an injected inline script; the safe local SRI SVG loaded; unsafe SVG was rejected with and without SRI; nonce-bearing first-party styles loaded in article, gallery, fallback and authoring roots."
+    },
+    {
+      "id": "NFR-03",
+      "status": "PASS",
+      "implementation": ["packages/article/src/index.js", "packages/article-renderer/src/rich-media.js", "packages/visualization-legacy/src/index.js"],
+      "automatedEvidence": ["tests/p13-hardening.test.mjs: parser/object budgets; streamed and declared oversize media responses are cancelled", "tests/p01-core.test.mjs and tests/p04-reactive-state.test.mjs: disposal, abort and stale resource lifecycle regression", "npm test: 116/116"],
+      "browserEvidence": "PASS: final dedicated Edge trace at 1x CPU and unthrottled network recorded LCP 164 ms and CLS 0.00; RichViz, map and media all mounted within bounded fixtures."
+    },
+    {
+      "id": "NFR-04",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/index.js", "packages/visualization-legacy/src/richviz-accessibility.css", "tests/browser/p13.js"],
+      "automatedEvidence": ["npm test: 116/116, including keyboard, semantic alternatives and component lifecycle regressions"],
+      "browserEvidence": "PASS: mobile Lighthouse 52/52, Accessibility 100, Best Practices 100, SEO 100, Agentic Browsing 100; keyboard focus was visible; text and RichViz tooltip measured 16 px; RichViz touch buttons measured at least 24 px; no overflow at 320/360/768/1024/1440 px."
+    },
+    {
+      "id": "NFR-05",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/index.js", "tests/browser/p13.js"],
+      "automatedEvidence": ["npm test: existing localization, fallback and directionality regressions remain green (116/116)"],
+      "browserEvidence": "PASS: article mounted Arabic RTL with a mixed English token isolated in bdi; a second live English article mounted LTR and preserved its embedded Arabic token."
+    },
+    {
+      "id": "NFR-06",
+      "status": "PASS",
+      "implementation": ["packages/article-renderer/src/rich-media.js", "packages/visualization-legacy/src/index.js", "tests/browser/p13.js"],
+      "automatedEvidence": ["tests/p13-hardening.test.mjs: local SVG manifests remain schema-compatible", "tests/p10-rich-media.test.mjs: local media, SRI failure fallback and resource cleanup", "npm test: 116/116"],
+      "browserEvidence": "PASS: all 57 requests in the final P13 session used project loopback; no external resource requests or CDN dependency appeared. Under Offline emulation the mounted article and local media remained usable, and a missing local image produced a readable alternative without exposing its URL."
+    },
+    {
+      "id": "NFR-07",
+      "status": "PASS",
+      "implementation": ["tests/p13-hardening.test.mjs", "tests/browser/p13.html", "tests/browser/p13.css", "tests/browser/p13.js", "tests/browser/p13-unsafe.svg", "tests/browser-server.mjs", "package.json"],
+      "automatedEvidence": ["npm run test:p13: 5/5", "npm test: 116/116", "browser P05 compatibility regression: all 7 behavior checks pass"],
+      "browserEvidence": "PASS: live CSP/security, image-integrity, unsafe-SVG, accessibility, keyboard, RTL/LTR, mobile viewport, offline and error fallback evidence collected; full-page screenshot was returned inline and visually inspected. Lighthouse and performance trace passed."
+    },
+    {
+      "id": "NFR-08",
+      "status": "PASS",
+      "implementation": ["No project browser-management code added; verified through installed Browser Environment Manager and authorized mcp__edge_ai tool"],
+      "automatedEvidence": ["No browser identity automation is required in npm tests; the dedicated browser preflight is separately recorded below."],
+      "browserEvidence": "PASS: CONFIGURED, BROWSER_RUNNING, CDP_VERIFIED, ACTIVE_PROFILE_VERIFIED, NAVIGATION_VERIFIED and SCREENSHOT_VERIFIED. Edge 155.0.4283.62 PID 29508; CDP 127.0.0.1:9222; active profile C:\\Users\\Abdoo\\AppData\\Local\\IB-Edge-Debug\\Profile; P13 loaded in authorized mcp__edge_ai. Installed manager skill is 1.1.0; handoff requested unavailable 1.0.1."
+    }
+  ],
+  "verification": {
+    "baseline": "PASS: P12 COMPLETE; original RichViz v0.5.0 ZIP SHA-256 6639552377C83B0FA48739C2140B808FF71CECF5ED9BC68C427D4E3B3482EEF3; CP-001 baseline covers 106 files; no Git metadata.",
+    "finalExecution": {
+      "date": "2026-10-20",
+      "focusedTests": "PASS: npm run test:p13, 5/5.",
+      "fullTests": "PASS: npm test, 116/116.",
+      "regressions": "PASS: full suite includes P01-P12; P05 browser compatibility assertions 7/7.",
+      "browserIdentity": {
+        "tool": "mcp__edge_ai",
+        "configured": "PASS: Browser Environment Manager registered the authorized dedicated AI-Agent-Browser metadata reference.",
+        "process": "PASS: Edge 155.0.4283.62 PID 29508.",
+        "cdp": "PASS: dedicated loopback CDP 127.0.0.1:9222 verified for the running Edge process.",
+        "activeProfile": "PASS: edge://version showed C:\\Users\\Abdoo\\AppData\\Local\\IB-Edge-Debug\\Profile.",
+        "navigation": "PASS: dedicated Edge loaded http://127.0.0.1:4173/tests/browser/p13.html.",
+        "screenshot": "PASS: full-page 320px P13 screenshot was captured inline and visually inspected; persistent file saving was unavailable through the browser connector."
+      },
+      "browserAccessibility": "PASS: Lighthouse 52/52 with zero failed audits; all four reported categories scored 100.",
+      "browserResponsive": "PASS: 320/360/768/1024/1440 px; no horizontal overflow; minimum visible text 16 px; RichViz button target minimum 24 px.",
+      "browserLocalization": "PASS: Arabic RTL and English LTR; mixed direction isolation present in both.",
+      "browserSecurity": "PASS: strict CSP blocked dynamic inline script; SRI verified safe SVG; unsafe SVG was rejected both with and without SRI; styles received CSP nonce; no unsafe external resource request.",
+      "offline": "PASS: mounted page remained usable with network Offline emulation; local image remained loaded and map interaction worked.",
+      "performance": "PASS: LCP 164 ms, CLS 0.00 at 1x CPU and unthrottled network; no field CrUX data exists for the local fixture.",
+      "networkAndConsole": "PASS: 57 requests were loopback-only; no console errors before the intentional CSP probe. The probe produced the expected CSP blocked-execution error.",
+      "preservation": "PASS: source ZIP hash unchanged; all 106 baseline paths exist; baseline mismatches are intended P13 source/test/fixture/ledger/state updates; all 171 vendor RichViz files match the ZIP byte for byte and notices remain unchanged.",
+      "limitations": ["The browser screenshot is inline evidence; the connector rejected saving it into the workspace, so no persistent screenshot path is claimed.", "No Git repository, branch, commit, build ID or release metadata exists."],
+      "phaseGate": "COMPLETE: NFR-01..NFR-08 all PASS. Stop after P13; P14 and P15 remain NOT_STARTED."
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "kind": "intui.article",
+  "schemaVersion": "1.0.0",
+  "id": "scientific-extension-demo",
+  "locale": "ar",
+  "dir": "rtl",
+  "title": "مختبر العلوم التفاعلي",
+  "summary": "أمثلة مستقلة لمحاكاة الحركة والنماذج الجغرافية والرياضية والكيميائية والتشريحية.",
+  "metadata": {
+    "status": "draft",
+    "contentType": "article",
+    "sources": [],
+    "canonicalReferences": [],
+    "supportedLocales": ["ar"],
+    "provenance": []
+  },
+  "assets": [],
+  "initialState": {},
+  "derived": {},
+  "sections": [
+    {
+      "id": "science-lab",
+      "heading": "التجارب والنماذج",
+      "blocks": [
+        {
+          "id": "projectile-simulation",
+          "type": "simulator2d",
+          "props": {
+            "label": "حركة المقذوف",
+            "description": "محاكاة حتمية ثنائية الأبعاد لمسار مقذوف تحت تأثير الجاذبية.",
+            "kind": "projectile",
+            "speed": 24,
+            "angleDeg": 42,
+            "gravity": 9.81,
+            "durationSeconds": 8
+          }
+        },
+        {
+          "id": "tetrahedron-model",
+          "type": "model3d",
+          "props": {
+            "label": "نموذج رباعي الوجوه",
+            "description": "شبكة مثلثية محلية قابلة للتدوير والتحريك والتكبير.",
+            "model": {
+              "format": "intuiforge.mesh.v1",
+              "vertices": [[-1, -1, -1], [1, -1, -1], [0, 1, -1], [0, 0, 1]],
+              "faces": [[0, 1, 2], [0, 3, 1], [1, 3, 2], [2, 3, 0]]
+            }
+          }
+        },
+        {
+          "id": "local-map",
+          "type": "map",
+          "props": {
+            "label": "خريطة بيانات محلية",
+            "description": "خريطة مبسطة لطبقة ساحلية وموقع دبي دون طلب بلاطات أو شبكة خارجية.",
+            "bounds": { "west": 34, "south": 20, "east": 58, "north": 34 },
+            "layers": [
+              {
+                "id": "coastline",
+                "label": "خط ساحلي توضيحي",
+                "visible": true,
+                "features": [{ "type": "LineString", "coordinates": [[35, 22], [44, 28], [56, 24]] }]
+              }
+            ],
+            "markers": [{ "id": "dubai", "label": "دبي", "coordinates": [55.27, 25.2], "description": "نقطة تجريبية ضمن بيانات المقال." }]
+          }
+        },
+        {
+          "id": "sine-graph",
+          "type": "mathGraph",
+          "props": {
+            "label": "الدالة الجيبية",
+            "description": "رسم تفاعلي لصيغة رياضية آمنة قابلة للتعديل.",
+            "formula": "sin(x)",
+            "xMin": -3.14,
+            "xMax": 3.14,
+            "xUnit": "راديان",
+            "yUnit": "قيمة"
+          }
+        },
+        {
+          "id": "projectile-experiment",
+          "type": "physicsExperiment",
+          "props": {
+            "label": "تجربة مدى المقذوف",
+            "description": "عدّل السرعة والزاوية والجاذبية لمقارنة النتائج الفيزيائية.",
+            "kind": "projectile",
+            "speed": 20,
+            "angleDeg": 45,
+            "gravity": 9.81
+          }
+        },
+        {
+          "id": "water-molecule",
+          "type": "chemistry",
+          "props": {
+            "label": "جزيء الماء",
+            "description": "ذرتا هيدروجين مرتبطتان بذرة أكسجين واحدة.",
+            "formula": "H₂O",
+            "atoms": [
+              { "id": "oxygen", "element": "O", "label": "أكسجين", "x": 0, "y": 0 },
+              { "id": "hydrogen-a", "element": "H", "label": "هيدروجين أ", "x": -1, "y": 1 },
+              { "id": "hydrogen-b", "element": "H", "label": "هيدروجين ب", "x": 1, "y": 1 }
+            ],
+            "bonds": [{ "source": "oxygen", "target": "hydrogen-a" }, { "source": "oxygen", "target": "hydrogen-b" }]
+          }
+        },
+        {
+          "id": "anatomy-regions",
+          "type": "anatomy",
+          "props": {
+            "label": "مناطق تشريحية مبسطة",
+            "description": "اختر منطقة من الرسم أو من القائمة النصية لعرض وصفها.",
+            "viewBox": { "width": 100, "height": 140 },
+            "parts": [
+              { "id": "body", "label": "الجذع", "description": "المنطقة المركزية من الجسم.", "shape": { "type": "ellipse", "cx": 50, "cy": 78, "rx": 25, "ry": 45 } },
+              { "id": "head", "label": "الرأس", "description": "المنطقة العلوية من المخطط.", "parentId": "body", "shape": { "type": "circle", "cx": 50, "cy": 23, "r": 13 } }
+            ]
+          }
+        },
+        {
+          "id": "motion-timeline",
+          "type": "animationTimeline",
+          "props": {
+            "label": "الخط الزمني للحركة",
+            "description": "شغّل الحركة أو أوقفها أو انتقل إلى إطار زمني محدد.",
+            "durationMs": 2400,
+            "frames": [
+              { "id": "start", "label": "البداية", "timeMs": 0, "value": 0 },
+              { "id": "middle", "label": "المنتصف", "timeMs": 1200, "value": 50 },
+              { "id": "finish", "label": "النهاية", "timeMs": 2400, "value": 100 }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

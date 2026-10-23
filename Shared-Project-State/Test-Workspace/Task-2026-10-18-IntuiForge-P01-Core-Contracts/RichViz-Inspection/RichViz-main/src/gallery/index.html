@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en" dir="ltr" data-theme="light">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rich Visualization Library — Rich Viz Gallery</title>
+  <meta name="description" content="QA and reference gallery for Rich Viz visualizations, engines, themes and languages.">
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="theme.css">
+  <link rel="stylesheet" href="gallery.css">
+  <link rel="stylesheet" href="../../visual-browser/browser.css">
+</head>
+<body>
+  <a class="skip-link" href="#examples">Skip to examples</a>
+  <div data-site-header></div>
+  <h1 class="gallery-heading">Renderer and theme reference</h1>
+  <form class="gallery-controls" aria-label="Gallery controls" onsubmit="return false">
+      <label>Theme <select id="theme"><option value="light">Light</option><option value="paper">Paper</option><option value="white">White</option><option value="dark">Dark</option></select></label>
+      <label>Language <select id="language"><option value="en">English (LTR)</option><option value="ar">العربية (RTL)</option><option value="ru">Русский (LTR)</option></select></label>
+      <label>Chart engine <select id="engine"><option value="">As authored</option><option value="chartjs">Chart.js</option><option value="recharts">Recharts</option><option value="echarts">ECharts</option><option value="plotly">Plotly</option><option value="native">Native SVG</option></select></label>
+      <label class="gallery-check"><input type="checkbox" id="source"> Show source</label>
+  </form>
+  <main id="examples" class="gallery-main"></main>
+  <div data-site-footer></div>
+  <script type="module" src="../../visual-browser/shell.js"></script>
+  <script type="module" src="gallery.js"></script>
+</body>
+</html>

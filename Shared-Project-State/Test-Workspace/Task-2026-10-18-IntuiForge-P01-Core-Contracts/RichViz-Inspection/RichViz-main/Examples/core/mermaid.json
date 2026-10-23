@@ -1,0 +1,9 @@
+{
+  "version": 1,
+  "type": "mermaid",
+  "title": "Git branching sequence",
+  "description": "A feature branch is created from main, receives commits and is merged back into main.",
+  "data": {
+    "source": "flowchart LR\n  A[main] --> B(create feature branch)\n  B --> C[commit work]\n  C --> D{review ok?}\n  D -- yes --> E[merge into main]\n  D -- no --> C"
+  }
+}
